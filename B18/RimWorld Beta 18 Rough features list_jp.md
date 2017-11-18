@@ -1,0 +1,171 @@
+# RimWorld Beta 18 – A World of Story is released! 日本語訳
+
+翻訳元：[http://steamcommunity.com/games/294100/announcements/detail/2922136221157800947](http://steamcommunity.com/games/294100/announcements/detail/2922136221157800947)  の Rough features list:
+
+参考：Google翻訳
+
+- 【新バイオーム湿地帯】湿地帯バイオームは植物に覆われているため動きが鈍くなり、泥だらけの地形のため建設が難しいです。これらおよび他のバイオーム用に、多くの新しい植物が加えられました。
+  - 熱帯雨水 バイオーム
+  - 温帯湿地 バイオーム
+  - コールドボグ バイオーム
+- 【新規イベント】
+  - 隕石：隕石は鉱山の塊を残ます。
+  - オーロラ：美しいオーロラが夜空を照らし、気分を改善します。
+  - 竜巻
+  - 和平交渉クエスト
+  - 世界難民クエスト
+  - 囚人救助クエスト
+- 【ストーリーフルな戦闘】近接戦闘の大幅に修正し、すべての戦闘の相互作用を確認できます。ストーリーフルな戦闘は、戦闘中の各打撃、ミス、強打、ブロック、転倒を報告する戦闘ログを生成します。戦闘中または戦闘後に、戦闘ログを確認して何が起こったかを見て、より豊かなストーリーを生み出すことができます。
+- 【研究の分割】
+  - 例えば、ガンの研究は現在いくつかの段階に分かれているので、アサルトライフルのような先進的な銃を作ることは単純なリボルバーを作ることよりも多くの研究を要すします。
+  - 近接兵器の研究は現在いくつかの段階に分かれています。
+- 【新しい家具】
+  - ベッドロール：持ち運べるベッド
+  - ドレッサー：部屋の状態を改善
+  - エンドテーブル：部屋の状態を改善
+  - さまざまな大きさの新しいテーブル
+- 【新しいクエスト報酬スペシャルアイテム】
+  - 精神性放出気？（Psychic emanator）
+  - バノメータパワーセル？（Vanometric power cell）
+  - 無限化学反応器（Infinite chemreactor）
+  - Techprof subpersona core？
+  - 回復メカニックスーパードーズ？（Healer mechanite superdose）
+  - 蘇生メカニックスーパードーズ？（Resurrector mechanite superdose）
+  - 軌道砲撃誘導装置（Orbital bombardment targeter）
+  - 軌道ビーム誘導装置（Orbital power beam targeter）
+- 【部族アップグレード】
+  - イクワ(Ikwa)近接武器
+  - ウォーマスク
+  - 部族の頭飾り
+  - リカーブボウ
+  - 部族の猟犬？（Tribal hunter）
+  - 部族の重射手
+  - 部族の凶悪犯
+- 【様々な状況で使用される世界の構成】
+  - 眠るメカノイド
+  - 動物の待ち伏せ
+  - 敵の伏兵
+- 【新しい精神崩壊】
+  - 侮辱する。ランダムに移動して人を侮辱する。
+  - ターゲットを絞った侮辱行為。特定の入植者の周りを追って、それらを繰り返し侮辱する。
+  - かんしゃく。家具、建造物、壊れやすいものを無作為にぶつけ回る。
+  - ベッドルームでかんしゃく。自分の部屋に行って、家具、建造物、壊れやすいものを無作為に粉砕します。
+  - 特定の相手へのかんしゃく。無作為に選ばれた特定の価値のある物や建造物を破壊する。
+  - 加虐的な暴動(Sadistic rage.)。しばらくの間、囚人を攻撃する。素手のみです。囚人が攻撃する場合にのみ発生します。倒れた囚人に攻撃はしません。
+  - 死体への執着。死体を掘り起こし、会議場のテーブルやランダムな交通量の多い場所に配置します。精神崩壊は終了します。
+  - 強硬症。心因的影響によえい、その場で倒れた状態に陥る。数日後に回復します。これは、 "緊張崩壊" hediffによって実装することができます。
+  - 脱獄者。入植者は無作為な（脱獄を企てている）囚人の元に行き、特別な「脱獄の火付け」措置(special “spark jailbreak” action)をとり、その囚人に脱獄を誘発します。
+  - 虐殺者。定期的にランダムな家畜を虐殺します。
+  - 殺人衝動。特定の入植者や無作為に選んだ捕虜を狩り、近接攻撃で殺そうとします。近接武器か拳で攻撃します。ターゲットが死ぬまで攻撃を続けます。
+  - 暴動化。ポーン(The pawn。ゲーム中すべての動くもののこと。)は基本的に動物のように動作し始めます。あなたはおとなしくさせて、彼が再び入植(rejoin)するようにすることができます。
+- 【新しい精神刺激】基本的に精神崩壊を回復させます。 これらは入植者に高気分の一時的なボーナスを与える。
+  - 狂乱的な作業（1日）：すべての仕事速度2.5倍
+  - 狂乱的な移動（1日）：移動速度1.5倍
+  - 狂乱的な射撃（3日）：射撃スキルが10レベル上昇。
+  - 素晴らしいトレード
+  - 素晴らしい勧誘
+  - 素晴らしい手術
+  - 素晴らしい芸術
+- 湖、山脈、湾などの世界の特徴が検出され、名前が付けられます。名前はワールドビューで表示されます。
+- 洞窟は地図上の山岳地帯で時折形成されます。その中には特別な洞窟の植物(cave plants)があります。休眠している昆虫の巣箱も存在する可能性があります。
+- 多くの新しい物語の種類が追加されました。その為、多くの新しい種類の出来事が記録され、植民者はそれらについてアートを作ることができます。アートの説明ははるかに多様になります。
+- 疫病は作物を一斉に枯らすものではなくなり、徐々に広がるようになりました。
+- 宇宙船が大きくなり、もう1つのコンポーネント、センサークラスターを持ちます（必要です？）。
+- 宇宙船クエスト終了フェーズ：隠された宇宙船の地形に到達しても、ゲームは到着時に即座に終了しなくなります。宇宙船が存在する地図が生成されます。離陸するには、宇宙船を始動させなければなりません。その数日間、襲撃から生き残らなければなりません。
+- 宇宙船の建設には、独自の技術ツリーと生産方法を備えた高度なコンポーネントが必要になります。
+- 拳銃の分類がリボルバーと自動拳銃に分割されました。
+- ボマロープは化学燃料を搾乳できるようになりました。
+- 化学燃料から発電する化学燃料発電機を追加。
+- 大砲の動作を変更しました。どのタイプの砲弾も発射できる迫撃砲が1種類あり、各砲弾は異なる効果を生み出します。砲弾は爆薬、焼夷弾、火砲、アンチグレイン(antigrain)（特殊ハイテク弾頭）です。
+- 緯度による季節：季節は緯度に応じてより合理的に調整されるようになりました。赤道で反転する代わりに、季節のないクロスオーバー地域があります。
+- アラートレターの種類とサウンドをより明確に再設計。
+- ポーンは今追放されることができます。これは、キャラバンのポーンを放棄することに似ています。
+- 技術的なこと：セーブファイルには、それを生成するシードだけでなく、惑星マップの実際の内容が含まれるようになりました。このロード改善は、前方互換性を可能にし、プレイ中にワールドマップを修正することを技術的に可能にします。
+- 多くのチューニング、バグ修正、再設計。
+
+----
+
+## 以下原文
+
+----
+
+### Rough features list:
+
+- New swamp biomes: Swamp biomes are hard to move through due to choking vegetation, and hard to build in due to swampy terrain. Many new plants were added to fill out these and other biomes.
+  - Tropical swamp
+  - Temperate swamp
+  - Cold bog
+- New incidents:
+  - Meteorite impact. A meteorite impacts, leaving a lump of mineable ore.
+  - Aurora. A beautiful aurora lights up the night sky, improving mood.
+  - Tornado
+  - Peace talks quest
+  - World refugee quest
+  - Prisoner rescue quest
+- Storyful combat: A major rework of melee combat, and a new way to report all combat interactions. Storyful combat generates a combat log that reports each blow, miss, swipe, block and fall in the combat. During or after a fight, you can review the combat log to see what happened, to generate a richer story.
+- Various research has been split up
+  - Gun research is now broken into several stages, so making advanced guns like assault rifles takes more research than making simple revolvers
+  - Melee weapon research is now broken into several stages
+- New furniture
+  - Bedroll: Portable bed
+  - Dresser: Passively improves room
+  - Endtable: Passive improves room
+  - Various new table sizes
+- New quest reward special items:
+  - Psychic emanator
+  - Vanometric power cell
+  - Infinite chemreactor
+  - Techprof subpersona core
+  - Healer mechanite superdose
+  - Resurrector mechanite superdose
+  - Orbital bombardment targeter
+  - Orbital power beam targeter
+- Tribal content upgrade:
+  - Ikwa melee weapon
+  - War mask
+  - Tribal headdress
+  - Recurve bow
+  - Tribal hunter
+  - Tribal heavy archer
+  - Tribal berserker
+- New world site components (used in various situations):
+  - Sleeping mechanoids
+  - Animal ambush
+  - Enemy ambush
+- New mental breaks:
+  - Insulting spree. Randomly go around and insult people.
+  - Targeted insulting spree. Follow around a specific other colonist, insulting them repeatedly.
+  - Tantrum. Go around randomly smashing furniture, buildings, and damageable items.
+  - Bedroom tantrum. Go to your own room and randomly smash furniture, buildings, and damageable items.
+  - Targeted tantrum. Go to destroy a single, specific, randomly-chosen, valuable item or building.
+  - Sadistic rage. Melee attack prisoners for a while. Fists only. Only occurs when there are prisoners to attack. Does not attack downed prisoners.
+  - Corpse obsession. Dig up a corpse and drop it on a meeting spot table or in a random high-traffic area. The mental break then ends.
+  - Catatonic. Collapse on the spot into a downed state with a psychological breakdown. Recover some days later. This can be implemented by a “catatonic breakdown” hediff.
+  - Jailbreaker. Colonist goes to a random prisoner (who is capable of prison breaking), and upon doing a special “spark jailbreak” action with them, induces an immediate prison break in that prisoner.
+  - Slaughterer. Slaughter random colony animal(s) periodically.
+  - Murderous rage. Hunt down a specific colonist or prisoner (randomly chosen) and attempt to kill them by melee attack. Uses melee weapon or fists, as equipped. Keep attacking until the target is dead.
+  - Run wild. The pawn basically starts acting like an animal. You can tame him to try to get him to rejoin.
+- New mental inspirations. Basically reverse mental breaks - these give temporary bonuses to colonists in high moods.
+  - Work frenzy (1 day): Global work speed 2.5x
+  - Go frenzy (1 day): Walk speed 1.5x
+  - Shoot frenzy (3 days): Shooting hit chance improved as though the pawn is 10 skill levels higher.
+  - Inspired trade
+  - Inspired recruitment
+  - Inspired surgery
+  - Inspired art
+- World features like lakes, mountain ranges, and bays are now detected and named. Names are displayed in the world view.
+- Caves now form sometimes in mountainous maps. Inside there are special cave plants. There can also be dormant insect hives.
+- Many new tale types were added. So, the game will record many new types of events, and colonists can make art about them. Art descriptions should be much more diverse.
+- Crop blights now appear and spread over time instead of instantly destroying crops
+- Spaceship is now bigger and has one more component, the sensor cluster
+- Spaceship quest ending phase: When going to the hidden space ship to finish the game, the game does not end instantly on arrival. The map generates with the ship intact. To take off, first you must power up the ship, which takes some days, during which you must survive raids.
+- Space ship construction now requires advanced components, which have their own tech tree and production method
+- Split pistol into revolver and autopistol
+- Boomalopes can be milked for chemfuel
+- Added chemfuel generator, which generates electricity from chemfuel
+- Artillery works differently now. There is one type of mortar, which can fire any type of shell, with each shell creating a different effect. The shells are explosive, incendiary, firefoam, and antigrain (a special high-tech warhead).
+- Seasonal latitudes: Seasons now more reasonably adjust depending on latitude. Instead of flipping at the equator, there is a seasonless crossover zone.
+- Redesigned alert letter types and sounds to be more specific.
+- Pawns can now be banished. This is analogous to abandoning pawns in caravans.
+- Technical: The save file now contains the actual contents of the planet map, instead of just the seed to generate it. This speed up loading, makes forward compatibility possible, and makes it technically possible to modify the world map during play.
+- Many many tunings, bugfixes, and redesigns.
