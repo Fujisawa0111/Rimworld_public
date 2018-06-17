@@ -31,24 +31,26 @@
     }
     </style>
 <meta charset="UTF-8">
-<title>B18 日本語とLabel対応表(β2)</title>
+<title>1.0 unstable beta 日本語とLabel対応表(β1)</title>
 </head>
 <body>
 <h3>
-B18 日本語とLabel対応表(β2)2017/12/24更新
+1.0 unstable beta 日本語とLabel対応表 2018/06/17更新
 </h3>
 <p>
 注意。このデータは、Coreの日本語ファイルから抜き出して一覧にしたものです。<br />
 日本語ファイルに存在しない場合、みつからないかもしれません。ご了承ください。<br />
-</p>
-<p>
-β2.2017/12/14 : &lt;path&gt;&lt;/path&gt;&lt;trans&gt;&lt;/trans&gt;の形式のものを抽出対象としました。
 </p>
 <table id="foo-table" class="display cell-border" cellspacing="0" width="100%">
   <thead>
 	<tr><th>日本語名(Label)</th><th>DefName</th><th>記述されてるXML</th></tr>
   </thead>
   <tbody>
+    <tr><td>x 回繰り返す</td><td>RepeatCount</td><td>DefInjected\BillRepeatModeDef\BillRepeatModeDefs.xml</td></tr>
+    <tr><td>在庫 x個まで繰り返す</td><td>TargetCount</td><td>DefInjected\BillRepeatModeDef\BillRepeatModeDefs.xml</td></tr>
+    <tr><td>無制限</td><td>Forever</td><td>DefInjected\BillRepeatModeDef\BillRepeatModeDefs.xml</td></tr>
+    <tr><td>床に置く</td><td>DropOnFloor</td><td>DefInjected\BillStoreModeDef\BillStoreModeDefs.xml</td></tr>
+    <tr><td>最良の保管庫へ移動</td><td>BestStockpile</td><td>DefInjected\BillStoreModeDef\BillStoreModeDefs.xml</td></tr>
     <tr><td>針葉樹林</td><td>BorealForest</td><td>DefInjected\BiomeDef\Biomes_Cold.xml</td></tr>
     <tr><td>ツンドラ</td><td>Tundra</td><td>DefInjected\BiomeDef\Biomes_Cold.xml</td></tr>
     <tr><td>寒帯湿地</td><td>ColdBog</td><td>DefInjected\BiomeDef\Biomes_Cold.xml</td></tr>
@@ -393,7 +395,7 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>寒波</td><td>ColdSnap</td><td>DefInjected\GameConditionDefs\GameConditions_Misc.xml</td></tr>
     <tr><td>ゲリラ雷雨</td><td>Flashstorm</td><td>DefInjected\GameConditionDefs\GameConditions_Misc.xml</td></tr>
     <tr><td>気候の変動周期</td><td>ClimateCycle</td><td>DefInjected\GameConditionDefs\GameConditions_Misc.xml</td></tr>
-    <tr><td>対惑星戦略兵器</td><td>Planetkiller</td><td>DefInjected\GameConditionDefs\GameConditions_Misc.xml</td></tr>
+    <tr><td>対惑星戦略兵器interstellar</td><td>Planetkiller</td><td>DefInjected\GameConditionDefs\GameConditions_Misc.xml</td></tr>
     <tr><td>オーロラ</td><td>Aurora</td><td>DefInjected\GameConditionDefs\GameConditions_Misc.xml</td></tr>
     <tr><td>飲酒</td><td>AlcoholHigh</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>気がつかない</td><td>AlcoholHigh.stages.0</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
@@ -403,6 +405,7 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>泥酔</td><td>AlcoholHigh.stages.4</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>意識不明</td><td>AlcoholHigh.stages.5</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>二日酔い</td><td>Hangover</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
+    <tr><td>二日酔い</td><td>Hangover.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>軽度</td><td>Hangover.stages.0</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>重度</td><td>Hangover.stages.1</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>酩酊</td><td>Hangover.stages.2</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
@@ -413,6 +416,7 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>アルコール中毒</td><td>AlcoholAddiction</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>禁断症状</td><td>AlcoholAddiction.stages.1</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>ウェイクアップでハイになる</td><td>WakeUpHigh</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
+    <tr><td>ウェイクアップハイ</td><td>WakeUpHigh.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>ウェイクアップ耐性</td><td>WakeUpTolerance</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>小</td><td>WakeUpTolerance.stages.1</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>大</td><td>WakeUpTolerance.stages.2</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
@@ -420,6 +424,7 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>ウェイクアップ中毒</td><td>WakeUpAddiction</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>禁断症状</td><td>WakeUpAddiction.stages.1</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>スモークリーフに酔っている</td><td>SmokeleafHigh</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
+    <tr><td>スモークリーフに酔っている</td><td>SmokeleafHigh.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>スモークリーフ耐性</td><td>SmokeleafTolerance</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>小</td><td>SmokeleafTolerance.stages.1</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>大</td><td>SmokeleafTolerance.stages.2</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
@@ -427,8 +432,11 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>スモークリーフ依存</td><td>SmokeleafAddiction</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>禁断症状</td><td>SmokeleafAddiction.stages.1</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>フレークでハイになる</td><td>FlakeHigh</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
+    <tr><td>フレークハイ</td><td>FlakeHigh.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>ペコーでハイになる</td><td>PekoeHigh</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
+    <tr><td>ペコーハイ</td><td>PekoeHigh.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>イェイョでハイになる</td><td>YayoHigh</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
+    <tr><td>イェイョハイ</td><td>YayoHigh.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>サイカイト耐性</td><td>PsychiteTolerance</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>小</td><td>PsychiteTolerance.stages.1</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>大</td><td>PsychiteTolerance.stages.2</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
@@ -436,6 +444,7 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>サイカイト中毒</td><td>PsychiteAddiction</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>禁断症状</td><td>PsychiteAddiction.stages.1</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>ゴージュースでハイになる</td><td>GoJuiceHigh</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
+    <tr><td>ゴージュースハイ</td><td>GoJuiceHigh.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>ゴージュース耐性</td><td>GoJuiceTolerance</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>小</td><td>GoJuiceTolerance.stages.1</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
     <tr><td>大</td><td>GoJuiceTolerance.stages.2</td><td>DefInjected\HediffDefs\Hediffs_Global_Drugs.xml</td></tr>
@@ -457,13 +466,18 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>失血</td><td>BloodLoss</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
     <tr><td>麻酔</td><td>Anesthetic</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
     <tr><td>緊張性衰弱</td><td>CatatonicBreakdown</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
+    <tr><td>緊張性衰弱</td><td>CatatonicBreakdown.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
     <tr><td>サイキックショック</td><td>PsychicShock</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
+    <tr><td>サイキックショック</td><td>PsychicShock.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
     <tr><td>冷凍睡眠病</td><td>CryptosleepSickness</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
     <tr><td>食中毒</td><td>FoodPoisoning</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
     <tr><td>毒物が蓄積</td><td>ToxicBuildup</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
     <tr><td>妊娠</td><td>Pregnant</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
+    <tr><td>妊娠</td><td>Pregnant.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
     <tr><td>心筋梗塞</td><td>HeartAttack</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
+    <tr><td>心筋梗塞</td><td>HeartAttack.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
     <tr><td>ドラッグの過剰摂取</td><td>DrugOverdose</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
+    <tr><td>ドラッグ過剰摂取</td><td>DrugOverdose.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
     <tr><td>(Hidden)</td><td>DrugOverdose.stages.0</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
     <tr><td>軽度</td><td>DrugOverdose.stages.1</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
     <tr><td>重度</td><td>DrugOverdose.stages.2</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
@@ -472,58 +486,129 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>熱中症</td><td>Heatstroke</td><td>DefInjected\HediffDefs\Hediffs_Global_Temperature.xml</td></tr>
     <tr><td>低体温症</td><td>Hypothermia</td><td>DefInjected\HediffDefs\Hediffs_Global_Temperature.xml</td></tr>
     <tr><td>木製義足</td><td>PegLeg</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
+    <tr><td>木製義足</td><td>PegLeg.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>入れ歯</td><td>Denture</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
+    <tr><td>入れ歯</td><td>Denture.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>人造下肢</td><td>SimpleProstheticLeg</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
+    <tr><td>人造下肢</td><td>SimpleProstheticLeg.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>人造上肢</td><td>SimpleProstheticArm</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
+    <tr><td>人造上肢</td><td>SimpleProstheticArm.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>拳</td><td>SimpleProstheticArm.comps.0.tools.0</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>強化視覚センサー</td><td>BionicEye</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
+    <tr><td>強化視覚センサー</td><td>BionicEye.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>強化上肢</td><td>BionicArm</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
+    <tr><td>強化上肢</td><td>BionicArm.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>拳</td><td>BionicArm.comps.0.tools.0</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>強化下肢</td><td>BionicLeg</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
+    <tr><td>強化下肢</td><td>BionicLeg.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>機械化かぎ爪</td><td>PowerClaw</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
+    <tr><td>機械化かぎ爪</td><td>PowerClaw.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>爪</td><td>PowerClaw.comps.0.tools.0</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>機械化鎌状刃</td><td>ScytherBlade</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
+    <tr><td>機械化鎌状刃</td><td>ScytherBlade.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>刃</td><td>ScytherBlade.comps.0.tools.0</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>突起</td><td>ScytherBlade.comps.0.tools.1</td><td>DefInjected\HediffDefs\Hediffs_Local_AddedParts.xml</td></tr>
     <tr><td>腰痛</td><td>BadBack</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
+    <tr><td>腰痛</td><td>BadBack.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
     <tr><td>虚弱</td><td>Frail</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
+    <tr><td>虚弱</td><td>Frail.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
     <tr><td>白内障</td><td>Cataract</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
+    <tr><td>白内障</td><td>Cataract.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
     <tr><td>失明</td><td>Blindness</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
     <tr><td>聴力損失</td><td>HearingLoss</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
     <tr><td>認知症</td><td>Dementia</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
     <tr><td>アルツハイマー病</td><td>Alzheimers</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
     <tr><td>ぜんそく</td><td>Asthma</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
     <tr><td>心筋梗塞</td><td>HeartArteryBlockage</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
+    <tr><td>心筋梗塞</td><td>HeartArteryBlockage.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
     <tr><td>悪性腫瘍</td><td>Carcinoma</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
+    <tr><td>悪性腫瘍</td><td>Carcinoma.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
     <tr><td>ジョイワイヤー</td><td>Joywire</td><td>DefInjected\HediffDefs\Hediffs_Local_Implants.xml</td></tr>
+    <tr><td>ジョイワイヤー</td><td>Joywire.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Implants.xml</td></tr>
     <tr><td>ペインストッパー</td><td>Painstopper</td><td>DefInjected\HediffDefs\Hediffs_Local_Implants.xml</td></tr>
+    <tr><td>ペインストッパー</td><td>Painstopper.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Implants.xml</td></tr>
     <tr><td>回虫</td><td>GutWorms</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
     <tr><td>せん毛虫</td><td>MuscleParasites</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
     <tr><td>筋繊維 機械化症</td><td>FibrousMechanites</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
     <tr><td>感覚器 機械化症</td><td>SensoryMechanites</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
     <tr><td>傷からの感染症</td><td>WoundInfection</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
+    <tr><td>傷感染症</td><td>WoundInfection.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
     <tr><td>インフルエンザ</td><td>Flu</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
     <tr><td>ペスト</td><td>Plague</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
     <tr><td>マラリア</td><td>Malaria</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
     <tr><td>眠り病</td><td>SleepingSickness</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
     <tr><td>その他</td><td>Misc</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>ケガ</td><td>Misc.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>包帯</td><td>Misc.comps.0.labelTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>縫合</td><td>Misc.comps.0.labelTendedWellInner</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>セット</td><td>Misc.comps.0.labelSolidTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>やけど</td><td>Burn</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>やけど</td><td>Burn.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>包帯</td><td>Burn.comps.0.labelTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>縫合</td><td>Burn.comps.0.labelTendedWellInner</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>セット</td><td>Burn.comps.0.labelSolidTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>ひしゃげた</td><td>Crush</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>ひしゃげた</td><td>Crush.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>包帯</td><td>Crush.comps.0.labelTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>縫合</td><td>Crush.comps.0.labelTendedWellInner</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>セット</td><td>Crush.comps.0.labelSolidTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>ひびが入った</td><td>Crack</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>ひびが入った</td><td>Crack.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>治療</td><td>Crack.comps.0.labelTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>治療</td><td>Crack.comps.0.labelTendedWellInner</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>セット</td><td>Crack.comps.0.labelSolidTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>切創</td><td>Cut</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>切創</td><td>Cut.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>包帯</td><td>Cut.comps.0.labelTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>縫合</td><td>Cut.comps.0.labelTendedWellInner</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>セット</td><td>Cut.comps.0.labelSolidTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>医療事故(切創)</td><td>SurgicalCut</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>医療事故(切創)</td><td>SurgicalCut.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>包帯</td><td>SurgicalCut.comps.0.labelTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>縫合</td><td>SurgicalCut.comps.0.labelTendedWellInner</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>セット</td><td>SurgicalCut.comps.0.labelSolidTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>ひっかき傷</td><td>Scratch</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>ひっかき傷</td><td>Scratch.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>包帯</td><td>Scratch.comps.0.labelTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>縫合</td><td>Scratch.comps.0.labelTendedWellInner</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>セット</td><td>Scratch.comps.0.labelSolidTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>噛み傷</td><td>Bite</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>噛み傷</td><td>Bite.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>包帯</td><td>Bite.comps.0.labelTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>縫合</td><td>Bite.comps.0.labelTendedWellInner</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>セット</td><td>Bite.comps.0.labelSolidTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>刺し傷</td><td>Stab</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>刺し傷</td><td>Stab.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>包帯</td><td>Stab.comps.0.labelTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>縫合</td><td>Stab.comps.0.labelTendedWellInner</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>セット</td><td>Stab.comps.0.labelSolidTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>銃創</td><td>Gunshot</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>銃創</td><td>Gunshot.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>包帯</td><td>Gunshot.comps.0.labelTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>縫合</td><td>Gunshot.comps.0.labelTendedWellInner</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>セット</td><td>Gunshot.comps.0.labelSolidTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>裂傷</td><td>Shredded</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>裂傷</td><td>Shredded.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>包帯</td><td>Shredded.comps.0.labelTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>縫合</td><td>Shredded.comps.0.labelTendedWellInner</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>セット</td><td>Shredded.comps.0.labelSolidTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>打撲傷</td><td>Bruise</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>打撲傷</td><td>Bruise.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>包帯</td><td>Bruise.comps.0.labelTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>縫合</td><td>Bruise.comps.0.labelTendedWellInner</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>セット</td><td>Bruise.comps.0.labelSolidTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>凍傷</td><td>Frostbite</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>包帯</td><td>Frostbite.comps.0.labelTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>縫合</td><td>Frostbite.comps.0.labelTendedWellInner</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>セット</td><td>Frostbite.comps.0.labelSolidTendedWell</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>身体の一部分を失った</td><td>MissingBodyPart</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
+    <tr><td>身体欠損</td><td>MissingBodyPart.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Injuries.xml</td></tr>
     <tr><td>後天性サヴァン症</td><td>TraumaSavant</td><td>DefInjected\HediffDefs\Hediffs_Local_Misc.xml</td></tr>
+    <tr><td>後天性サヴァン症</td><td>TraumaSavant.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Misc.xml</td></tr>
     <tr><td>大脳変性(化学的)</td><td>ChemicalDamageBrain</td><td>DefInjected\HediffDefs\Hediffs_Local_Misc.xml</td></tr>
     <tr><td>腎臓(科学的)</td><td>ChemicalDamageKidney</td><td>DefInjected\HediffDefs\Hediffs_Local_Misc.xml</td></tr>
     <tr><td>肝硬変</td><td>Cirrhosis</td><td>DefInjected\HediffDefs\Hediffs_Local_Misc.xml</td></tr>
+    <tr><td>肝硬変</td><td>Cirrhosis.labelNoun</td><td>DefInjected\HediffDefs\Hediffs_Local_Misc.xml</td></tr>
     <tr><td>蘇生精神病</td><td>ResurrectionPsychosis</td><td>DefInjected\HediffDefs\Hediffs_Local_Misc.xml</td></tr>
     <tr><td>初期</td><td>ResurrectionPsychosis.stages.0</td><td>DefInjected\HediffDefs\Hediffs_Local_Misc.xml</td></tr>
     <tr><td>初期</td><td>ResurrectionPsychosis.stages.1</td><td>DefInjected\HediffDefs\Hediffs_Local_Misc.xml</td></tr>
@@ -767,11 +852,13 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>ルシフェリウム</td><td>Chemical_Luciferium</td><td>DefInjected\NeedDefs\Needs_Misc.xml</td></tr>
     <tr><td>アンブロージア</td><td>Chemical_Ambrosia</td><td>DefInjected\NeedDefs\Needs_Misc.xml</td></tr>
     <tr><td>意識</td><td>Consciousness</td><td>DefInjected\PawnCapacityDefs\PawnCapacity.xml</td></tr>
+    <tr><td>データ処理</td><td>Consciousness.labelMechanoids</td><td>DefInjected\PawnCapacityDefs\PawnCapacity.xml</td></tr>
     <tr><td>視覚</td><td>Sight</td><td>DefInjected\PawnCapacityDefs\PawnCapacity.xml</td></tr>
     <tr><td>聴覚</td><td>Hearing</td><td>DefInjected\PawnCapacityDefs\PawnCapacity.xml</td></tr>
     <tr><td>運動能力</td><td>Moving</td><td>DefInjected\PawnCapacityDefs\PawnCapacity.xml</td></tr>
     <tr><td>指の機能</td><td>Manipulation</td><td>DefInjected\PawnCapacityDefs\PawnCapacity.xml</td></tr>
     <tr><td>会話能力</td><td>Talking</td><td>DefInjected\PawnCapacityDefs\PawnCapacity.xml</td></tr>
+    <tr><td>通信機能</td><td>Talking.labelMechanoids</td><td>DefInjected\PawnCapacityDefs\PawnCapacity.xml</td></tr>
     <tr><td>消化機能</td><td>Eating</td><td>DefInjected\PawnCapacityDefs\PawnCapacity.xml</td></tr>
     <tr><td>肺機能</td><td>Breathing</td><td>DefInjected\PawnCapacityDefs\PawnCapacity.xml</td></tr>
     <tr><td>腎機能</td><td>BloodFiltration</td><td>DefInjected\PawnCapacityDefs\PawnCapacity.xml</td></tr>
@@ -800,10 +887,15 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>ダチョウ</td><td>Ostrich</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Birds.xml</td></tr>
     <tr><td>シチメンチョウ</td><td>Turkey</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Birds.xml</td></tr>
     <tr><td>ニワトリ</td><td>Chicken</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Farm.xml</td></tr>
+    <tr><td>オンドリ</td><td>Chicken.labelMale</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Farm.xml</td></tr>
+    <tr><td>メンドリ</td><td>Chicken.labelFemale</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Farm.xml</td></tr>
     <tr><td>ヒヨコ</td><td>Chicken.lifeStages.0</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Farm.xml</td></tr>
     <tr><td>ブタ</td><td>Pig</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Farm.xml</td></tr>
+    <tr><td>メスブタ</td><td>Pig.labelFemale</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Farm.xml</td></tr>
     <tr><td>子ブタ</td><td>Pig.lifeStages.0</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Farm.xml</td></tr>
     <tr><td>ウシ</td><td>Cow</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Farm.xml</td></tr>
+    <tr><td>オウシ</td><td>Cow.labelMale</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Farm.xml</td></tr>
+    <tr><td>メウシ</td><td>Cow.labelFemale</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Farm.xml</td></tr>
     <tr><td>子ウシ</td><td>Cow.lifeStages.0</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Farm.xml</td></tr>
     <tr><td>アルパカ</td><td>Alpaca</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Farm.xml</td></tr>
     <tr><td>ゾウ</td><td>Elephant</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Giant.xml</td></tr>
@@ -832,7 +924,11 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>アライグマ</td><td>Raccoon</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Rodenlikes.xml</td></tr>
     <tr><td>ネズミ</td><td>Rat</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Rodenlikes.xml</td></tr>
     <tr><td>シカ</td><td>Deer</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Temperate.xml</td></tr>
+    <tr><td>オスジカ</td><td>Deer.labelMale</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Temperate.xml</td></tr>
+    <tr><td>メスジカ</td><td>Deer.labelFemale</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Temperate.xml</td></tr>
     <tr><td>アイベックス</td><td>Ibex</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Temperate.xml</td></tr>
+    <tr><td>オスアイベックス</td><td>Ibex.labelMale</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Temperate.xml</td></tr>
+    <tr><td>メスアイベックス</td><td>Ibex.labelFemale</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Temperate.xml</td></tr>
     <tr><td>ヘラジカ</td><td>Elk</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Temperate.xml</td></tr>
     <tr><td>子ヘラジカ</td><td>Elk.lifeStages.0</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Temperate.xml</td></tr>
     <tr><td>カリブー</td><td>Caribou</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_Temperate.xml</td></tr>
@@ -846,14 +942,19 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>ワーグ</td><td>Warg</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
     <tr><td>子ワーグ</td><td>Warg.lifeStages.0</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
     <tr><td>シンリンオオカミ</td><td>WolfTimber</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
+    <tr><td>シンリンオオカミ群れ</td><td>WolfTimber.labelPlural</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
     <tr><td>子シンリンオオカミ</td><td>WolfTimber.lifeStages.0</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
     <tr><td>ホッキョクオオカミ</td><td>WolfArctic</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
+    <tr><td>ホッキョクオオカミ群れ</td><td>WolfArctic.labelPlural</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
     <tr><td>子ホッキョクオオカミ</td><td>WolfArctic.lifeStages.0</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
     <tr><td>フェネックキツネ</td><td>FoxFennec</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
+    <tr><td>フェネックキツネ群れ</td><td>FoxFennec.labelPlural</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
     <tr><td>子フェネックキツネ</td><td>FoxFennec.lifeStages.0</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
     <tr><td>アカギツネ</td><td>FoxRed</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
+    <tr><td>アカギツネ群れ</td><td>FoxRed.labelPlural</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
     <tr><td>子アカギツネ</td><td>FoxRed.lifeStages.0</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
     <tr><td>ホッキョクギツネ</td><td>FoxArctic</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
+    <tr><td>ホッキョクギツネ</td><td>FoxArctic.labelPlural</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
     <tr><td>子ホッキョクギツネ</td><td>FoxArctic.lifeStages.0</td><td>DefInjected\PawnKindDef\PawnKinds_Animal_WildCanines.xml</td></tr>
     <tr><td>機械化ムカデ</td><td>Centipede</td><td>DefInjected\PawnKindDef\PawnKinds_Mechanoid.xml</td></tr>
     <tr><td>機械化カマキリ</td><td>Scyther</td><td>DefInjected\PawnKindDef\PawnKinds_Mechanoid.xml</td></tr>
@@ -863,10 +964,13 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>傭兵(狙撃手)</td><td>MercenarySniper</td><td>DefInjected\PawnKindDef\PawnKinds_Mercenary.xml</td></tr>
     <tr><td>傭兵(特殊部隊兵)</td><td>MercenarySlasher</td><td>DefInjected\PawnKindDef\PawnKinds_Mercenary.xml</td></tr>
     <tr><td>傭兵(重火器)</td><td>MercenaryHeavy</td><td>DefInjected\PawnKindDef\PawnKinds_Mercenary.xml</td></tr>
+    <tr><td>傭兵達(重火器)</td><td>MercenaryHeavy.labelPlural</td><td>DefInjected\PawnKindDef\PawnKinds_Mercenary.xml</td></tr>
     <tr><td>カシラ</td><td>PirateBoss</td><td>DefInjected\PawnKindDef\PawnKinds_Mercenary.xml</td></tr>
     <tr><td>傭兵(エリート)</td><td>MercenaryElite</td><td>DefInjected\PawnKindDef\PawnKinds_Mercenary.xml</td></tr>
+    <tr><td>傭兵達(エリート)</td><td>MercenaryElite.labelPlural</td><td>DefInjected\PawnKindDef\PawnKinds_Mercenary.xml</td></tr>
     <tr><td>村民</td><td>Villager</td><td>DefInjected\PawnKindDef\PawnKinds_Outlander.xml</td></tr>
     <tr><td>議員</td><td>TownCouncilman</td><td>DefInjected\PawnKindDef\PawnKinds_Outlander.xml</td></tr>
+    <tr><td>議員達</td><td>TownCouncilman.labelPlural</td><td>DefInjected\PawnKindDef\PawnKinds_Outlander.xml</td></tr>
     <tr><td>town trader</td><td>TownTrader</td><td>DefInjected\PawnKindDef\PawnKinds_Outlander.xml</td></tr>
     <tr><td>衛兵</td><td>TownGuard</td><td>DefInjected\PawnKindDef\PawnKinds_Outlander.xml</td></tr>
     <tr><td>ならず者</td><td>Drifter</td><td>DefInjected\PawnKindDef\PawnKinds_Pirate.xml</td></tr>
@@ -879,6 +983,9 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>流浪の戦士</td><td>SpaceSoldier</td><td>DefInjected\PawnKindDef\PawnKinds_Spacer.xml</td></tr>
     <tr><td>奴隷</td><td>Slave</td><td>DefInjected\PawnKindDef\PawnKinds_Special.xml</td></tr>
     <tr><td>野蛮人</td><td>WildMan</td><td>DefInjected\PawnKindDef\PawnKinds_Special.xml</td></tr>
+    <tr><td>野蛮人の男性</td><td>WildMan.labelPlural</td><td>DefInjected\PawnKindDef\PawnKinds_Special.xml</td></tr>
+    <tr><td>野蛮人の女性</td><td>WildMan.labelFemale</td><td>DefInjected\PawnKindDef\PawnKinds_Special.xml</td></tr>
+    <tr><td>野蛮人の女性</td><td>WildMan.labelFemalePlural</td><td>DefInjected\PawnKindDef\PawnKinds_Special.xml</td></tr>
     <tr><td>戦士</td><td>TribalWarrior</td><td>DefInjected\PawnKindDef\PawnKinds_Tribal.xml</td></tr>
     <tr><td>行商人</td><td>TribalTrader</td><td>DefInjected\PawnKindDef\PawnKinds_Tribal.xml</td></tr>
     <tr><td>弓士</td><td>TribalArcher</td><td>DefInjected\PawnKindDef\PawnKinds_Tribal.xml</td></tr>
@@ -887,31 +994,57 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>狂戦士</td><td>TribalBerserker</td><td>DefInjected\PawnKindDef\PawnKinds_Tribal.xml</td></tr>
     <tr><td>名誉ある戦士</td><td>TribalChief</td><td>DefInjected\PawnKindDef\PawnKinds_Tribal.xml</td></tr>
     <tr><td>父</td><td>Parent</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>母</td><td>Parent.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>息子</td><td>Child</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>娘</td><td>Child.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>兄弟</td><td>Sibling</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>姉妹</td><td>Sibling.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>異母兄弟</td><td>HalfSibling</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>異母姉妹</td><td>HalfSibling.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>祖父</td><td>Grandparent</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>祖母</td><td>Grandparent.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>孫息子</td><td>Grandchild</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>孫娘</td><td>Grandchild.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>甥</td><td>NephewOrNiece</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>姪</td><td>NephewOrNiece.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>叔父</td><td>UncleOrAunt</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>叔母</td><td>UncleOrAunt.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>親戚</td><td>Cousin</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>親戚</td><td>Cousin.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>曾祖父</td><td>GreatGrandparent</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>曾祖母</td><td>GreatGrandparent.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>曾孫息子</td><td>GreatGrandchild</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>曾孫娘</td><td>GreatGrandchild.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>おお叔父</td><td>GranduncleOrGrandaunt</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>おお叔母</td><td>GranduncleOrGrandaunt.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>兄弟姉妹の孫息子</td><td>GrandnephewOrGrandniece</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>兄弟姉妹の孫娘</td><td>GrandnephewOrGrandniece.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>一度、離れた縁者</td><td>CousinOnceRemoved</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>一度、離れた縁者</td><td>CousinOnceRemoved.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>二度目の縁者</td><td>SecondCousin</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>二度目の縁者</td><td>SecondCousin.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>血縁</td><td>Kin</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
+    <tr><td>血縁</td><td>Kin.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByBlood.xml</td></tr>
     <tr><td>夫</td><td>Spouse</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
+    <tr><td>妻</td><td>Spouse.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
     <tr><td>婚約者</td><td>Fiance</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
+    <tr><td>婚約者</td><td>Fiance.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
     <tr><td>恋人</td><td>Lover</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
+    <tr><td>恋人</td><td>Lover.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
     <tr><td>まま父</td><td>Stepparent</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
+    <tr><td>まま母</td><td>Stepparent.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
     <tr><td>まま子</td><td>Stepchild</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
+    <tr><td>まま娘</td><td>Stepchild.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
     <tr><td>義理の父</td><td>ParentInLaw</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
+    <tr><td>義理の母</td><td>ParentInLaw.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
     <tr><td>婿</td><td>ChildInLaw</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
+    <tr><td>嫁</td><td>ChildInLaw.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
     <tr><td>元夫</td><td>ExSpouse</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
+    <tr><td>元妻</td><td>ExSpouse.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
     <tr><td>元恋人</td><td>ExLover</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
+    <tr><td>元恋人</td><td>ExLover.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_FamilyByChoice.xml</td></tr>
     <tr><td>絆</td><td>Bond</td><td>DefInjected\PawnRelationDefs\PawnRelations_Misc.xml</td></tr>
+    <tr><td>絆</td><td>Bond.labelFemale</td><td>DefInjected\PawnRelationDefs\PawnRelations_Misc.xml</td></tr>
     <tr><td>相互交流無し</td><td>NoInteraction</td><td>DefInjected\PrisonerInteractionModeDef\PrisonerInteractionMode.xml</td></tr>
     <tr><td>気さくな会話</td><td>Chat</td><td>DefInjected\PrisonerInteractionModeDef\PrisonerInteractionMode.xml</td></tr>
     <tr><td>雑談と勧誘</td><td>AttemptRecruit</td><td>DefInjected\PrisonerInteractionModeDef\PrisonerInteractionMode.xml</td></tr>
@@ -937,13 +1070,13 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>ロングスォードを作る</td><td>Make_MeleeWeapon_LongSword</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>メイスを作る</td><td>Make_MeleeWeapon_Mace</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>ナイフを作る</td><td>Make_MeleeWeapon_Knife</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
-    <tr><td>ジャックナイフを作る</td><td>Make_MeleeWeapon_Shiv</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
+    <tr><td>即席ナイフを作る</td><td>Make_MeleeWeapon_Shiv</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>スピアを作る</td><td>Make_MeleeWeapon_Spear</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>クラブを作る</td><td>Make_MeleeWeapon_Club</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
-    <tr><td>ikwaを作る</td><td>Make_MeleeWeapon_Ikwa</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
+    <tr><td>イクワを作る</td><td>Make_MeleeWeapon_Ikwa</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>ショートボウを作る</td><td>Make_Bow_Short</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>投槍を作る</td><td>Make_Pila</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
-    <tr><td>recuve bowを作る</td><td>Make_Bow_Recurve</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
+    <tr><td>リカーブボウを作る</td><td>Make_Bow_Recurve</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>グレートボウを作る</td><td>Make_Bow_Great</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>ヘルメットを作る</td><td>Make_Apparel_SimpleHelmet</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>次世代型ヘルメットを作る</td><td>Make_Apparel_AdvancedHelmet</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
@@ -965,7 +1098,7 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>軽機関銃を作る</td><td>Make_Gun_LMG</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>チャージライフルを作る</td><td>Make_Gun_ChargeRifle</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>ガトリング銃を作る</td><td>Make_Gun_Minigun</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
-    <tr><td>高性能炸薬弾(HE)を作る</td><td>Make_Shell_HighExplosive</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
+    <tr><td>高性能炸薬弾([PAWN_pronoun])を作る</td><td>Make_Shell_HighExplosive</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>焼夷弾を作る</td><td>Make_Shell_Incendiary</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>EMP弾を作る</td><td>Make_Shell_EMP</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
     <tr><td>fireform弾を作る</td><td>Make_Shell_Firefoam</td><td>DefInjected\RecipeDef\Recipes_Add.xml</td></tr>
@@ -996,7 +1129,7 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>簡単な食事</td><td>CookMealSimpleCampfire</td><td>DefInjected\RecipeDef\Recipes_Meals.xml</td></tr>
     <tr><td>手のこんだ食事</td><td>CookMealFine</td><td>DefInjected\RecipeDef\Recipes_Meals.xml</td></tr>
     <tr><td>贅沢な食事</td><td>CookMealLavish</td><td>DefInjected\RecipeDef\Recipes_Meals.xml</td></tr>
-    <tr><td>携帯糧食</td><td>CookMealSurvival</td><td>DefInjected\RecipeDef\Recipes_Meals.xml</td></tr>
+    <tr><td>非常用食品</td><td>CookMealSurvival</td><td>DefInjected\RecipeDef\Recipes_Meals.xml</td></tr>
     <tr><td>石を切断する</td><td>MakeStoneBlocksAny</td><td>DefInjected\RecipeDef\Recipes_Production.xml</td></tr>
     <tr><td>くず鉄を精錬する</td><td>ExtractMetalFromSlag</td><td>DefInjected\RecipeDef\Recipes_Production.xml</td></tr>
     <tr><td>武器を溶解する</td><td>SmeltWeapon</td><td>DefInjected\RecipeDef\Recipes_Production.xml</td></tr>
@@ -1132,11 +1265,11 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>自動ドア</td><td>Autodoors</td><td>DefInjected\ResearchProjectDef\ResearchProjects_Tier2_Misc.xml</td></tr>
     <tr><td>水耕栽培器</td><td>Hydroponics</td><td>DefInjected\ResearchProjectDef\ResearchProjects_Tier2_Misc.xml</td></tr>
     <tr><td>溶鉱炉</td><td>ElectricSmelting</td><td>DefInjected\ResearchProjectDef\ResearchProjects_Tier2_Misc.xml</td></tr>
-    <tr><td>携帯糧食</td><td>PackagedSurvivalMeal</td><td>DefInjected\ResearchProjectDef\ResearchProjects_Tier2_Misc.xml</td></tr>
+    <tr><td>非常用食品</td><td>PackagedSurvivalMeal</td><td>DefInjected\ResearchProjectDef\ResearchProjects_Tier2_Misc.xml</td></tr>
     <tr><td>電気火葬炉</td><td>ElectricCremation</td><td>DefInjected\ResearchProjectDef\ResearchProjects_Tier2_Misc.xml</td></tr>
     <tr><td>彩色灯</td><td>ColoredLights</td><td>DefInjected\ResearchProjectDef\ResearchProjects_Tier2_Misc.xml</td></tr>
     <tr><td>精密工作機械</td><td>Machining</td><td>DefInjected\ResearchProjectDef\ResearchProjects_Tier2_Misc.xml</td></tr>
-    <tr><td>爆発物 IED</td><td>IEDs</td><td>DefInjected\ResearchProjectDef\ResearchProjects_Tier2_Misc.xml</td></tr>
+    <tr><td>爆発物 IEDj</td><td>IEDs</td><td>DefInjected\ResearchProjectDef\ResearchProjects_Tier2_Misc.xml</td></tr>
     <tr><td>焼夷 IED</td><td>IEDIncendiary</td><td>DefInjected\ResearchProjectDef\ResearchProjects_Tier2_Misc.xml</td></tr>
     <tr><td>迫撃砲</td><td>Mortars</td><td>DefInjected\ResearchProjectDef\ResearchProjects_Tier2_Misc.xml</td></tr>
     <tr><td>ガンスミス</td><td>Gunsmithing</td><td>DefInjected\ResearchProjectDef\ResearchProjects_Tier2_Misc.xml</td></tr>
@@ -1246,8 +1379,8 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>食中毒発生率</td><td>FoodPoisonChanceFactor</td><td>DefInjected\RoomStatDefs\RoomStats.xml</td></tr>
     <tr><td>やすらぎ効果倍率</td><td>GraveVisitingJoyGainFactor</td><td>DefInjected\RoomStatDefs\RoomStats.xml</td></tr>
     <tr><td>不時着</td><td>Crashlanded</td><td>DefInjected\ScenarioDefs\Scenarios_Classic.xml</td></tr>
-    <tr><td>リッチ エクスプローラー</td><td>TheRichExplorer</td><td>DefInjected\ScenarioDefs\Scenarios_Special.xml</td></tr>
-    <tr><td>ロスト トライブ</td><td>LostTribe</td><td>DefInjected\ScenarioDefs\Scenarios_Special.xml</td></tr>
+    <tr><td>リッチ エクスプローラー</td><td>TheRichExplorer</td><td>DefInjected\ScenarioDefs\Scenarios_Classic.xml</td></tr>
+    <tr><td>ロスト トライブ</td><td>LostTribe</td><td>DefInjected\ScenarioDefs\Scenarios_Classic.xml</td></tr>
     <tr><td>プレイヤーの派閥</td><td>PlayerFaction</td><td>DefInjected\ScenPartDefs\ScenParts_Fixed.xml</td></tr>
     <tr><td>初期登場人数</td><td>ConfigPage_ConfigureStartingPawns</td><td>DefInjected\ScenPartDefs\ScenParts_Fixed.xml</td></tr>
     <tr><td>登場方法</td><td>PlayerPawnsArriveMethod</td><td>DefInjected\ScenPartDefs\ScenParts_Fixed.xml</td></tr>
@@ -1331,8 +1464,8 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>金額</td><td>MarketValue</td><td>DefInjected\StatDefs\Stats_Basics_General.xml</td></tr>
     <tr><td>売値掛け率</td><td>SellPriceFactor</td><td>DefInjected\StatDefs\Stats_Basics_General.xml</td></tr>
     <tr><td>燃えやすさ</td><td>Flammability</td><td>DefInjected\StatDefs\Stats_Basics_General.xml</td></tr>
-    <tr><td>製作費</td><td>WorkToMake</td><td>DefInjected\StatDefs\Stats_Basics_General.xml</td></tr>
-    <tr><td>工数</td><td>WorkToBuild</td><td>DefInjected\StatDefs\Stats_Basics_General.xml</td></tr>
+    <tr><td>工数</td><td>WorkToMake</td><td>DefInjected\StatDefs\Stats_Basics_General.xml</td></tr>
+    <tr><td>建築工数</td><td>WorkToBuild</td><td>DefInjected\StatDefs\Stats_Basics_General.xml</td></tr>
     <tr><td>劣化しやすさ</td><td>DeteriorationRate</td><td>DefInjected\StatDefs\Stats_Basics_General.xml</td></tr>
     <tr><td>美しさ</td><td>Beauty</td><td>DefInjected\StatDefs\Stats_Basics_General.xml</td></tr>
     <tr><td>清潔さ</td><td>Cleanliness</td><td>DefInjected\StatDefs\Stats_Basics_General.xml</td></tr>
@@ -1645,12 +1778,12 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>テーブル(3x3)(移動先)</td><td>Table3x3c_Blueprint_Install</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
     <tr><td>テーブル(3x3)(設計)</td><td>Table3x3c_Blueprint</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
     <tr><td>テーブル(3x3)(施工)</td><td>Table3x3c_Frame</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
-    <tr><td>テーブル(短)</td><td>TableShort</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
-    <tr><td>テーブル(短)(設計)</td><td>TableShort_Blueprint</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
-    <tr><td>テーブル(短)(施工)</td><td>TableShort_Frame</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
-    <tr><td>テーブル(長)</td><td>TableLong</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
-    <tr><td>テーブル(長)(設計)</td><td>TableLong_Blueprint</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
-    <tr><td>テーブル(長)(施工)</td><td>TableLong_Frame</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
+    <tr><td>テーブル(2x2)</td><td>TableShort</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
+    <tr><td>テーブル(2x2)(設計)</td><td>TableShort_Blueprint</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
+    <tr><td>テーブル(2x2)(施工)</td><td>TableShort_Frame</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
+    <tr><td>テーブル(2x4)</td><td>TableLong</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
+    <tr><td>テーブル(2x4)(設計)</td><td>TableLong_Blueprint</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
+    <tr><td>テーブル(2x4)(施工)</td><td>TableLong_Frame</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
     <tr><td>植木鉢</td><td>PlantPot</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
     <tr><td>植木鉢(移動先)</td><td>PlantPot_Blueprint_Install</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
     <tr><td>植木鉢(設計)</td><td>PlantPot_Blueprint</td><td>DefInjected\ThingDef\Buildings_Furniture.xml</td></tr>
@@ -1956,9 +2089,9 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>IED 消化剤トラップ</td><td>TrapIED_Firefoam</td><td>DefInjected\ThingDef\Buildings_Security.xml</td></tr>
     <tr><td>IED 消化剤トラップ(設計)</td><td>TrapIED_Firefoam_Blueprint</td><td>DefInjected\ThingDef\Buildings_Security.xml</td></tr>
     <tr><td>IED 消化剤トラップ(施工)</td><td>TrapIED_Firefoam_Frame</td><td>DefInjected\ThingDef\Buildings_Security.xml</td></tr>
-    <tr><td>IED antigrain warhead trap</td><td>TrapIED_AntigrainWarhead</td><td>DefInjected\ThingDef\Buildings_Security.xml</td></tr>
-    <tr><td>IED antigrain warhead trap(設計)</td><td>TrapIED_AntigrainWarhead_Blueprint</td><td>DefInjected\ThingDef\Buildings_Security.xml</td></tr>
-    <tr><td>IED antigrain warhead trap(施工)</td><td>TrapIED_AntigrainWarhead_Frame</td><td>DefInjected\ThingDef\Buildings_Security.xml</td></tr>
+    <tr><td>IED 反物質弾トラップ</td><td>TrapIED_AntigrainWarhead</td><td>DefInjected\ThingDef\Buildings_Security.xml</td></tr>
+    <tr><td>IED 反物質弾トラップ(設計)</td><td>TrapIED_AntigrainWarhead_Blueprint</td><td>DefInjected\ThingDef\Buildings_Security.xml</td></tr>
+    <tr><td>IED 反物質弾トラップ(施工)</td><td>TrapIED_AntigrainWarhead_Frame</td><td>DefInjected\ThingDef\Buildings_Security.xml</td></tr>
     <tr><td>焼夷迫撃砲</td><td>Turret_MortarIncendiary</td><td>DefInjected\ThingDef\Buildings_Security.xml</td></tr>
     <tr><td>焼夷迫撃砲(設計)</td><td>Turret_MortarIncendiary_Blueprint</td><td>DefInjected\ThingDef\Buildings_Security.xml</td></tr>
     <tr><td>焼夷迫撃砲(施工)</td><td>Turret_MortarIncendiary_Frame</td><td>DefInjected\ThingDef\Buildings_Security.xml</td></tr>
@@ -2063,10 +2196,10 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>機械化かぎ爪</td><td>PowerClaw</td><td>DefInjected\ThingDef\Items_BodyParts.xml</td></tr>
     <tr><td>機械化鎌状刃</td><td>ScytherBlade</td><td>DefInjected\ThingDef\Items_BodyParts.xml</td></tr>
     <tr><td>AI人格コア</td><td>AIPersonaCore</td><td>DefInjected\ThingDef\Items_Exotic.xml</td></tr>
-    <tr><td>ニューロトレイナー </td><td>MechSerumNeurotrainer</td><td>DefInjected\ThingDef\Items_Exotic.xml</td></tr>
-    <tr><td>シーラムヒーラー</td><td>MechSerumHealer</td><td>DefInjected\ThingDef\Items_Exotic.xml</td></tr>
-    <tr><td>シーラムリザレクト</td><td>MechSerumResurrector</td><td>DefInjected\ThingDef\Items_Exotic.xml</td></tr>
-    <tr><td>techprof subpersona core</td><td>TechprofSubpersonaCore</td><td>DefInjected\ThingDef\Items_Exotic.xml</td></tr>
+    <tr><td>ニューロトレイナーシーラム</td><td>MechSerumNeurotrainer</td><td>DefInjected\ThingDef\Items_Exotic.xml</td></tr>
+    <tr><td>ヒーラーシーラム</td><td>MechSerumHealer</td><td>DefInjected\ThingDef\Items_Exotic.xml</td></tr>
+    <tr><td>リザレクトシーラム</td><td>MechSerumResurrector</td><td>DefInjected\ThingDef\Items_Exotic.xml</td></tr>
+    <tr><td>研究AI亜人格コア</td><td>TechprofSubpersonaCore</td><td>DefInjected\ThingDef\Items_Exotic.xml</td></tr>
     <tr><td>スランボの角</td><td>ThrumboHorn</td><td>DefInjected\ThingDef\Items_Exotic.xml</td></tr>
     <tr><td>突起</td><td>ThrumboHorn.tools.0</td><td>DefInjected\ThingDef\Items_Exotic.xml</td></tr>
     <tr><td>基部</td><td>ThrumboHorn.tools.1</td><td>DefInjected\ThingDef\Items_Exotic.xml</td></tr>
@@ -2096,7 +2229,7 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>シチメンチョウの卵(有精卵)</td><td>EggTurkeyFertilized</td><td>DefInjected\ThingDef\Items_Resource_AnimalProduct.xml</td></tr>
     <tr><td>薬草</td><td>HerbalMedicine</td><td>DefInjected\ThingDef\Items_Resource_Manufactured.xml</td></tr>
     <tr><td>医薬品</td><td>Medicine</td><td>DefInjected\ThingDef\Items_Resource_Manufactured.xml</td></tr>
-    <tr><td>ナノマシーン</td><td>GlitterworldMedicine</td><td>DefInjected\ThingDef\Items_Resource_Manufactured.xml</td></tr>
+    <tr><td>最先端医薬品</td><td>GlitterworldMedicine</td><td>DefInjected\ThingDef\Items_Resource_Manufactured.xml</td></tr>
     <tr><td>迫撃砲弾</td><td>MortarShell</td><td>DefInjected\ThingDef\Items_Resource_Manufactured.xml</td></tr>
     <tr><td>コンポーネント</td><td>Component</td><td>DefInjected\ThingDef\Items_Resource_Manufactured.xml</td></tr>
     <tr><td>先進コンポーネント</td><td>AdvancedComponent</td><td>DefInjected\ThingDef\Items_Resource_Manufactured.xml</td></tr>
@@ -2148,7 +2281,6 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>彫刻(梱包)</td><td>MinifiedSculpture</td><td>DefInjected\ThingDef\Items_Unfinished.xml</td></tr>
     <tr><td>家具(梱包)</td><td>MinifiedFurniture</td><td>DefInjected\ThingDef\Items_Unfinished.xml</td></tr>
     <tr><td>ルシフェリウム</td><td>Luciferium</td><td>DefInjected\ThingDef\Luciferium.xml</td></tr>
-    <tr><td>マラリ-ブロック</td><td>MalariBlock</td><td>DefInjected\ThingDef\MalariBlock.xml</td></tr>
     <tr><td>ペノキシリン</td><td>Penoxycyline</td><td>DefInjected\ThingDef\Penoxycyline.xml</td></tr>
     <tr><td>サイコイドペコー</td><td>PsychoidPekoe</td><td>DefInjected\ThingDef\Phychite_Pekoe.xml</td></tr>
     <tr><td>紅茸</td><td>Glowstool</td><td>DefInjected\ThingDef\Plants_Cave.xml</td></tr>
@@ -2397,6 +2529,8 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>ヒトの皮</td><td>Human_Leather</td><td>DefInjected\ThingDef\Races_Humanlike.xml</td></tr>
     <tr><td>ヒトの肉</td><td>Human_Meat</td><td>DefInjected\ThingDef\Races_Humanlike.xml</td></tr>
     <tr><td>ヒトの死体</td><td>Human_Corpse</td><td>DefInjected\ThingDef\Races_Humanlike.xml</td></tr>
+    <tr><td>左拳</td><td>Human.tools.0</td><td>DefInjected\ThingDef\Races_Humanlike.xml</td></tr>
+    <tr><td>右拳</td><td>Human.tools.1</td><td>DefInjected\ThingDef\Races_Humanlike.xml</td></tr>
     <tr><td>機械化ムカデ</td><td>Mechanoid_Centipede</td><td>DefInjected\ThingDef\Races_Mechanoid.xml</td></tr>
     <tr><td>機械化ムカデの故障個体</td><td>Mechanoid_Centipede_Corpse</td><td>DefInjected\ThingDef\Races_Mechanoid.xml</td></tr>
     <tr><td>機械化カマキリ</td><td>Mechanoid_Scyther</td><td>DefInjected\ThingDef\Races_Mechanoid.xml</td></tr>
@@ -2430,7 +2564,7 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>ウェイクアップ</td><td>WakeUp</td><td>DefInjected\ThingDef\WakeUp.xml</td></tr>
     <tr><td>手榴弾</td><td>Proj_GrenadeFrag</td><td>DefInjected\ThingDef\Weapons_Grenades.xml</td></tr>
     <tr><td>手榴弾</td><td>Weapon_GrenadeFrag</td><td>DefInjected\ThingDef\Weapons_Grenades.xml</td></tr>
-    <tr><td>モロトフカクテル</td><td>Proj_GrenadeMolotov</td><td>DefInjected\ThingDef\Weapons_Grenades.xml</td></tr>
+    <tr><td>モロトフカクテル        </td><td>Proj_GrenadeMolotov</td><td>DefInjected\ThingDef\Weapons_Grenades.xml</td></tr>
     <tr><td>モロトフのカクテル</td><td>Weapon_GrenadeMolotov</td><td>DefInjected\ThingDef\Weapons_Grenades.xml</td></tr>
     <tr><td>手榴弾(EMP)</td><td>Proj_GrenadeEMP</td><td>DefInjected\ThingDef\Weapons_Grenades.xml</td></tr>
     <tr><td>手榴弾(EMP)</td><td>Weapon_GrenadeEMP</td><td>DefInjected\ThingDef\Weapons_Grenades.xml</td></tr>
@@ -2469,12 +2603,12 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>焼夷弾投射器</td><td>Gun_InfernoCannon</td><td>DefInjected\ThingDef\Weapons_Guns.xml</td></tr>
     <tr><td>ブラスター弾</td><td>Bullet_ChargeBlasterHeavy</td><td>DefInjected\ThingDef\Weapons_Guns.xml</td></tr>
     <tr><td>重ブラスター砲</td><td>Gun_ChargeBlasterHeavy</td><td>DefInjected\ThingDef\Weapons_Guns.xml</td></tr>
-    <tr><td>ジャックナイフ</td><td>MeleeWeapon_Shiv</td><td>DefInjected\ThingDef\Weapons_Melee.xml</td></tr>
+    <tr><td>即席ナイフ</td><td>MeleeWeapon_Shiv</td><td>DefInjected\ThingDef\Weapons_Melee.xml</td></tr>
     <tr><td>ナイフ</td><td>MeleeWeapon_Knife</td><td>DefInjected\ThingDef\Weapons_Melee.xml</td></tr>
     <tr><td>クラブ</td><td>MeleeWeapon_Club</td><td>DefInjected\ThingDef\Weapons_Melee.xml</td></tr>
     <tr><td>メイス</td><td>MeleeWeapon_Mace</td><td>DefInjected\ThingDef\Weapons_Melee.xml</td></tr>
     <tr><td>グラディウス</td><td>MeleeWeapon_Gladius</td><td>DefInjected\ThingDef\Weapons_Melee.xml</td></tr>
-    <tr><td>ikwa</td><td>MeleeWeapon_Ikwa</td><td>DefInjected\ThingDef\Weapons_Melee.xml</td></tr>
+    <tr><td>イクワ</td><td>MeleeWeapon_Ikwa</td><td>DefInjected\ThingDef\Weapons_Melee.xml</td></tr>
     <tr><td>スピア</td><td>MeleeWeapon_Spear</td><td>DefInjected\ThingDef\Weapons_Melee.xml</td></tr>
     <tr><td>ロングスウォード</td><td>MeleeWeapon_LongSword</td><td>DefInjected\ThingDef\Weapons_Melee.xml</td></tr>
     <tr><td>矢</td><td>Arrow_Short</td><td>DefInjected\ThingDef\Weapons_RangedNeolithic.xml</td></tr>
@@ -2564,12 +2698,12 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>{0}の人革 (+2)</td><td>HumanLeatherApparelHappy.stages.2</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
     <tr><td>{0}の人革 (etc)</td><td>HumanLeatherApparelHappy.stages.3</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
     <tr><td>お腹が空いた</td><td>NeedFood.stages.0</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
-    <tr><td>飢餓</td><td>NeedFood.stages.1</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
-    <tr><td>餓死(些細)</td><td>NeedFood.stages.2</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
-    <tr><td>餓死(マイナー)</td><td>NeedFood.stages.3</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
-    <tr><td>餓死(中程度) (moderate)</td><td>NeedFood.stages.4</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
-    <tr><td>餓死(シビア)</td><td>NeedFood.stages.5</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
-    <tr><td>餓死(極限)</td><td>NeedFood.stages.6</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
+    <tr><td>とてもお腹が空いた</td><td>NeedFood.stages.1</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
+    <tr><td>飢餓(ささいな)</td><td>NeedFood.stages.2</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
+    <tr><td>飢餓(軽度)</td><td>NeedFood.stages.3</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
+    <tr><td>飢餓(中度)</td><td>NeedFood.stages.4</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
+    <tr><td>飢餓(重度)</td><td>NeedFood.stages.5</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
+    <tr><td>飢餓(末期)</td><td>NeedFood.stages.6</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
     <tr><td>疲れた</td><td>NeedRest.stages.0</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
     <tr><td>とても疲れた</td><td>NeedRest.stages.1</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
     <tr><td>疲れ果てた</td><td>NeedRest.stages.2</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Needs.xml</td></tr>
@@ -2626,6 +2760,7 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>サイコドローン(重度)</td><td>PsychicDrone.stages.3</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Special.xml</td></tr>
     <tr><td>サイコドローン(極度)</td><td>PsychicDrone.stages.4</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Special.xml</td></tr>
     <tr><td>ジョイワイヤー</td><td>Joywire.stages.0</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Special.xml</td></tr>
+    <tr><td>美しいオーロラ</td><td>Aurora.stages.0</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Special.xml</td></tr>
     <tr><td>{0}の寝室が羨ましい</td><td>Jealous.stages.0</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
     <tr><td>なんでも</td><td>Anything</td><td>DefInjected\TimeAssignmentDefs\TimeAssignmentDef.xml</td></tr>
     <tr><td>仕事の時間</td><td>Work</td><td>DefInjected\TimeAssignmentDefs\TimeAssignmentDef.xml</td></tr>
@@ -2749,6 +2884,26 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>除雪</td><td>CleanClearSnow</td><td>DefInjected\WorkGiverDef\WorkGivers.xml</td></tr>
     <tr><td>掃除</td><td>CleanFilth</td><td>DefInjected\WorkGiverDef\WorkGivers.xml</td></tr>
     <tr><td>研究</td><td>Research</td><td>DefInjected\WorkGiverDef\WorkGivers.xml</td></tr>
+    <tr><td>消火</td><td>Firefighter.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>瀕死</td><td>Patient.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>医者</td><td>Doctor.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>病人</td><td>PatientBedRest.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>制御</td><td>Flicker.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>看守</td><td>Warden.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>調教</td><td>Handling.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>料理</td><td>Cooking.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>狩猟</td><td>Hunting.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>建築</td><td>Construction.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>栽培</td><td>Growing.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>採掘</td><td>Mining.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>収穫</td><td>PlantCutting.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>鍛冶</td><td>Smithing.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>裁縫</td><td>Tailoring.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>芸術</td><td>Art.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>工芸</td><td>Crafting.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>運搬</td><td>Hauling.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>掃除</td><td>Cleaning.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
+    <tr><td>研究</td><td>Research.labelShort</td><td>DefInjected\WorkTypeDef\WorkTypes.xml</td></tr>
     <tr><td>キャラバン隊</td><td>Caravan</td><td>DefInjected\WorldObjectDef\Incidents_Caravan.xml</td></tr>
     <tr><td>派閥の本拠地</td><td>FactionBase</td><td>DefInjected\WorldObjectDef\Incidents_Caravan.xml</td></tr>
     <tr><td>放棄された派閥の本拠地</td><td>AbandonedFactionBase</td><td>DefInjected\WorldObjectDef\Incidents_Caravan.xml</td></tr>
@@ -2759,335 +2914,6 @@ B18 日本語とLabel対応表(β2)2017/12/24更新
     <tr><td>ウェイポイント</td><td>RoutePlannerWaypoint</td><td>DefInjected\WorldObjectDef\Incidents_Caravan.xml</td></tr>
     <tr><td>和平交渉</td><td>PeaceTalks</td><td>DefInjected\WorldObjectDef\Incidents_Caravan.xml</td></tr>
     <tr><td>待ち伏せ</td><td>Ambush</td><td>DefInjected\WorldObjectDef\Incidents_Caravan.xml</td></tr>
-    <tr><td>微量</td><td>BloodLoss.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>少量</td><td>BloodLoss.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>中程度</td><td>BloodLoss.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>多量</td><td>BloodLoss.stages[3]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>致死量</td><td>BloodLoss.stages[4]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>症状なし</td><td>ToxicBuildup.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>初期</td><td>ToxicBuildup.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>軽度</td><td>ToxicBuildup.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>中度</td><td>ToxicBuildup.stages[3]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>重度</td><td>ToxicBuildup.stages[4]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>極度</td><td>ToxicBuildup.stages[5]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>初期</td><td>Pregnant.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>中期</td><td>Pregnant.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>臨月</td><td>Pregnant.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>苦痛</td><td>HeartAttack.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>衰弱</td><td>HeartAttack.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>致命的</td><td>HeartAttack.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Global_Misc.xml</td></tr>
-    <tr><td>ささいな</td><td>Malnutrition.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Global_Needs.xml</td></tr>
-    <tr><td>軽度</td><td>Malnutrition.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Global_Needs.xml</td></tr>
-    <tr><td>中度</td><td>Malnutrition.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Global_Needs.xml</td></tr>
-    <tr><td>重度</td><td>Malnutrition.stages[3]</td><td>DefInjected\HediffDefs\Hediffs_Global_Needs.xml</td></tr>
-    <tr><td>末期</td><td>Malnutrition.stages[4]</td><td>DefInjected\HediffDefs\Hediffs_Global_Needs.xml</td></tr>
-    <tr><td>初期</td><td>Heatstroke.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Global_Temperature.xml</td></tr>
-    <tr><td>初期段階</td><td>Heatstroke.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Global_Temperature.xml</td></tr>
-    <tr><td>わずかに</td><td>Heatstroke.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Global_Temperature.xml</td></tr>
-    <tr><td>深刻な</td><td>Heatstroke.stages[3]</td><td>DefInjected\HediffDefs\Hediffs_Global_Temperature.xml</td></tr>
-    <tr><td>致命的</td><td>Heatstroke.stages[4]</td><td>DefInjected\HediffDefs\Hediffs_Global_Temperature.xml</td></tr>
-    <tr><td>初期</td><td>Hypothermia.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Global_Temperature.xml</td></tr>
-    <tr><td>初期段階</td><td>Hypothermia.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Global_Temperature.xml</td></tr>
-    <tr><td>わずかに</td><td>Hypothermia.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Global_Temperature.xml</td></tr>
-    <tr><td>深刻な</td><td>Hypothermia.stages[3]</td><td>DefInjected\HediffDefs\Hediffs_Global_Temperature.xml</td></tr>
-    <tr><td>致命的</td><td>Hypothermia.stages[4]</td><td>DefInjected\HediffDefs\Hediffs_Global_Temperature.xml</td></tr>
-    <tr><td>軽度</td><td>Alzheimers.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>軽度</td><td>Alzheimers.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>重度</td><td>Alzheimers.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>重度</td><td>Alzheimers.stages[3]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>軽度</td><td>Asthma.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>重度</td><td>Asthma.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>重度</td><td>Asthma.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>軽度</td><td>HeartArteryBlockage.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>軽度</td><td>HeartArteryBlockage.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>中度</td><td>HeartArteryBlockage.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>中度</td><td>HeartArteryBlockage.stages[3]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>重度</td><td>HeartArteryBlockage.stages[4]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>軽度</td><td>Carcinoma.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>軽度</td><td>Carcinoma.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>中度</td><td>Carcinoma.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>中度</td><td>Carcinoma.stages[3]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>重度</td><td>Carcinoma.stages[4]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>重度</td><td>Carcinoma.stages[5]</td><td>DefInjected\HediffDefs\Hediffs_Local_Chronic.xml</td></tr>
-    <tr><td>弱い痛み</td><td>FibrousMechanites.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>激しい痛み</td><td>FibrousMechanites.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>弱い痛み</td><td>SensoryMechanites.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>激しい痛み</td><td>SensoryMechanites.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>軽度</td><td>WoundInfection.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>中度</td><td>WoundInfection.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>重度</td><td>WoundInfection.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>重度</td><td>WoundInfection.stages[3]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>軽度</td><td>Flu.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>軽度</td><td>Flu.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>中度</td><td>Flu.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>重度</td><td>Flu.stages[3]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>軽度</td><td>Plague.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>軽度</td><td>Plague.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>中度</td><td>Plague.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>重度</td><td>Plague.stages[3]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>重度</td><td>Plague.stages[4]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>軽度</td><td>Malaria.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>軽度</td><td>Malaria.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>中度</td><td>Malaria.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>重度</td><td>Malaria.stages[3]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>軽度</td><td>SleepingSickness.stages[0]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>軽度</td><td>SleepingSickness.stages[1]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>軽度</td><td>SleepingSickness.stages[2]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>中度</td><td>SleepingSickness.stages[3]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>重度</td><td>SleepingSickness.stages[4]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>重度</td><td>SleepingSickness.stages[5]</td><td>DefInjected\HediffDefs\Hediffs_Local_Infections.xml</td></tr>
-    <tr><td>誰かが安楽死させられた</td><td>KnowGuestExecuted.stages[1]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>誰かが処刑された</td><td>KnowGuestExecuted.stages[2]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>誰かの臓器が抜かれた</td><td>KnowGuestExecuted.stages[3]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>入植者が安楽死させられた</td><td>KnowColonistExecuted.stages[1]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>入植者が処刑された</td><td>KnowColonistExecuted.stages[2]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>入植者の臓器が抜かれた</td><td>KnowColonistExecuted.stages[3]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>無実の囚人が死んだ</td><td>KnowPrisonerDiedInnocent.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>入植者が死んだ</td><td>KnowColonistDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>絆で結ばれた家畜{0}が死んだ</td><td>BondedAnimalDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の親友{0}が死んだ</td><td>PawnWithGoodOpinionDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私のライバル{0}が死んだ</td><td>PawnWithBadOpinionDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の息子{0}が死んだ</td><td>MySonDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の娘{0}が死んだ</td><td>MyDaughterDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の夫{0}が死んだ</td><td>MyHusbandDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の妻{0}が死んだ</td><td>MyWifeDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の婚約者{0}が死んだ</td><td>MyFianceDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の婚約者{0}が死んだ</td><td>MyFianceeDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の恋人{0}が死んだ</td><td>MyLoverDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の兄弟{0}が死んだ</td><td>MyBrotherDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の姉妹{0}が死んだ</td><td>MySisterDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の父{0}が死んだ</td><td>MyFatherDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の母{0}が死んだ</td><td>MyMotherDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の姪{0}が死んだ</td><td>MyNieceDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の甥{0}が死んだ</td><td>MyNephewDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の叔母{0}が死んだ</td><td>MyAuntDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の叔父{0}が死んだ</td><td>MyUncleDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>異兄弟{0}が死んだ</td><td>MyHalfSiblingDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の孫{0}が死んだ</td><td>MyGrandchildDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の祖父母{0}が死んだ</td><td>MyGrandparentDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私のいとこ{0}が死んだ</td><td>MyCousinDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>私の親族{0}が死んだ</td><td>MyKinDied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Death.xml</td></tr>
-    <tr><td>debugbadthought</td><td>DebugBad.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Debug.xml</td></tr>
-    <tr><td>debuggoodthought</td><td>DebugGood.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Debug.xml</td></tr>
-    <tr><td>贅沢な料理を食べた</td><td>AteLavishMeal.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Eating.xml</td></tr>
-    <tr><td>おいしい食事を食べた</td><td>AteFineMeal.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Eating.xml</td></tr>
-    <tr><td>ひどい食事だった</td><td>AteAwfulMeal.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Eating.xml</td></tr>
-    <tr><td>生肉を食べた</td><td>AteRawFood.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Eating.xml</td></tr>
-    <tr><td>屍肉を食べた</td><td>AteCorpse.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Eating.xml</td></tr>
-    <tr><td>生の人肉を食べた</td><td>AteHumanlikeMeatDirect.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Eating.xml</td></tr>
-    <tr><td>好物の生の人肉を食べた</td><td>AteHumanlikeMeatDirectCannibal.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Eating.xml</td></tr>
-    <tr><td>調理された人肉を食べた</td><td>AteHumanlikeMeatAsIngredient.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Eating.xml</td></tr>
-    <tr><td>好物の調理された人肉を食べた</td><td>AteHumanlikeMeatAsIngredientCannibal.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Eating.xml</td></tr>
-    <tr><td>虫をそのまま食べた</td><td>AteInsectMeatDirect.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Eating.xml</td></tr>
-    <tr><td>調理された虫を食べた</td><td>AteInsectMeatAsIngredient.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Eating.xml</td></tr>
-    <tr><td>屍肉を食べた</td><td>AteRottenFood.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Eating.xml</td></tr>
-    <tr><td>結婚しました</td><td>GotMarried.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Gatherings.xml</td></tr>
-    <tr><td>結婚式に参列</td><td>AttendedWedding.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Gatherings.xml</td></tr>
-    <tr><td>パーティに参加</td><td>AttendedParty.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Gatherings.xml</td></tr>
-    <tr><td>地面で食事をした</td><td>AteWithoutTable.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>よく眠れない</td><td>SleepDisturbed.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>新天地</td><td>NewColonyOptimism.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>期待と不安</td><td>NewColonyHope.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>野宿させられた</td><td>SleptOutside.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>ベッドが恋しい</td><td>SleptOnGround.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>凍えながら夜を過ごした。</td><td>SleptInCold.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>熱帯夜</td><td>SleptInHeat.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>奴隷売買</td><td>KnowPrisonerSold.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>誰かの臓器を摘出した</td><td>KnowGuestOrganHarvested.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>入植者の臓器を摘出した</td><td>KnowColonistOrganHarvested.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>私の臓器を摘出した</td><td>MyOrganHarvested.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>監禁された</td><td>WasImprisoned.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>豊かな園芸の才能</td><td>GreenThumbHappy.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>カタルシス</td><td>Catharsis.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>擦り寄る</td><td>Nuzzled.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>石棺に埋葬した</td><td>KnowBuriedInSarcophagus.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>私は人肉を捌いた</td><td>ButcheredHumanlikeCorpse.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>私らは人肉を捌いた</td><td>KnowButcheredHumanlikeCorpse.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>死体を見た</td><td>ObservedLayingCorpse.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>腐乱死体を見た</td><td>ObservedLayingRottingCorpse.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>死んでゆく仲間を見た</td><td>WitnessedDeathAlly.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>よそ者が死ぬところを見た</td><td>WitnessedDeathNonAlly.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>家族が死ぬところを見た</td><td>WitnessedDeathFamily.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>死の瞬間にたちあえた</td><td>WitnessedDeathBloodlust.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>人殺し</td><td>KilledHumanlikeBloodlust.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Misc.xml</td></tr>
-    <tr><td>ひどい寝室</td><td>SleptInBedroom.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_RoomStats.xml</td></tr>
-    <tr><td>ひどい宿舎</td><td>SleptInBarracks.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_RoomStats.xml</td></tr>
-    <tr><td>世間話</td><td>Chitchat.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>込み入った会話</td><td>DeepTalk.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>ばかにされた</td><td>Slighted.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>侮辱された</td><td>Insulted.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>侮辱された</td><td>InsultedMood.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>親密な関係</td><td>RapportBuilt.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>カッとなった</td><td>HadAngeringFight.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>鬱憤がたまって喧嘩した。</td><td>HadCatharticFight.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>傷つけられた</td><td>HarmedMe.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>私の手術でヘマをした。</td><td>BotchedMySurgery.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>たすけられた</td><td>RescuedMe.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>スカウトされた</td><td>RecruitedMe.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>お互いに倒れた</td><td>CrashedTogether.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>最愛が売られた</td><td>SoldMyLovedOne.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>絆で結ばれた動物が売られた</td><td>SoldMyBondedAnimal.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>拒絶された</td><td>RebuffedMyRomanceAttempt.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>{0}に拒絶された</td><td>RebuffedMyRomanceAttemptMood.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>私とのロマンスは失敗に終わった</td><td>FailedRomanceAttemptOnMe.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>わかれた</td><td>BrokeUpWithMe.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>{0}にふられた</td><td>BrokeUpWithMeMood.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>浮気された</td><td>CheatedOnMe.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>{0}に裏切られた</td><td>CheatedOnMeMood.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>離婚された</td><td>DivorcedMe.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>{0}に離婚を突きつけられた</td><td>DivorcedMeMood.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>プロポーズを拒否された</td><td>RejectedMyProposal.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>{0}に、プロポーズを拒否された</td><td>RejectedMyProposalMood.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>プロポーズを断った</td><td>IRejectedTheirProposal.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>ハネムーン</td><td>HoneymoonPhase.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>恋人ができました</td><td>GotSomeLovin.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>友人が殺された</td><td>KilledMyFriend.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>ライバルが殺された</td><td>KilledMyRival.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>恋人が殺された</td><td>KilledMyLover.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>婚約者が殺された</td><td>KilledMyFiance.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>配偶者が殺された</td><td>KilledMySpouse.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>父親が殺された</td><td>KilledMyFather.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>母親が殺された</td><td>KilledMyMother.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>息子が殺された</td><td>KilledMySon.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>娘が殺された</td><td>KilledMyDaughter.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>兄弟が殺された</td><td>KilledMyBrother.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>姉妹が殺された</td><td>KilledMySister.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>親族が殺された</td><td>KilledMyKin.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Memory_Social.xml</td></tr>
-    <tr><td>将来への意気込み</td><td>LowExpectations.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>希望が低い将来への意気込み</td><td>LowExpectations.stages[1]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>希望が非常に低い将来への意気込み</td><td>LowExpectations.stages[2]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>希望が極めて低い将来への意気込み</td><td>LowExpectations.stages[3]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>闇の中にいた</td><td>EnvironmentDark.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>キャビンフィーバー(軽度)</td><td>CabinFever.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>キャビンフィーバー(重大)</td><td>CabinFever.stages[1]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>すり切れた服を着ている</td><td>ApparelDamaged.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>ボロボロの服を着ている</td><td>ApparelDamaged.stages[1]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>病気になった</td><td>Sick.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>寒い</td><td>EnvironmentCold.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>とても寒い</td><td>EnvironmentCold.stages[1]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>凍ってしまう！</td><td>EnvironmentCold.stages[2]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>暑い</td><td>EnvironmentHot.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>とても暑い</td><td>EnvironmentHot.stages[1]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>極度に暑い</td><td>EnvironmentHot.stages[2]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>熱中症</td><td>EnvironmentHot.stages[3]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_General.xml</td></tr>
-    <tr><td>ひどい独居房</td><td>PrisonCell.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_RoomStats.xml</td></tr>
-    <tr><td>ひどい雑居房</td><td>PrisonBarracks.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_RoomStats.xml</td></tr>
-    <tr><td>不倫</td><td>Affair.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>近親相姦</td><td>Incestuous.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>欠損者</td><td>Disfigured.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>勤勉vsぐうたら</td><td>HardWorkerVsLazy.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>薬物拒絶vs薬物乱用</td><td>TeetotalerVsChemicalInterest.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>薬物乱用vs薬物拒絶</td><td>ChemicalInterestVsTeetotaler.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>飲もう</td><td>Drunk.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>かわいい</td><td>Pretty.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>美しい</td><td>Pretty.stages[1]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>醜い</td><td>Ugly.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>ひどく醜い</td><td>Ugly.stages[1]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>気に障る声</td><td>AnnoyingVoice.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>気持ち悪い息づかい</td><td>CreepyBreathing.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>男</td><td>Man.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>女</td><td>Woman.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>死体解剖</td><td>ButcheredHumanlikeCorpseOpinion.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>ヒトの生肉を食べた</td><td>AteRawHumanlikeMeat.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>囚人を奴隷商に売った</td><td>SoldPrisoner.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>囚人を処刑した</td><td>ExecutedPrisoner.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>入植者を殺した</td><td>KilledColonist.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>家畜を殺した</td><td>KilledColonyAnimal.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>脅威となっていた敵を殺した</td><td>KilledMajorColonyEnemy.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>私の{0}{1}の評価</td><td>OpinionOfMyLover.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>{0}の主人</td><td>BondedAnimalMaster.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>{0}の主人になりたい</td><td>NotBondedAnimalMaster.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>{0}と一緒に眠りたい。</td><td>WantToSleepWithSpouseOrLover.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Social.xml</td></tr>
-    <tr><td>監禁された</td><td>Imprisoned.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Special.xml</td></tr>
-    <tr><td>ベッドシェア</td><td>SharedBed.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Special.xml</td></tr>
-    <tr><td>死者には安らぎを</td><td>ColonistLeftUnburied.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Special.xml</td></tr>
-    <tr><td>裸</td><td>Naked.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Special.xml</td></tr>
-    <tr><td>わずかな痛み</td><td>Pain.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Special.xml</td></tr>
-    <tr><td>中程度の痛み</td><td>Pain.stages[1]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Special.xml</td></tr>
-    <tr><td>激痛</td><td>Pain.stages[2]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Special.xml</td></tr>
-    <tr><td>ショック状態</td><td>Pain.stages[3]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Special.xml</td></tr>
-    <tr><td>マゾのわずかな痛み</td><td>MasochistPain.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>マゾの適度な痛み</td><td>MasochistPain.stages[1]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>マゾの激痛を体験</td><td>MasochistPain.stages[2]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>マゾの桁外れな痛みからくるショック状態</td><td>MasochistPain.stages[3]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>未強化な肉体</td><td>ProsthophileNoProsthetic.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>強化された肉体</td><td>ProsthophileHappy.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>失われた自然な肉体</td><td>ProsthophobeUnhappy.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>挌闘家に卑怯な武器</td><td>BrawlerUnhappy.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>着衣を強要された</td><td>ClothedNudist.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>あるがままの姿</td><td>HappyNude.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>陽の下のよたか</td><td>NightOwlDuringTheDay.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>よたか</td><td>NightOwlDuringTheNight.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>欲張りの貧相な寝室</td><td>Greedy.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>欲張りの貧相な寝室</td><td>Greedy.stages[1]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>欲張りの貧相な寝室</td><td>Greedy.stages[2]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>欲張りの貧相な寝室</td><td>Greedy.stages[3]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>欲張りの貧相な寝室</td><td>Greedy.stages[4]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>禁欲主義者のすさまじい寝室</td><td>Ascetic.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>禁欲主義者のむかつく寝室</td><td>Ascetic.stages[1]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>禁欲主義者のさえない寝室</td><td>Ascetic.stages[2]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>禁欲主義者の見栄えの良い寝室</td><td>Ascetic.stages[5]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>禁欲主義者の見栄えの良い寝室</td><td>Ascetic.stages[6]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>禁欲主義者の見栄えの良い寝室</td><td>Ascetic.stages[7]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>禁欲主義者の見栄えの良い寝室</td><td>Ascetic.stages[8]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>禁欲主義者の見栄えの良い寝室</td><td>Ascetic.stages[9]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>禁欲主義者の見栄えの良い寝室</td><td>Ascetic.stages[10]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>禁欲主義者の見栄えの良い寝室</td><td>Ascetic.stages[11]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_Traits.xml</td></tr>
-    <tr><td>陽気な性格</td><td>MoodOffsetSanguine.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_TraitsPerm.xml</td></tr>
-    <tr><td>楽天家</td><td>MoodOffsetOptimist.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_TraitsPerm.xml</td></tr>
-    <tr><td>悲観主義者</td><td>MoodOffsetPessimist.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_TraitsPerm.xml</td></tr>
-    <tr><td>抑うつ病者</td><td>MoodOffsetDepressive.stages[0]</td><td>DefInjected\ThoughtDef\Thoughts_Situation_TraitsPerm.xml</td></tr>
-    <tr><td>ヌーディスト</td><td>Nudist.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>流血嗜好者</td><td>Bloodlust.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>サイコパス</td><td>Psychopath.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>食人嗜好者</td><td>Cannibal.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>やっかい者</td><td>Abrasive.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>うぬぼれ屋</td><td>TooSmart.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>格闘家</td><td>Brawler.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>マゾヒスト</td><td>Masochist.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>義体化願望</td><td>Prosthophile.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>自然体主義</td><td>Prosthophobe.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>庭師の才能</td><td>GreenThumb.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>よたか</td><td>NightOwl.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>欲張り</td><td>Greedy.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>嫉妬</td><td>Jealous.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>禁欲</td><td>Ascetic.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>同性愛者</td><td>Gay.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>男嫌い</td><td>DislikesMen.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>女嫌い</td><td>DislikesWomen.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>気に障る声</td><td>AnnoyingVoice.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>気持ち悪い息づかい</td><td>CreepyBreathing.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>放火魔</td><td>Pyromaniac.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Singular.xml</td></tr>
-    <tr><td>鈍足</td><td>SpeedOffset.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>せかせか歩き</td><td>SpeedOffset.degreeDatas[1]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>小走り</td><td>SpeedOffset.degreeDatas[2]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>ドラッグ中毒者</td><td>DrugDesire.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>ドラッグ常用者</td><td>DrugDesire.degreeDatas[1]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>ドラッグ嫌い</td><td>DrugDesire.degreeDatas[2]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>あっけらかん</td><td>NaturalMood.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>楽観主義者</td><td>NaturalMood.degreeDatas[1]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>悲観主義者</td><td>NaturalMood.degreeDatas[2]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>抑うつ病者</td><td>NaturalMood.degreeDatas[3]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>鉄の意志</td><td>Nerves.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>信念の人</td><td>Nerves.degreeDatas[1]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>いくじなし</td><td>Nerves.degreeDatas[2]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>精神不安定</td><td>Nerves.degreeDatas[3]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>神経質</td><td>Neurotic.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>ノイローゼもち</td><td>Neurotic.degreeDatas[1]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>職人気質</td><td>Industriousness.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>勤労者</td><td>Industriousness.degreeDatas[1]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>だらけ癖</td><td>Industriousness.degreeDatas[2]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>怠け者</td><td>Industriousness.degreeDatas[3]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>精神過敏</td><td>PsychicSensitivity.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>精神感応</td><td>PsychicSensitivity.degreeDatas[1]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>精神的鈍感</td><td>PsychicSensitivity.degreeDatas[2]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>精神的無反応</td><td>PsychicSensitivity.degreeDatas[3]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>慎重な射手</td><td>ShootingAccuracy.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>トリガーハッピー</td><td>ShootingAccuracy.degreeDatas[1]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>美しい</td><td>Beauty.degreeDatas[0]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>可愛い</td><td>Beauty.degreeDatas[1]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>醜い</td><td>Beauty.degreeDatas[2]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
-    <tr><td>ひどく醜い</td><td>Beauty.degreeDatas[3]</td><td>DefInjected\TraitDef\Traits_Spectrum.xml</td></tr>
 	</tbody>
 </table>
 </body>
