@@ -1,0 +1,1695 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #3399ff; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #3399ff; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #3399ff; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #3399ff; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #3399ff; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #3399ff; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #3399ff; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #3399ff; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #3399ff; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #3399ff; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #3399ff; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #3399ff; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #3399ff; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">B18\Mods\Core\Defs\Scenarios\Scenarios_Classic.xml</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">B19\Mods\Core\Defs\Scenarios\Scenarios_Classic.xml</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;?</span><span class="sf7b2">xml</span><span class="sf13b2"> </span><span class="sf20b2">version</span><span class="sf13b2">=</span><span class="sf12b2">"1.0"</span><span class="sf13b2"> encoding=</span><span class="sf12b2">"utf-8"</span><span class="sf13b2"> ?&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;?</span><span class="sf7b2">xml</span><span class="sf13b2"> </span><span class="sf20b2">version</span><span class="sf13b2">=</span><span class="sf12b2">"1.0"</span><span class="sf13b2"> encoding=</span><span class="sf12b2">"utf-8"</span><span class="sf13b2"> ?&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;Defs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;Defs&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;ScenarioDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;ScenarioDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Crashlanded</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Crashlanded</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">Crashlanded</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">Crashlanded</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">The three of you awake in your cryptosleep sarcophagi to the sound of sirens and ripping metal. You barely get to the escape pods before the ship is torn apart. Some time later, you land on this unknown rimworld.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">The three of you awake in your cryptosleep sarcophagi to the sound of sirens and ripping metal. You barely get to the escape pods before the ship is torn apart. Some time later, you land on this unknown rimworld.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenario&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenario&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;summary&gt;</span><span class="sf3b2">Three crashlanded survivors - the classic RimWorld experience.</span><span class="sf13b2">&lt;/summary&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;summary&gt;</span><span class="sf3b2">Three crashlanded survivors - the classic RimWorld experience.</span><span class="sf13b2">&lt;/summary&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerFaction&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerFaction&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">PlayerFaction</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">PlayerFaction</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factionDef&gt;</span><span class="sf3b2">PlayerColony</span><span class="sf13b2">&lt;/factionDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factionDef&gt;</span><span class="sf3b2">PlayerColony</span><span class="sf13b2">&lt;/factionDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/playerFaction&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/playerFaction&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Config pages --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Config pages --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ConfigPage_ConfigureSta<wbr>rtingPawns"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ConfigPage_ConfigureSta<wbr>rtingPawns"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ConfigPage_ConfigureStartingPawns</span><span class="sf13b2">&lt;<wbr>/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ConfigPage_ConfigureStartingPawns</span><span class="sf13b2">&lt;<wbr>/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pawnCount&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/pawnCount&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pawnCount&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/pawnCount&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pawnChoiceCount&gt;</span><span class="sf10b2">8</span><span class="sf13b2">&lt;/pawnChoiceCount&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pawnChoiceCount&gt;</span><span class="sf10b2">8</span><span class="sf13b2">&lt;/pawnChoiceCount&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player starting stuff spawn method--&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player starting stuff spawn method--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_PlayerPawnsArriveMethod<wbr>"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_PlayerPawnsArriveMethod<wbr>"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">PlayerPawnsArriveMethod</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">PlayerPawnsArriveMethod</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;method&gt;</span><span class="sf3b2">DropPods</span><span class="sf13b2">&lt;/method&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;method&gt;</span><span class="sf3b2">DropPods</span><span class="sf13b2">&lt;/method&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visible&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/visible&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visible&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/visible&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player pawns modifiers --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player pawns modifiers --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ForcedHediff"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ForcedHediff"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ForcedHediff</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ForcedHediff</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visible&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/visible&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visible&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/visible&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;context&gt;</span><span class="sf3b2">PlayerStarter</span><span class="sf13b2">&lt;/context&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;context&gt;</span><span class="sf3b2">PlayerStarter</span><span class="sf13b2">&lt;/context&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;chance&gt;</span><span class="sf10b2">0.5</span><span class="sf13b2">&lt;/chance&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;chance&gt;</span><span class="sf10b2">0.5</span><span class="sf13b2">&lt;/chance&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;hediff&gt;</span><span class="sf3b2">CryptosleepSickness</span><span class="sf13b2">&lt;/hediff&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;hediff&gt;</span><span class="sf3b2">CryptosleepSickness</span><span class="sf13b2">&lt;/hediff&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;hideOffMap&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/hideOffMap&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;hideOffMap&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/hideOffMap&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;severityRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;severityRange&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;min&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/min&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;min&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/min&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;max&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/max&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;max&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/severityRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/severityRange&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player starting things --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player starting things --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Silver</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Silver</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">800</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">800</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">MealSurvivalPack</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">MealSurvivalPack</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;count&gt;</span><span class="sf17b16">44</span><span style="color: #000000; background-color: #efcb05; ">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;count&gt;</span><span class="sf17b16">50</span><span style="color: #000000; background-color: #efcb05; ">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">Medicine</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">Medicine</span><span class="sf17b18">Industrial</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDef&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">30</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">30</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">Component</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">Component</span><span class="sf17b18">Industrial</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDef<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">30</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">30</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Gun_BoltActionRifle</span><span class="sf13b2">&lt;/thingDef<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Gun_BoltActionRifle</span><span class="sf13b2">&lt;/thingDef<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Gun_Revolver</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Gun_Revolver</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">MeleeWeapon_Knife</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">MeleeWeapon_Knife</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;stuff&gt;</span><span class="sf3b2">Plasteel</span><span class="sf13b2">&lt;/stuff&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;stuff&gt;</span><span class="sf3b2">Plasteel</span><span class="sf13b2">&lt;/stuff&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"ScenPart_StartingThing_Defined"</span><span style="color: #000000; background-color: #efcb05; ">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;def&gt;</span><span style="color: #000000; background-color: #efcb05; ">StartingThing_Defined</span><span style="color: #000000; background-color: #efcb05; ">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">Apparel_FlakPants</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"ScenPart_StartingThing_Defined"</span><span style="color: #000000; background-color: #efcb05; ">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;def&gt;</span><span style="color: #000000; background-color: #efcb05; ">StartingThing_Defined</span><span style="color: #000000; background-color: #efcb05; ">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">Apparel_FlakVest</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"ScenPart_StartingThing_Defined"</span><span style="color: #000000; background-color: #efcb05; ">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;def&gt;</span><span style="color: #000000; background-color: #efcb05; ">StartingThing_Defined</span><span style="color: #000000; background-color: #efcb05; ">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">Apparel_AdvancedHelmet</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thing<wbr>Def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;stuff&gt;</span><span style="color: #000000; background-color: #efcb05; ">Plasteel</span><span style="color: #000000; background-color: #efcb05; ">&lt;/stuff&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingAnimal"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingAnimal"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingAnimal</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingAnimal</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;bondToRandomPlayerPawnChance&gt;</span><span class="sf10b2">1.0</span><span class="sf13b2">&lt;/bond<wbr>ToRandomPlayerPawnChance&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;bondToRandomPlayerPawnChance&gt;</span><span class="sf10b2">1.0</span><span class="sf13b2">&lt;/bond<wbr>ToRandomPlayerPawnChance&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Scatter some things near player start --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Scatter some things near player start --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsNearPlayer<wbr>Start"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsNearPlayer<wbr>Start"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsNearPlayerStart</span><span class="sf13b2">&lt;/def&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsNearPlayerStart</span><span class="sf13b2">&lt;/def&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Steel</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Steel</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">450</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">450</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsNearPlayer<wbr>Start"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsNearPlayer<wbr>Start"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsNearPlayerStart</span><span class="sf13b2">&lt;/def&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsNearPlayerStart</span><span class="sf13b2">&lt;/def&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">WoodLog</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">WoodLog</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">300</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">300</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Scatter some things anywhere --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Scatter some things anywhere --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsAnywhere"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsAnywhere"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsAnywhere</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsAnywhere</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">ShipChunk</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">ShipChunk</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsAnywhere"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsAnywhere"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsAnywhere</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsAnywhere</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Steel</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Steel</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">720</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">720</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsAnywhere"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsAnywhere"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsAnywhere</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsAnywhere</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">MealSurvivalPack</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">MealSurvivalPack</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">7</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">7</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Game start dialog --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Game start dialog --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_GameStartDialog"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_GameStartDialog"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">GameStartDialog</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">GameStartDialog</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;textKey&gt;</span><span class="sf3b2">GameStartDialog</span><span class="sf13b2">&lt;/textKey&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;textKey&gt;</span><span class="sf3b2">GameStartDialog</span><span class="sf13b2">&lt;/textKey&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;closeSound&gt;</span><span class="sf3b2">GameStartSting</span><span class="sf13b2">&lt;/closeSound&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;closeSound&gt;</span><span class="sf3b2">GameStartSting</span><span class="sf13b2">&lt;/closeSound&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/scenario&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/scenario&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/ScenarioDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/ScenarioDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;ScenarioDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;ScenarioDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">LostTribe</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">LostTribe</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">Lost Tribe</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">Lost Tribe</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">Your tribe was destroyed by the great blood machines sent by the gods. Five of you managed to escape. Now, it's time to build up a new home.\n\nNote: Since you'll start poor and research slowly, this is a difficult scenario.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">Your tribe was destroyed by the great blood machines sent by the gods. Five of you managed to escape. Now, it's time to build up a new home.\n\nNote: Since you'll start poor and research slowly, this is a difficult scenario.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenario&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenario&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;summary&gt;</span><span class="sf3b2">Five lost tribespeople attempt to rebuild. Difficult.</span><span class="sf13b2">&lt;/summary&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;summary&gt;</span><span class="sf3b2">Five lost tribespeople attempt to rebuild. Difficult.</span><span class="sf13b2">&lt;/summary&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerFaction&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerFaction&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">PlayerFaction</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">PlayerFaction</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factionDef&gt;</span><span class="sf3b2">PlayerTribe</span><span class="sf13b2">&lt;/factionDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factionDef&gt;</span><span class="sf3b2">PlayerTribe</span><span class="sf13b2">&lt;/factionDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/playerFaction&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/playerFaction&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Config pages --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Config pages --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ConfigPage_ConfigureSta<wbr>rtingPawns"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ConfigPage_ConfigureSta<wbr>rtingPawns"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ConfigPage_ConfigureStartingPawns</span><span class="sf13b2">&lt;<wbr>/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ConfigPage_ConfigureStartingPawns</span><span class="sf13b2">&lt;<wbr>/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pawnCount&gt;</span><span class="sf10b2">5</span><span class="sf13b2">&lt;/pawnCount&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pawnCount&gt;</span><span class="sf10b2">5</span><span class="sf13b2">&lt;/pawnCount&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pawnChoiceCount&gt;</span><span class="sf10b2">8</span><span class="sf13b2">&lt;/pawnChoiceCount&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pawnChoiceCount&gt;</span><span class="sf10b2">8</span><span class="sf13b2">&lt;/pawnChoiceCount&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player starting stuff spawn method--&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player starting stuff spawn method--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_PlayerPawnsArriveMethod<wbr>"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_PlayerPawnsArriveMethod<wbr>"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">PlayerPawnsArriveMethod</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">PlayerPawnsArriveMethod</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;method&gt;</span><span class="sf3b2">Standing</span><span class="sf13b2">&lt;/method&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;method&gt;</span><span class="sf3b2">Standing</span><span class="sf13b2">&lt;/method&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player pawns modifiers --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player pawns modifiers --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ForcedHediff"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ForcedHediff"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ForcedHediff</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ForcedHediff</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visible&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/visible&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visible&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/visible&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;context&gt;</span><span class="sf3b2">PlayerStarter</span><span class="sf13b2">&lt;/context&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;context&gt;</span><span class="sf3b2">PlayerStarter</span><span class="sf13b2">&lt;/context&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;chance&gt;</span><span class="sf10b2">0.5</span><span class="sf13b2">&lt;/chance&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;chance&gt;</span><span class="sf10b2">0.5</span><span class="sf13b2">&lt;/chance&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;hediff&gt;</span><span class="sf3b2">Malnutrition</span><span class="sf13b2">&lt;/hediff&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;hediff&gt;</span><span class="sf3b2">Malnutrition</span><span class="sf13b2">&lt;/hediff&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;severityRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;severityRange&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;min&gt;</span><span class="sf10b2">0.2</span><span class="sf13b2">&lt;/min&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;min&gt;</span><span class="sf10b2">0.2</span><span class="sf13b2">&lt;/min&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;max&gt;</span><span class="sf10b2">0.4</span><span class="sf13b2">&lt;/max&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;max&gt;</span><span class="sf10b2">0.4</span><span class="sf13b2">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/severityRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/severityRange&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_SetNeedLevel"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_SetNeedLevel"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">SetNeedLevel</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">SetNeedLevel</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visible&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/visible&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visible&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/visible&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;context&gt;</span><span class="sf3b2">PlayerStarter</span><span class="sf13b2">&lt;/context&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;context&gt;</span><span class="sf3b2">PlayerStarter</span><span class="sf13b2">&lt;/context&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;chance&gt;</span><span class="sf10b2">1.0</span><span class="sf13b2">&lt;/chance&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;chance&gt;</span><span class="sf10b2">1.0</span><span class="sf13b2">&lt;/chance&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;need&gt;</span><span class="sf3b2">Food</span><span class="sf13b2">&lt;/need&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;need&gt;</span><span class="sf3b2">Food</span><span class="sf13b2">&lt;/need&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;levelRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;levelRange&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;min&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/min&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;min&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/min&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;max&gt;</span><span class="sf10b2">0.1</span><span class="sf13b2">&lt;/max&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;max&gt;</span><span class="sf10b2">0.1</span><span class="sf13b2">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/levelRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/levelRange&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player starting things --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player starting things --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Silver</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Silver</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">200</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">200</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Pemmican</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Pemmican</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;count&gt;</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">00</span><span style="color: #000000; background-color: #efcb05; ">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;count&gt;</span><span class="sf17b16">4</span><span style="color: #000000; background-color: #efcb05; ">00</span><span style="color: #000000; background-color: #efcb05; ">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span class="sf17b16">HerbalMedicine</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span class="sf17b16">MedicineHerbal</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">20</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">20</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">MeleeWeapon_Club</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">MeleeWeapon_Club</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;stuff&gt;</span><span class="sf3b2">WoodLog</span><span class="sf13b2">&lt;/stuff&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;stuff&gt;</span><span class="sf3b2">WoodLog</span><span class="sf13b2">&lt;/stuff&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">MeleeWeapon_</span><span class="sf17b16">Spear</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">MeleeWeapon_</span><span class="sf17b16">Ikwa</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;stuff&gt;</span><span class="sf17b16">WoodLog</span><span style="color: #000000; background-color: #efcb05; ">&lt;/stuff&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;stuff&gt;</span><span class="sf17b16">Steel</span><span style="color: #000000; background-color: #efcb05; ">&lt;/stuff&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">MeleeWeapon_Knife</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">MeleeWeapon_Knife</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;stuff&gt;</span><span class="sf3b2">Jade</span><span class="sf13b2">&lt;/stuff&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;stuff&gt;</span><span class="sf3b2">Jade</span><span class="sf13b2">&lt;/stuff&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Bow_Short</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Bow_Short</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">2</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">2</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Pila</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Pila</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingAnimal"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingAnimal"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingAnimal</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingAnimal</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;bondToRandomPlayerPawnChance&gt;</span><span class="sf10b2">1.0</span><span class="sf13b2">&lt;/bond<wbr>ToRandomPlayerPawnChance&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;bondToRandomPlayerPawnChance&gt;</span><span class="sf10b2">1.0</span><span class="sf13b2">&lt;/bond<wbr>ToRandomPlayerPawnChance&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Scatter some things near player start --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Scatter some things near player start --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsNearPlayer<wbr>Start"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsNearPlayer<wbr>Start"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsNearPlayerStart</span><span class="sf13b2">&lt;/def&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsNearPlayerStart</span><span class="sf13b2">&lt;/def&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">WoodLog</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">WoodLog</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">500</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">500</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Game start dialog --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Game start dialog --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_GameStartDialog"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_GameStartDialog"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">GameStartDialog</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">GameStartDialog</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;text&gt;</span><span class="sf3b2">The gods were very angry. The blood machines came at night. They swept through your village, cutting and burning your people with their blades and devil-fire.\n\nOnly a few of you escaped. Now, after a harrowing journey on foot, with no close friends to turn to, you must build a new home in the wilderness, like your ancestors did.</span><span class="sf13b2">&lt;/text&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;text&gt;</span><span class="sf3b2">The gods were very angry. The blood machines came at night. They swept through your village, cutting and burning your people with their blades and devil-fire.\n\nOnly a few of you escaped. Now, after a harrowing journey on foot, with no close friends to turn to, you must build a new home in the wilderness, like your ancestors did.</span><span class="sf13b2">&lt;/text&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;closeSound&gt;</span><span class="sf3b2">GameStartSting</span><span class="sf13b2">&lt;/closeSound&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;closeSound&gt;</span><span class="sf3b2">GameStartSting</span><span class="sf13b2">&lt;/closeSound&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/scenario&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/scenario&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ScenarioDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ScenarioDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;ScenarioDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;ScenarioDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">TheRichExplorer</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">TheRichExplorer</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">The Rich Explorer</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">The Rich Explorer</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">People called you crazy for leaving your glitterworld home, but you always yearned to explore the stars - outside the neurosimulator. Now you're at the end of your long journey in cryptosleep, landing on an unknown rimworld to see what it's like.\n\nNote: Since your starting character will lack some skills, this is an especially difficult scenario in the early game.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">People called you crazy for leaving your glitterworld home, but you always yearned to explore the stars - outside the neurosimulator. Now you're at the end of your long journey in cryptosleep, landing on an unknown rimworld to see what it's like.\n\nNote: Since your starting character will lack some skills, this is an especially difficult scenario in the early game.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenario&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenario&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;summary&gt;</span><span class="sf3b2">One rich explorer out to experience the universe. Extra difficult.</span><span class="sf13b2">&lt;/summary&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;summary&gt;</span><span class="sf3b2">One rich explorer out to experience the universe. Extra difficult.</span><span class="sf13b2">&lt;/summary&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerFaction&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerFaction&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">PlayerFaction</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">PlayerFaction</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factionDef&gt;</span><span class="sf3b2">PlayerColony</span><span class="sf13b2">&lt;/factionDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factionDef&gt;</span><span class="sf3b2">PlayerColony</span><span class="sf13b2">&lt;/factionDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/playerFaction&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/playerFaction&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Config pages --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Config pages --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ConfigPage_ConfigureSta<wbr>rtingPawns"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ConfigPage_ConfigureSta<wbr>rtingPawns"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ConfigPage_ConfigureStartingPawns</span><span class="sf13b2">&lt;<wbr>/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ConfigPage_ConfigureStartingPawns</span><span class="sf13b2">&lt;<wbr>/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pawnCount&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/pawnCount&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pawnCount&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/pawnCount&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pawnChoiceCount&gt;</span><span class="sf10b2">8</span><span class="sf13b2">&lt;/pawnChoiceCount&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pawnChoiceCount&gt;</span><span class="sf10b2">8</span><span class="sf13b2">&lt;/pawnChoiceCount&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player starting stuff spawn method--&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player starting stuff spawn method--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_PlayerPawnsArriveMethod<wbr>"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_PlayerPawnsArriveMethod<wbr>"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">PlayerPawnsArriveMethod</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">PlayerPawnsArriveMethod</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visible&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/visible&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visible&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/visible&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;method&gt;</span><span class="sf3b2">DropPods</span><span class="sf13b2">&lt;/method&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;method&gt;</span><span class="sf3b2">DropPods</span><span class="sf13b2">&lt;/method&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Starting research --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Starting research --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingResearch"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingResearch"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingResearch</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingResearch</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;project&gt;</span><span class="sf3b2">GunTurrets</span><span class="sf13b2">&lt;/project&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;project&gt;</span><span class="sf3b2">GunTurrets</span><span class="sf13b2">&lt;/project&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player starting things --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Player starting things --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Silver</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Silver</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">2000</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">2000</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Gold</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Gold</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">30</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">30</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">MealSurvivalPack</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">MealSurvivalPack</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">40</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">40</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span class="sf17b16">GlitterworldMedicine</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDe<wbr>f&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span class="sf17b16">MedicineUltratech</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">30</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">30</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">Component</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">Component</span><span class="sf17b18">Industrial</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingDef<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">30</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">30</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingThing_Defined"</span><span class="sf13b2">&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingThing_Defined</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Gun_ChargeRifle</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Gun_ChargeRifle</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingAnimal"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_StartingAnimal"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingAnimal</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">StartingAnimal</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;bondToRandomPlayerPawnChance&gt;</span><span class="sf10b2">1.0</span><span class="sf13b2">&lt;/bond<wbr>ToRandomPlayerPawnChance&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;bondToRandomPlayerPawnChance&gt;</span><span class="sf10b2">1.0</span><span class="sf13b2">&lt;/bond<wbr>ToRandomPlayerPawnChance&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Scatter some things near player start --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Scatter some things near player start --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsNearPlayer<wbr>Start"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsNearPlayer<wbr>Start"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsNearPlayerStart</span><span class="sf13b2">&lt;/def&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsNearPlayerStart</span><span class="sf13b2">&lt;/def&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Steel</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">Steel</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">450</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">450</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsNearPlayer<wbr>Start"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_ScatterThingsNearPlayer<wbr>Start"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsNearPlayerStart</span><span class="sf13b2">&lt;/def&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">ScatterThingsNearPlayerStart</span><span class="sf13b2">&lt;/def&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">WoodLog</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;thingDef&gt;</span><span class="sf3b2">WoodLog</span><span class="sf13b2">&lt;/thingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">300</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;count&gt;</span><span class="sf10b2">300</span><span class="sf13b2">&lt;/count&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Game start dialog --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">&lt;!-- Game start dialog --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_GameStartDialog"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"ScenPart_GameStartDialog"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">GameStartDialog</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;def&gt;</span><span class="sf3b2">GameStartDialog</span><span class="sf13b2">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;text&gt;</span><span class="sf3b2">The neurosimulations, holo-games, and free-orgies were never enough for you. You wanted more - the grit and consequence of real life, like they talk about in the history books. You wanted to know what real challenge and consequence feel like.\n\nNow, after a journey of decades in cryptosleep, you're landing on this unknown rimworld. Real consequences await you.</span><span class="sf13b2">&lt;/text&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;text&gt;</span><span class="sf3b2">The neurosimulations, holo-games, and free-orgies were never enough for you. You wanted more - the grit and consequence of real life, like they talk about in the history books. You wanted to know what real challenge and consequence feel like.\n\nNow, after a journey of decades in cryptosleep, you're landing on this unknown rimworld. Real consequences await you.</span><span class="sf13b2">&lt;/text&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;closeSound&gt;</span><span class="sf3b2">GameStartSting</span><span class="sf13b2">&lt;/closeSound&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;closeSound&gt;</span><span class="sf3b2">GameStartSting</span><span class="sf13b2">&lt;/closeSound&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/scenario&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/scenario&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ScenarioDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ScenarioDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ScenarioDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">NakedBrutality</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">Naked Brutality</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">You went under anasthetic for a minor surgery. Now you've awoken in a drop pod crashing into a distant planet. You're naked, alone, and totally unprepared. Can you survive?\n\nWarning: There is nothing fair about this scenario - it is extremely difficult and death can happen for any reason.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;scenario&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;summary&gt;</span><span style="color: #000000; background-color: #efcb05; ">Naked, alone, and utterly unprepared. Can you survive? Extremely difficult and unfair.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/summary&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;playerFaction&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;def&gt;</span><span style="color: #000000; background-color: #efcb05; ">PlayerFaction</span><span style="color: #000000; background-color: #efcb05; ">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factionDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">PlayerColony</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factionDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/playerFaction&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;!-- Config pages --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"ScenPart_ConfigPage_ConfigureSta<wbr>rtingPawns"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;def&gt;</span><span style="color: #000000; background-color: #efcb05; ">ConfigPage_ConfigureStartingPawns</span><span style="color: #000000; background-color: #efcb05; ">&lt;<wbr>/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;pawnCount&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/pawnCount&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;pawnChoiceCount&gt;</span><span style="color: #000000; background-color: #efcb05; ">8</span><span style="color: #000000; background-color: #efcb05; ">&lt;/pawnChoiceCount&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;!-- Player starting stuff spawn method--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"ScenPart_PlayerPawnsArriveMethod<wbr>"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;def&gt;</span><span style="color: #000000; background-color: #efcb05; ">PlayerPawnsArriveMethod</span><span style="color: #000000; background-color: #efcb05; ">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;visible&gt;</span><span style="color: #000000; background-color: #efcb05; ">false</span><span style="color: #000000; background-color: #efcb05; ">&lt;/visible&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;method&gt;</span><span style="color: #000000; background-color: #efcb05; ">DropPods</span><span style="color: #000000; background-color: #efcb05; ">&lt;/method&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;!-- Player starting stuff spawn method--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"ScenPart_Naked"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;def&gt;</span><span style="color: #000000; background-color: #efcb05; ">Naked</span><span style="color: #000000; background-color: #efcb05; ">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;context&gt;</span><span style="color: #000000; background-color: #efcb05; ">PlayerStarter</span><span style="color: #000000; background-color: #efcb05; ">&lt;/context&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;!-- Game start dialog --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"ScenPart_GameStartDialog"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;def&gt;</span><span style="color: #000000; background-color: #efcb05; ">GameStartDialog</span><span style="color: #000000; background-color: #efcb05; ">&lt;/def&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;text&gt;</span><span style="color: #000000; background-color: #efcb05; ">It was supposed to be a minor surgery. Just an hour under anasthetic. You felt totally safe.\n\nNow you've awoken inside a drop pod punching through the atmosphere of a distant rim world.\n\nAside from a slick of mysterious goo all over your body, you are totally naked. With no preparation, no supplies, and no tools, can you survive?</span><span style="color: #000000; background-color: #efcb05; ">&lt;/text&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;closeSound&gt;</span><span style="color: #000000; background-color: #efcb05; ">GameStartSting</span><span style="color: #000000; background-color: #efcb05; ">&lt;/closeSound&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/scenario&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/ScenarioDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;/Defs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;/Defs&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

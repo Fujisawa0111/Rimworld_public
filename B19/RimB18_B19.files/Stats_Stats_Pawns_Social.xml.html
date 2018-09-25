@@ -1,0 +1,967 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #3399ff; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #3399ff; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #3399ff; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #3399ff; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #3399ff; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #3399ff; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #3399ff; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #3399ff; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #3399ff; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #3399ff; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #3399ff; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #3399ff; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #3399ff; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">B18\Mods\Core\Defs\Stats\Stats_Pawns_Social.xml</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">B19\Mods\Core\Defs\Stats\Stats_Pawns_Social.xml</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;?</span><span class="sf7b2">xml</span><span class="sf13b2"> </span><span class="sf20b2">version</span><span class="sf13b2">=</span><span class="sf12b2">"1.0"</span><span class="sf13b2"> encoding=</span><span class="sf12b2">"utf-8"</span><span class="sf13b2"> ?&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;?</span><span class="sf7b2">xml</span><span class="sf13b2"> </span><span class="sf20b2">version</span><span class="sf13b2">=</span><span class="sf12b2">"1.0"</span><span class="sf13b2"> encoding=</span><span class="sf12b2">"utf-8"</span><span class="sf13b2"> ?&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;Defs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;Defs&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span class="sf17b16">RecruitPrisonerChance</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span class="sf17b16">NegotiationAbility</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span class="sf17b16">recruit</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">prisoner</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">chance</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span class="sf17b16">negotiation</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">ability</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">Base</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">chanc</span><span style="color: #000000; background-color: #efcb05; ">e this person </span><span class="sf17b16">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">recruit</span><span style="color: #000000; background-color: #efcb05; "> a </span><span style="color: #000000; background-color: #efcb05; ">prisoner</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">How</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">effectiv</span><span style="color: #000000; background-color: #efcb05; ">e this person </span><span class="sf17b16">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">as</span><span style="color: #000000; background-color: #efcb05; "> a </span><span class="sf17b18">negotiator.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">This</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">affects</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">speed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> prisoner </span><span class="sf17b18">recruitment,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">impact</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">on</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">faction</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">relations</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">when</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">giving</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">gifts,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">outcome</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">peace</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">talks</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">PawnSocial</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">PawnSocial</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;minValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">01</span><span style="color: #000000; background-color: #efcb05; ">&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;minValue&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.4</span><span style="color: #000000; background-color: #e49b52; ">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentTwo</span><span class="sf13b2">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentTwo</span><span class="sf13b2">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;displayPriorityInCategory&gt;</span><span style="color: #000000; background-color: #efcb05; ">100</span><span style="color: #000000; background-color: #efcb05; ">&lt;/display<wbr>PriorityInCategory&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;skillNeedFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;skillNeedFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"SkillNeed_BaseBonus"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"SkillNeed_BaseBonus"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;skill&gt;</span><span class="sf3b2">Social</span><span class="sf13b2">&lt;/skill&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;skill&gt;</span><span class="sf3b2">Social</span><span class="sf13b2">&lt;/skill&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;baseValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">02</span><span style="color: #000000; background-color: #efcb05; ">&lt;/baseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;baseValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">4</span><span style="color: #000000; background-color: #efcb05; ">&lt;/baseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;bonusPerLevel&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.0</span><span class="sf17b16">4</span><span style="color: #000000; background-color: #efcb05; ">&lt;/bonusPerLevel&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;bonusPerLevel&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.0</span><span class="sf17b16">75</span><span style="color: #000000; background-color: #efcb05; ">&lt;/bonusPerLevel&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/skillNeedFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/skillNeedFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacityFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacityFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacity&gt;</span><span class="sf3b2">Talking</span><span class="sf13b2">&lt;/capacity&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacity&gt;</span><span class="sf3b2">Talking</span><span class="sf13b2">&lt;/capacity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;weight&gt;</span><span class="sf10b2">0.9</span><span class="sf13b2">&lt;/weight&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;weight&gt;</span><span class="sf10b2">0.9</span><span class="sf13b2">&lt;/weight&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;allowedDefect&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.05</span><span style="color: #000000; background-color: #efcb05; ">&lt;/allowedDefect&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;max&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;capacity&gt;</span><span style="color: #000000; background-color: #efcb05; ">Hearing</span><span style="color: #000000; background-color: #efcb05; ">&lt;/capacity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;weight&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.9</span><span style="color: #000000; background-color: #efcb05; ">&lt;/weight&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;allowedDefect&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.20</span><span style="color: #000000; background-color: #efcb05; ">&lt;/allowedDefect&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;max&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/capacityFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/capacityFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;scenarioRandomizable&gt;</span><span style="color: #000000; background-color: #efcb05; ">true</span><span style="color: #000000; background-color: #efcb05; ">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #e49b52; ">TameAnimalChance</span><span style="color: #000000; background-color: #e49b52; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;label&gt;</span><span style="color: #000000; background-color: #e49b52; ">tame animal chance</span><span style="color: #000000; background-color: #e49b52; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #e49b52; ">TradePriceImprovement</span><span style="color: #000000; background-color: #e49b52; ">&lt;/defName<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;label&gt;</span><span style="color: #000000; background-color: #e49b52; ">trade price improvement</span><span style="color: #000000; background-color: #e49b52; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">Base</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">chance</span><span style="color: #000000; background-color: #efcb05; "> this person </span><span class="sf17b16">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">tame</span><span style="color: #000000; background-color: #efcb05; "> a</span><span class="sf17b18">n</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">animal</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">When</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">this person </span><span class="sf17b16">acts</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">as</span><span style="color: #000000; background-color: #efcb05; "> a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">trade</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">negotiator,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">buy</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">sell</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">prices</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">improved</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">by</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">this</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">percentage</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">PawnSocial</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">PawnSocial</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;minValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0</span><span class="sf17b18">.01</span><span style="color: #000000; background-color: #efcb05; ">&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;minValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentTwo</span><span class="sf13b2">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentTwo</span><span class="sf13b2">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;displayPriorityInCategory&gt;</span><span style="color: #000000; background-color: #efcb05; ">80</span><span style="color: #000000; background-color: #efcb05; ">&lt;/displayP<wbr>riorityInCategory&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;skillNeedFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;skillNeedFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"SkillNeed_BaseBonus"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"SkillNeed_BaseBonus"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;skill&gt;</span><span class="sf17b16">Animals</span><span style="color: #000000; background-color: #efcb05; ">&lt;/skill&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;skill&gt;</span><span style="color: #000000; background-color: #e49b52; ">Social</span><span style="color: #000000; background-color: #e49b52; ">&lt;/skill&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;baseValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0</span><span class="sf17b18">.02</span><span style="color: #000000; background-color: #efcb05; ">&lt;/baseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;baseValue&gt;</span><span style="color: #000000; background-color: #e49b52; ">0</span><span style="color: #000000; background-color: #e49b52; ">&lt;/baseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;bonusPerLevel&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.01</span><span style="color: #000000; background-color: #efcb05; ">&lt;/bonusPerLevel&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;bonusPerLevel&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.015</span><span style="color: #000000; background-color: #e49b52; ">&lt;/bonusPerLevel&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/skillNeedFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/skillNeedFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacityFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacityFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacity&gt;</span><span class="sf3b2">Talking</span><span class="sf13b2">&lt;/capacity&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacity&gt;</span><span class="sf3b2">Talking</span><span class="sf13b2">&lt;/capacity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;weight&gt;</span><span class="sf10b2">0.9</span><span class="sf13b2">&lt;/weight&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;weight&gt;</span><span class="sf10b2">0.9</span><span class="sf13b2">&lt;/weight&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;allowedDefect&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.05</span><span style="color: #000000; background-color: #efcb05; ">&lt;/allowedDefect&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;max&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;capacity&gt;</span><span class="sf17b16">Manipulation</span><span style="color: #000000; background-color: #efcb05; ">&lt;/capacity&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;capacity&gt;</span><span class="sf17b16">Hearing</span><span style="color: #000000; background-color: #efcb05; ">&lt;/capacity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;weight&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/weight&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;weight&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #efcb05; ">&lt;/weight&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">/li</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">allowedDefect</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">0.20</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">allowedDefect</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16"> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">capacityFactors</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">max</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">max</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">scenarioRandomizable</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">true</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">scenarioRan<wbr>domizable</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #e49b52; ">TrainAnimalChance</span><span style="color: #000000; background-color: #e49b52; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;label&gt;</span><span style="color: #000000; background-color: #e49b52; ">train animal chance</span><span style="color: #000000; background-color: #e49b52; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">Base chance this person will make progress training an animal on a given attempt. The actual chance for a given attempt will also depend on the animal's wildness, whether it is bonded with the trainer, and so on.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;category&gt;</span><span style="color: #000000; background-color: #e49b52; ">PawnSocial</span><span style="color: #000000; background-color: #e49b52; ">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;defaultBaseValue&gt;</span><span style="color: #000000; background-color: #e49b52; ">1.0</span><span style="color: #000000; background-color: #e49b52; ">&lt;/defaultBaseValue<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;minValue&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.01</span><span style="color: #000000; background-color: #e49b52; ">&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;toStringStyle&gt;</span><span style="color: #000000; background-color: #e49b52; ">PercentTwo</span><span style="color: #000000; background-color: #e49b52; ">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;skillNeedFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;li Class=</span><span style="color: #000000; background-color: #e49b52; ">"SkillNeed_BaseBonus"</span><span style="color: #000000; background-color: #e49b52; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;skill&gt;</span><span style="color: #000000; background-color: #e49b52; ">Animals</span><span style="color: #000000; background-color: #e49b52; ">&lt;/skill&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;baseValue&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.04</span><span style="color: #000000; background-color: #e49b52; ">&lt;/baseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;bonusPerLevel&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.04</span><span style="color: #000000; background-color: #efcb05; ">&lt;/bonusPerLevel&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;/skillNeedFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;capacityFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;capacity&gt;</span><span style="color: #000000; background-color: #e49b52; ">Talking</span><span style="color: #000000; background-color: #e49b52; ">&lt;/capacity&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;weight&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.7</span><span style="color: #000000; background-color: #e49b52; ">&lt;/weight&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/capacityFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/capacityFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;scenarioRandomizable&gt;</span><span style="color: #000000; background-color: #efcb05; ">true</span><span style="color: #000000; background-color: #efcb05; ">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">SocialImpact</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">SocialImpact</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">social </span><span class="sf17b18">chat</span><span style="color: #000000; background-color: #efcb05; "> impact</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">social </span><span style="color: #000000; background-color: #efcb05; ">impact</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">When</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">this</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">pers</span><span style="color: #000000; background-color: #efcb05; ">on </span><span class="sf17b16">interacts</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">socially,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">this</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">how</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">much</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">other</span><span style="color: #000000; background-color: #efcb05; "> person</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">affected</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">A</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">multiplier</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">on </span><span class="sf17b16">how</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">much</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">other</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">people</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">affected</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">by</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">this</span><span style="color: #000000; background-color: #efcb05; "> person</span><span class="sf17b18">'s</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">social</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">interactions</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">PawnSocial</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">PawnSocial</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf10b2">0.2</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf10b2">0.2</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentTwo</span><span class="sf13b2">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentTwo</span><span class="sf13b2">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;displayPriorityInCategory&gt;</span><span style="color: #000000; background-color: #efcb05; ">60</span><span style="color: #000000; background-color: #efcb05; ">&lt;/displayP<wbr>riorityInCategory&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;skillNeedFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;skillNeedFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"SkillNeed_BaseBonus"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"SkillNeed_BaseBonus"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;skill&gt;</span><span class="sf3b2">Social</span><span class="sf13b2">&lt;/skill&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;skill&gt;</span><span class="sf3b2">Social</span><span class="sf13b2">&lt;/skill&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;baseValue&gt;</span><span class="sf10b2">0.82</span><span class="sf13b2">&lt;/baseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;baseValue&gt;</span><span class="sf10b2">0.82</span><span class="sf13b2">&lt;/baseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;bonusPerLevel&gt;</span><span class="sf10b2">0.0275</span><span class="sf13b2">&lt;/bonusPerLevel&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;bonusPerLevel&gt;</span><span class="sf10b2">0.0275</span><span class="sf13b2">&lt;/bonusPerLevel&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/skillNeedFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/skillNeedFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;neverDisabled&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/neverDisabled&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;neverDisabled&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/neverDisabled&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacityFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacityFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacity&gt;</span><span class="sf3b2">Talking</span><span class="sf13b2">&lt;/capacity&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacity&gt;</span><span class="sf3b2">Talking</span><span class="sf13b2">&lt;/capacity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;weight&gt;</span><span class="sf10b2">0.9</span><span class="sf13b2">&lt;/weight&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;weight&gt;</span><span class="sf10b2">0.9</span><span class="sf13b2">&lt;/weight&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d16" href="#d16">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;allowedDefect&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.05</span><span style="color: #000000; background-color: #efcb05; ">&lt;/allowedDefect&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;max&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;capacity&gt;</span><span style="color: #000000; background-color: #efcb05; ">Hearing</span><span style="color: #000000; background-color: #efcb05; ">&lt;/capacity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;weight&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/weight&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;allowedDefect&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.05</span><span style="color: #000000; background-color: #efcb05; ">&lt;/allowedDefect&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;max&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/capacityFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/capacityFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d17" href="#d17">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;!--============ Animal ============--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #fbf2bf; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d18" href="#d18">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #e49b52; ">TameAnimalChance</span><span style="color: #000000; background-color: #e49b52; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;label&gt;</span><span style="color: #000000; background-color: #e49b52; ">tame animal chance</span><span style="color: #000000; background-color: #e49b52; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">defName&gt;DiplomacyPower&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">description&gt;</span><span class="sf17b16">The</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">bas</span><span style="color: #000000; background-color: #efcb05; ">e </span><span class="sf17b18">chance</span><span style="color: #000000; background-color: #efcb05; "> this person </span><span class="sf17b16">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">successfully</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">tame</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">an</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">animal</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">on</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">any</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">give</span><span style="color: #000000; background-color: #efcb05; ">n </span><span class="sf17b16">attempt.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">The</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">actual</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">chance</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">also</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">affected</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">by</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">animal's</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">wildness</span><span style="color: #000000; background-color: #efcb05; ">. </span><span class="sf17b16">Failed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">tame</span><span style="color: #000000; background-color: #efcb05; "> a</span><span class="sf17b16">ttempt</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">can</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">induc</span><span style="color: #000000; background-color: #efcb05; ">e </span><span class="sf17b16">animal</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">attacks,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">especially</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">more</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">viciou</span><span style="color: #000000; background-color: #efcb05; ">s </span><span class="sf17b18">animals</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">&lt;label&gt;diplomacy</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">power&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">description&gt;</span><span class="sf17b16">How</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">effectiv</span><span style="color: #000000; background-color: #efcb05; ">e </span><span style="color: #000000; background-color: #efcb05; ">this person </span><span class="sf17b16">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">as</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">negotiator.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">Affects</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">impact</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">o</span><span style="color: #000000; background-color: #efcb05; ">n </span><span class="sf17b16">faction</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">relations</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">when</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">this</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">person</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">gives</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">gifts</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">another</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">faction</span><span style="color: #000000; background-color: #efcb05; ">. </span><span class="sf17b16">It</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">also</span><span style="color: #000000; background-color: #efcb05; "> a</span><span class="sf17b16">ffects</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">outcom</span><span style="color: #000000; background-color: #efcb05; ">e </span><span class="sf17b16">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">peace</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">talks</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">with</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">other</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">faction</span><span style="color: #000000; background-color: #efcb05; ">s</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">PawnSocial</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">PawnSocial</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d19" href="#d19">.</a></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;minValue&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.4</span><span style="color: #000000; background-color: #e49b52; ">&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;minValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">01</span><span style="color: #000000; background-color: #efcb05; ">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentTwo</span><span class="sf13b2">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentTwo</span><span class="sf13b2">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d20" href="#d20">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;displayPriorityInCategory&gt;</span><span style="color: #000000; background-color: #efcb05; ">40</span><span style="color: #000000; background-color: #efcb05; ">&lt;/displayP<wbr>riorityInCategory&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;skillNeedFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;skillNeedFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"SkillNeed_BaseBonus"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"SkillNeed_BaseBonus"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d21" href="#d21">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;skill&gt;</span><span style="color: #000000; background-color: #e49b52; ">Animals</span><span style="color: #000000; background-color: #e49b52; ">&lt;/skill&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;baseValue&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.04</span><span style="color: #000000; background-color: #e49b52; ">&lt;/baseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">skil</span><span style="color: #000000; background-color: #efcb05; ">l&gt;</span><span class="sf17b18">Social&lt;/skill&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">bonusPerLeve</span><span style="color: #000000; background-color: #efcb05; ">l&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">03</span><span style="color: #000000; background-color: #efcb05; ">&lt;/b</span><span class="sf17b16">onusPerLevel</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;baseValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/b</span><span class="sf17b16">aseValue</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;bonusPerLevel&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.05</span><span style="color: #000000; background-color: #e49b52; ">&lt;/bonusPerLevel&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/skillNeedFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/skillNeedFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacityFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacityFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacity&gt;</span><span class="sf3b2">Talking</span><span class="sf13b2">&lt;/capacity&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacity&gt;</span><span class="sf3b2">Talking</span><span class="sf13b2">&lt;/capacity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;weight&gt;</span><span class="sf10b2">0.9</span><span class="sf13b2">&lt;/weight&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;weight&gt;</span><span class="sf10b2">0.9</span><span class="sf13b2">&lt;/weight&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d22" href="#d22">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;allowedDefect&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.20</span><span style="color: #000000; background-color: #efcb05; ">&lt;/allowedDefect&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;max&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;capacity&gt;</span><span style="color: #000000; background-color: #efcb05; ">Hearing</span><span style="color: #000000; background-color: #efcb05; ">&lt;/capacity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;weight&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/weight&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;allowedDefect&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.05</span><span style="color: #000000; background-color: #efcb05; ">&lt;/allowedDefect&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;max&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;capacity&gt;</span><span style="color: #000000; background-color: #efcb05; ">Manipulation</span><span style="color: #000000; background-color: #efcb05; ">&lt;/capacity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;weight&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/weight&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;allowedDefect&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.20</span><span style="color: #000000; background-color: #efcb05; ">&lt;/allowedDefect&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;max&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/capacityFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/capacityFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d23" href="#d23">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;scenarioRandomizable&gt;</span><span style="color: #000000; background-color: #efcb05; ">true</span><span style="color: #000000; background-color: #efcb05; ">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d24" href="#d24">.</a></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #e49b52; ">TradePriceImprovement</span><span style="color: #000000; background-color: #e49b52; ">&lt;/defName<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;label&gt;</span><span style="color: #000000; background-color: #e49b52; ">trade price improvement</span><span style="color: #000000; background-color: #e49b52; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #e49b52; ">TrainAnimalChance</span><span style="color: #000000; background-color: #e49b52; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;label&gt;</span><span style="color: #000000; background-color: #e49b52; ">train animal chance</span><span style="color: #000000; background-color: #e49b52; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">When</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">this person </span><span class="sf17b16">negotiates</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">price</span><span style="color: #000000; background-color: #efcb05; ">s, </span><span class="sf17b16">buy</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">sell</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">prices</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">improved</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">by</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">this</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">percentage</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">The</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">base</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">chance</span><span style="color: #000000; background-color: #efcb05; "> this person </span><span class="sf17b16">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">make</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">progress</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">training</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">an</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">animal</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">on</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">given</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">attempt.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">The</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">actual</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">chance</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">given</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">attempt</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">also</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">depend</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">on</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">animal's</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">wildnes</span><span style="color: #000000; background-color: #efcb05; ">s, </span><span class="sf17b16">whether</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">it</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">bonded</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">with</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">trainer,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">so</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">on</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">PawnSocial</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">PawnSocial</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d25" href="#d25">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defaultBaseValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;defaultBaseValue&gt;</span><span style="color: #000000; background-color: #e49b52; ">1.0</span><span style="color: #000000; background-color: #e49b52; ">&lt;/defaultBaseValue<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;minValue&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.01</span><span style="color: #000000; background-color: #e49b52; ">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentTwo</span><span class="sf13b2">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentTwo</span><span class="sf13b2">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d26" href="#d26">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;displayPriorityInCategory&gt;</span><span style="color: #000000; background-color: #efcb05; ">20</span><span style="color: #000000; background-color: #efcb05; ">&lt;/displayP<wbr>riorityInCategory&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;skillNeedFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;skillNeedFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"SkillNeed_BaseBonus"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"SkillNeed_BaseBonus"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d27" href="#d27">.</a></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;skill&gt;</span><span style="color: #000000; background-color: #e49b52; ">Social</span><span style="color: #000000; background-color: #e49b52; ">&lt;/skill&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;skill&gt;</span><span class="sf17b16">Animals</span><span style="color: #000000; background-color: #efcb05; ">&lt;/skill&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;baseValue&gt;</span><span style="color: #000000; background-color: #e49b52; ">0</span><span style="color: #000000; background-color: #e49b52; ">&lt;/baseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;baseValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0</span><span class="sf17b18">.10</span><span style="color: #000000; background-color: #efcb05; ">&lt;/baseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;bonusPerLevel&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.015</span><span style="color: #000000; background-color: #e49b52; ">&lt;/bonusPerLevel&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;bonusPerLevel&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.05</span><span style="color: #000000; background-color: #e49b52; ">&lt;/bonusPerLevel&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/skillNeedFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/skillNeedFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacityFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacityFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacity&gt;</span><span class="sf3b2">Talking</span><span class="sf13b2">&lt;/capacity&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacity&gt;</span><span class="sf3b2">Talking</span><span class="sf13b2">&lt;/capacity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d28" href="#d28">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;weight&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.7</span><span style="color: #000000; background-color: #e49b52; ">&lt;/weight&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">weigh</span><span style="color: #000000; background-color: #efcb05; ">t&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">weigh</span><span style="color: #000000; background-color: #efcb05; ">t&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">allowedDefec</span><span style="color: #000000; background-color: #efcb05; ">t&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">20</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">allowedDefec</span><span style="color: #000000; background-color: #efcb05; ">t&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">allowedDefect</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">0.05</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">allowedDefect</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">max</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">max</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacity&gt;</span><span class="sf3b2">Hearing</span><span class="sf13b2">&lt;/capacity&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;capacity&gt;</span><span class="sf3b2">Hearing</span><span class="sf13b2">&lt;/capacity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;weight&gt;</span><span class="sf10b2">0.3</span><span class="sf13b2">&lt;/weight&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;weight&gt;</span><span class="sf10b2">0.3</span><span class="sf13b2">&lt;/weight&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;allowedDefect&gt;</span><span class="sf10b2">0.05</span><span class="sf13b2">&lt;/allowedDefect&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;allowedDefect&gt;</span><span class="sf10b2">0.05</span><span class="sf13b2">&lt;/allowedDefect&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d29" href="#d29">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;max&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;capacity&gt;</span><span style="color: #000000; background-color: #efcb05; ">Manipulation</span><span style="color: #000000; background-color: #efcb05; ">&lt;/capacity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;weight&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/weight&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;allowedDefect&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.20</span><span style="color: #000000; background-color: #efcb05; ">&lt;/allowedDefect&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;max&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/capacityFactors&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/capacityFactors&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d30" href="#d30">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;scenarioRandomizable&gt;</span><span style="color: #000000; background-color: #efcb05; ">true</span><span style="color: #000000; background-color: #efcb05; ">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;/Defs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;/Defs&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

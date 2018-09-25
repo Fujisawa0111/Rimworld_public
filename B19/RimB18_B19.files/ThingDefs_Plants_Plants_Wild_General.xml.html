@@ -1,0 +1,819 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #3399ff; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #3399ff; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #3399ff; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #3399ff; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #3399ff; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #3399ff; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #3399ff; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #3399ff; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #3399ff; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #3399ff; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #3399ff; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #3399ff; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #3399ff; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">B18\Mods\Core\Defs\ThingDefs_Plants\Plants_Wild_General.xml</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">B19\Mods\Core\Defs\ThingDefs_Plants\Plants_Wild_General.xml</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;?</span><span class="sf7b2">xml</span><span class="sf13b2"> </span><span class="sf20b2">version</span><span class="sf13b2">=</span><span class="sf12b2">"1.0"</span><span class="sf13b2"> encoding=</span><span class="sf12b2">"utf-8"</span><span class="sf13b2"> ?&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;?</span><span class="sf7b2">xml</span><span class="sf13b2"> </span><span class="sf20b2">version</span><span class="sf13b2">=</span><span class="sf12b2">"1.0"</span><span class="sf13b2"> encoding=</span><span class="sf12b2">"utf-8"</span><span class="sf13b2"> ?&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;Defs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;Defs&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf9b2">&lt;!--===================================<wbr>=== Carpets =======================================<wbr>= --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf9b2">&lt;!--===================================<wbr>=== Carpets =======================================<wbr>= --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;ThingDef ParentName=</span><span class="sf12b2">"PlantBase"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;ThingDef ParentName=</span><span class="sf12b2">"PlantBase"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Plant</span><span style="color: #000000; background-color: #efcb05; ">Grass</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Plant</span><span class="sf17b18">_</span><span style="color: #000000; background-color: #efcb05; ">Grass</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">grass</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">grass</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">Wild grass. Grows anywhere there is a little light and minimally fertile ground.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">Wild grass. Grows anywhere there is a little light and minimally fertile ground.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;statBases&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;MaxHitPoints&gt;</span><span class="sf10b2">85</span><span class="sf13b2">&lt;/MaxHitPoints&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;MaxHitPoints&gt;</span><span class="sf10b2">85</span><span class="sf13b2">&lt;/MaxHitPoints&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Flammability&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/Flammability&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Nutrition&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.15</span><span style="color: #000000; background-color: #efcb05; ">&lt;/Nutrition&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/statBases&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicData&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;texPath&gt;</span><span class="sf3b2">Things/Plant/Grass</span><span class="sf13b2">&lt;/texPath&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;texPath&gt;</span><span class="sf3b2">Things/Plant/Grass</span><span class="sf13b2">&lt;/texPath&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicClass&gt;</span><span class="sf3b2">Graphic_Random</span><span class="sf13b2">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicClass&gt;</span><span class="sf3b2">Graphic_Random</span><span class="sf13b2">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;hideAtSnowDepth&gt;</span><span class="sf10b2">0.5</span><span class="sf13b2">&lt;/hideAtSnowDepth&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;hideAtSnowDepth&gt;</span><span class="sf10b2">0.5</span><span class="sf13b2">&lt;/hideAtSnowDepth&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ingestible</span><span class="sf17b18">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ingestible</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;nutrition&gt;0.18&lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span class="sf17b18">nutrition</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;/ingestible&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;plant&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;plant&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;fertilityMin&gt;</span><span class="sf10b2">0.05</span><span class="sf13b2">&lt;/fertilityMin&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;fertilityMin&gt;</span><span class="sf10b2">0.05</span><span class="sf13b2">&lt;/fertilityMin&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;fertilitySensitivity&gt;</span><span class="sf10b2">0.3</span><span class="sf13b2">&lt;/fertilitySen<wbr>sitivity&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;fertilitySensitivity&gt;</span><span class="sf10b2">0.3</span><span class="sf13b2">&lt;/fertilitySen<wbr>sitivity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;growDays&gt;</span><span class="sf10b2">2.5</span><span class="sf13b2">&lt;/growDays&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;growDays&gt;</span><span class="sf10b2">2.5</span><span class="sf13b2">&lt;/growDays&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;leaflessGraphicPath&gt;</span><span class="sf3b2">Things/Plant/Grass<wbr>_Leafless</span><span class="sf13b2">&lt;/leaflessGraphicPath&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;leaflessGraphicPath&gt;</span><span class="sf3b2">Things/Plant/Grass<wbr>_Leafless</span><span class="sf13b2">&lt;/leaflessGraphicPath&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;harvestWork&gt;</span><span class="sf10b2">40</span><span class="sf13b2">&lt;/harvestWork&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;harvestWork&gt;</span><span class="sf10b2">40</span><span class="sf13b2">&lt;/harvestWork&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;maxMeshCount&gt;</span><span class="sf10b2">9</span><span class="sf13b2">&lt;/maxMeshCount&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;maxMeshCount&gt;</span><span class="sf10b2">9</span><span class="sf13b2">&lt;/maxMeshCount&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visualSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visualSizeRange&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;min&gt;</span><span class="sf10b2">0.4</span><span class="sf13b2">&lt;/min&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;min&gt;</span><span class="sf10b2">0.4</span><span class="sf13b2">&lt;/min&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;max&gt;</span><span class="sf10b2">0.6</span><span class="sf13b2">&lt;/max&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;max&gt;</span><span class="sf10b2">0.6</span><span class="sf13b2">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/visualSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/visualSizeRange&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;topWindExposure&gt;</span><span class="sf10b2">0.4</span><span class="sf13b2">&lt;/topWindExposure&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;topWindExposure&gt;</span><span class="sf10b2">0.4</span><span class="sf13b2">&lt;/topWindExposure&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">reproduceMtbDays</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">reproduceMtbDays</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">wildOrder</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">wildOrder</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/plant&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/plant&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;ThingDef ParentName=</span><span class="sf12b2">"PlantBase"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;ThingDef ParentName=</span><span class="sf12b2">"PlantBase"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Plant</span><span style="color: #000000; background-color: #efcb05; ">TallGrass</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Plant</span><span class="sf17b18">_</span><span style="color: #000000; background-color: #efcb05; ">TallGrass</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">tall grass</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">tall grass</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">Wild tall grass. Slows down anyone moving over it.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">Wild tall grass. Slows down anyone moving over it.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;statBases&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;MaxHitPoints&gt;</span><span class="sf10b2">90</span><span class="sf13b2">&lt;/MaxHitPoints&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;MaxHitPoints&gt;</span><span class="sf10b2">90</span><span class="sf13b2">&lt;/MaxHitPoints&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Flammability&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/Flammability&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Nutrition&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.16</span><span style="color: #000000; background-color: #efcb05; ">&lt;/Nutrition&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/statBases&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pathCost&gt;</span><span class="sf10b2">15</span><span class="sf13b2">&lt;/pathCost&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pathCost&gt;</span><span class="sf10b2">15</span><span class="sf13b2">&lt;/pathCost&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicData&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;texPath&gt;</span><span class="sf3b2">Things/Plant/Grass</span><span class="sf13b2">&lt;/texPath&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;texPath&gt;</span><span class="sf3b2">Things/Plant/Grass</span><span class="sf13b2">&lt;/texPath&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicClass&gt;</span><span class="sf3b2">Graphic_Random</span><span class="sf13b2">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicClass&gt;</span><span class="sf3b2">Graphic_Random</span><span class="sf13b2">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;hideAtSnowDepth&gt;</span><span class="sf10b2">0.5</span><span class="sf13b2">&lt;/hideAtSnowDepth&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;hideAtSnowDepth&gt;</span><span class="sf10b2">0.5</span><span class="sf13b2">&lt;/hideAtSnowDepth&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ingestible</span><span class="sf17b18">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ingestible</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;nutrition&gt;0.20&lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span class="sf17b18">nutrition</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;/ingestible&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;plant&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;plant&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;fertilityMin&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/fertilityMin&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;fertilitySensitivity&gt;</span><span class="sf10b2">0.7</span><span class="sf13b2">&lt;/fertilitySen<wbr>sitivity&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;fertilitySensitivity&gt;</span><span class="sf10b2">0.7</span><span class="sf13b2">&lt;/fertilitySen<wbr>sitivity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;growDays&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/growDays&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;growDays&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/growDays&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;reproduceMtbDays&gt;</span><span style="color: #000000; background-color: #efcb05; ">3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/reproduceMtbDays&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;harvestWork&gt;</span><span class="sf10b2">60</span><span class="sf13b2">&lt;/harvestWork&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;harvestWork&gt;</span><span class="sf10b2">60</span><span class="sf13b2">&lt;/harvestWork&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;maxMeshCount&gt;</span><span class="sf10b2">9</span><span class="sf13b2">&lt;/maxMeshCount&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;maxMeshCount&gt;</span><span class="sf10b2">9</span><span class="sf13b2">&lt;/maxMeshCount&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visualSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visualSizeRange&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;min&gt;</span><span class="sf10b2">0.7</span><span class="sf13b2">&lt;/min&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;min&gt;</span><span class="sf10b2">0.7</span><span class="sf13b2">&lt;/min&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;max&gt;</span><span class="sf10b2">0.85</span><span class="sf13b2">&lt;/max&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;max&gt;</span><span class="sf10b2">0.85</span><span class="sf13b2">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/visualSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/visualSizeRange&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;topWindExposure&gt;</span><span class="sf10b2">0.4</span><span class="sf13b2">&lt;/topWindExposure&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;topWindExposure&gt;</span><span class="sf10b2">0.4</span><span class="sf13b2">&lt;/topWindExposure&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;wildClusterSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;min&gt;</span><span style="color: #000000; background-color: #efcb05; ">35</span><span style="color: #000000; background-color: #efcb05; ">&lt;/min&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;max&gt;</span><span style="color: #000000; background-color: #efcb05; ">40</span><span style="color: #000000; background-color: #efcb05; ">&lt;/max&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/wildClusterSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;wildClusterRadius&gt;</span><span class="sf10b2">4</span><span class="sf13b2">&lt;/wildClusterRadius<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;wildClusterRadius&gt;</span><span class="sf10b2">4</span><span class="sf13b2">&lt;/wildClusterRadius<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;wildClusterWeight&gt;</span><span style="color: #000000; background-color: #efcb05; ">10</span><span style="color: #000000; background-color: #efcb05; ">&lt;/wildClusterWeigh<wbr>t&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;wildOrder&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/wildOrder&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/plant&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/plant&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf9b2">&lt;!--===================================<wbr>=== Bushes =======================================<wbr>= --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf9b2">&lt;!--===================================<wbr>=== Bushes =======================================<wbr>= --&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;ThingDef ParentName=</span><span class="sf12b2">"BushBase"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;ThingDef ParentName=</span><span class="sf12b2">"BushBase"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Plant</span><span style="color: #000000; background-color: #efcb05; ">Bush</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Plant</span><span class="sf17b18">_</span><span style="color: #000000; background-color: #efcb05; ">Bush</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">bush</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">bush</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">A short shrub. Does not typically talk.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">A short shrub. Does not typically talk.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicData&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;texPath&gt;</span><span class="sf3b2">Things/Plant/Bush</span><span class="sf13b2">&lt;/texPath&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;texPath&gt;</span><span class="sf3b2">Things/Plant/Bush</span><span class="sf13b2">&lt;/texPath&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;drawSize&gt;</span><span class="sf10b2">1.15</span><span class="sf13b2">&lt;/drawSize&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;drawSize&gt;</span><span class="sf10b2">1.15</span><span class="sf13b2">&lt;/drawSize&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;shadowData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;shadowData&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;volume&gt;</span><span class="sf11b2">(</span><span class="sf10b2">0.55</span><span class="sf11b2">, </span><span class="sf10b2">0.2</span><span class="sf11b2">, </span><span class="sf10b2">0.2</span><span class="sf11b2">)</span><span class="sf13b2">&lt;/volume&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;volume&gt;</span><span class="sf11b2">(</span><span class="sf10b2">0.55</span><span class="sf11b2">, </span><span class="sf10b2">0.2</span><span class="sf11b2">, </span><span class="sf10b2">0.2</span><span class="sf11b2">)</span><span class="sf13b2">&lt;/volume&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/shadowData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/shadowData&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;plant&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;plant&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;growDays&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/growDays&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;growDays&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/growDays&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;leaflessGraphicPath&gt;</span><span class="sf3b2">Things/Plant/Bush_<wbr>Leafless</span><span class="sf13b2">&lt;/leaflessGraphicPath&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;leaflessGraphicPath&gt;</span><span class="sf3b2">Things/Plant/Bush_<wbr>Leafless</span><span class="sf13b2">&lt;/leaflessGraphicPath&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/plant&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/plant&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;ThingDef ParentName=</span><span class="sf12b2">"PlantBase"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;ThingDef ParentName=</span><span class="sf12b2">"PlantBase"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Plant</span><span style="color: #000000; background-color: #efcb05; ">Brambles</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Plant</span><span class="sf17b18">_</span><span style="color: #000000; background-color: #efcb05; ">Brambles</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">brambles</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">brambles</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">Tangled, thorny, woody shoots covered with leaves. </span><span class="sf17b16">Slow</span><span style="color: #000000; background-color: #efcb05; ">s </span><span style="color: #000000; background-color: #efcb05; ">down anyone moving over </span><span class="sf17b16">it</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">little</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">bit</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">Tangled, thorny, woody shoots covered with leaves. </span><span class="sf17b16">Bramble</span><span style="color: #000000; background-color: #efcb05; ">s </span><span class="sf17b18">grow</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">clusters,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">slow</span><span style="color: #000000; background-color: #efcb05; "> down anyone moving over </span><span class="sf17b16">them</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;statBases&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;MaxHitPoints&gt;</span><span class="sf10b2">100</span><span class="sf13b2">&lt;/MaxHitPoints&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;MaxHitPoints&gt;</span><span class="sf10b2">100</span><span class="sf13b2">&lt;/MaxHitPoints&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Nutrition&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.2</span><span style="color: #000000; background-color: #efcb05; ">&lt;/Nutrition&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/statBases&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pathCost&gt;</span><span class="sf10b2">15</span><span class="sf13b2">&lt;/pathCost&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;pathCost&gt;</span><span class="sf10b2">15</span><span class="sf13b2">&lt;/pathCost&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicData&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;texPath&gt;</span><span class="sf3b2">Things/Plant/Brambles</span><span class="sf13b2">&lt;/texPath<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;texPath&gt;</span><span class="sf3b2">Things/Plant/Brambles</span><span class="sf13b2">&lt;/texPath<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;drawSize&gt;</span><span class="sf10b2">1.7</span><span class="sf13b2">&lt;/drawSize&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;drawSize&gt;</span><span class="sf10b2">1.7</span><span class="sf13b2">&lt;/drawSize&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicClass&gt;</span><span class="sf3b2">Graphic_Random</span><span class="sf13b2">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;graphicClass&gt;</span><span class="sf3b2">Graphic_Random</span><span class="sf13b2">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d16" href="#d16">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ingestible</span><span class="sf17b18">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ingestible</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;nutrition&gt;0.20&lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span class="sf17b18">nutrition</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;/ingestible&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;plant&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;plant&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d17" href="#d17">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;fertilityMin&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/fertilityMin&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;fertilitySensitivity&gt;</span><span class="sf10b2">0.7</span><span class="sf13b2">&lt;/fertilitySen<wbr>sitivity&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;fertilitySensitivity&gt;</span><span class="sf10b2">0.7</span><span class="sf13b2">&lt;/fertilitySen<wbr>sitivity&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;growDays&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/growDays&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;growDays&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/growDays&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d18" href="#d18">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;reproduceMtbDays&gt;</span><span style="color: #000000; background-color: #efcb05; ">3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/reproduceMtbDays&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;harvestWork&gt;</span><span class="sf10b2">60</span><span class="sf13b2">&lt;/harvestWork&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;harvestWork&gt;</span><span class="sf10b2">60</span><span class="sf13b2">&lt;/harvestWork&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;maxMeshCount&gt;</span><span class="sf10b2">4</span><span class="sf13b2">&lt;/maxMeshCount&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;maxMeshCount&gt;</span><span class="sf10b2">4</span><span class="sf13b2">&lt;/maxMeshCount&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;leaflessGraphicPath&gt;</span><span class="sf3b2">Things/Plant/Bramb<wbr>les_Leafless</span><span class="sf13b2">&lt;/leaflessGraphicPath&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;leaflessGraphicPath&gt;</span><span class="sf3b2">Things/Plant/Bramb<wbr>les_Leafless</span><span class="sf13b2">&lt;/leaflessGraphicPath&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visualSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;visualSizeRange&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;min&gt;</span><span class="sf10b2">0.7</span><span class="sf13b2">&lt;/min&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;min&gt;</span><span class="sf10b2">0.7</span><span class="sf13b2">&lt;/min&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;max&gt;</span><span class="sf10b2">0.85</span><span class="sf13b2">&lt;/max&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;max&gt;</span><span class="sf10b2">0.85</span><span class="sf13b2">&lt;/max&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/visualSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/visualSizeRange&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;topWindExposure&gt;</span><span class="sf10b2">0.15</span><span class="sf13b2">&lt;/topWindExposure&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;topWindExposure&gt;</span><span class="sf10b2">0.15</span><span class="sf13b2">&lt;/topWindExposure&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d19" href="#d19">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;wildClusterSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;min&gt;</span><span style="color: #000000; background-color: #efcb05; ">25</span><span style="color: #000000; background-color: #efcb05; ">&lt;/min&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;max&gt;</span><span style="color: #000000; background-color: #efcb05; ">35</span><span style="color: #000000; background-color: #efcb05; ">&lt;/max&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/wildClusterSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;wildClusterRadius&gt;</span><span class="sf10b2">4</span><span class="sf13b2">&lt;/wildClusterRadius<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;wildClusterRadius&gt;</span><span class="sf10b2">4</span><span class="sf13b2">&lt;/wildClusterRadius<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d20" href="#d20">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;wildClusterWeight&gt;</span><span style="color: #000000; background-color: #efcb05; ">200</span><span style="color: #000000; background-color: #efcb05; ">&lt;/wildClusterWeig<wbr>ht&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;wildOrder&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/wildOrder&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;wildEqualLocalDistribution&gt;</span><span style="color: #000000; background-color: #efcb05; ">false</span><span style="color: #000000; background-color: #efcb05; ">&lt;/wild<wbr>EqualLocalDistribution&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/plant&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/plant&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d21" href="#d21">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ThingDef ParentName=</span><span style="color: #000000; background-color: #efcb05; ">"</span><span class="sf17b16">Plan</span><span style="color: #000000; background-color: #efcb05; ">tBase"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ThingDef ParentName=</span><span style="color: #000000; background-color: #efcb05; ">"</span><span class="sf17b16">Healroo</span><span style="color: #000000; background-color: #efcb05; ">tBase"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Plant</span><span class="sf17b16">WildHealroot</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Plant</span><span class="sf17b16">_HealrootWild</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">wild healroot</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">wild healroot</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d22" href="#d22">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">A slow-growing plant which yields herbal medicine when harvested.\n\nThis wild breed of healroot is </span><span style="color: #000000; background-color: #efcb05; ">difficult to cultivate. It is prized by tribespeople in colder climates.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">A slow-growing plant which yields herbal medicine when harvested.\n\nThis wild breed of healroot is </span><span class="sf17b18">hardier</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">than</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">domesticated</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">healroot,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">but</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">too</span><span style="color: #000000; background-color: #efcb05; "> difficult to cultivate. It is prized by tribespeople in colder climates.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">statBases</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">neverMultiSelect</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">false</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span class="sf17b16">neverMultiSele<wbr>ct</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">MaxHitPoints&gt;85&lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span class="sf17b16">MaxHitPoints</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;/statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;texPath&gt;Things/Plant/Healroot&lt;/texPath<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;graphicClass&gt;Graphic_Random&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;selectable&gt;true&lt;/selectable&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;pathCost&gt;10&lt;/pathCost&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;ingestible&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;nutrition&gt;0.15&lt;/nutrition&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;/ingestible&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;plant&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;plant&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d23" href="#d23">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;fertilitySensitivity&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/fertilitySen<wbr>sitivity&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;growDays&gt;</span><span style="color: #000000; background-color: #efcb05; ">6.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/growDays&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;dieIfLeafless&gt;</span><span style="color: #000000; background-color: #efcb05; ">false</span><span style="color: #000000; background-color: #efcb05; ">&lt;/dieIfLeafless&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;harvestWork&gt;</span><span style="color: #000000; background-color: #efcb05; ">400</span><span style="color: #000000; background-color: #efcb05; ">&lt;/harvestWork&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;harvestTag&gt;</span><span style="color: #000000; background-color: #efcb05; ">Standard</span><span style="color: #000000; background-color: #efcb05; ">&lt;/harvestTag&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;harvestedThingDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">HerbalMedicine</span><span style="color: #000000; background-color: #efcb05; ">&lt;/harv<wbr>estedThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;harvestYield&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/harvestYield&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;wildCommonalityMaxFraction&gt;</span><span style="color: #000000; background-color: #efcb05; ">3.0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/wildCo<wbr>mmonalityMaxFraction&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;wildClusterSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;min&gt;</span><span style="color: #000000; background-color: #efcb05; ">2</span><span style="color: #000000; background-color: #efcb05; ">&lt;/min&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;max&gt;</span><span style="color: #000000; background-color: #efcb05; ">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/max&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/wildClusterSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;wildClusterRadius&gt;</span><span class="sf10b2">4</span><span class="sf13b2">&lt;/wildClusterRadius<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;wildClusterRadius&gt;</span><span class="sf10b2">4</span><span class="sf13b2">&lt;/wildClusterRadius<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d24" href="#d24">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">topWindExposure</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">0.1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">topWindExposure</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">wildClusterWeight</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">80</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">wildClusterWeigh<wbr>t</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;visualSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;min&gt;0.3&lt;/min&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;max&gt;1.0&lt;/max&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;/visualSizeRange&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/plant&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/plant&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;/Defs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;/Defs&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

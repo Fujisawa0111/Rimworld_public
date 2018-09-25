@@ -1,0 +1,1395 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #3399ff; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #3399ff; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #3399ff; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #3399ff; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #3399ff; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #3399ff; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #3399ff; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #3399ff; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #3399ff; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #3399ff; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #3399ff; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #3399ff; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #3399ff; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">B18\Mods\Core\Defs\ThingDefs_Misc\Weapons_RangedNeolithic.xml</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">右無題</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&lt;?</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">xml</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">version</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">"1.0"</span><span style="color: #000000; background-color: #efcb05; "> encoding=</span><span style="color: #000000; background-color: #efcb05; ">"utf-8"</span><span style="color: #000000; background-color: #efcb05; "> ?&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&lt;Defs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ThingDef Name=</span><span style="color: #000000; background-color: #efcb05; ">"BaseWeaponNeolithic"</span><span style="color: #000000; background-color: #efcb05; "> Abstract=</span><span style="color: #000000; background-color: #efcb05; ">"True"</span><span style="color: #000000; background-color: #efcb05; "> ParentName=</span><span style="color: #000000; background-color: #efcb05; ">"BaseWeapon"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;techLevel&gt;</span><span style="color: #000000; background-color: #efcb05; ">Neolithic</span><span style="color: #000000; background-color: #efcb05; ">&lt;/techLevel&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;weaponTags&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">Neolithic</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/weaponTags&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingCategories&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">WeaponsRanged</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingCategories&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;comps&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;compClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">CompQuality</span><span style="color: #000000; background-color: #efcb05; ">&lt;/compClass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/comps&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;recipeMaker&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;workSpeedStat&gt;</span><span style="color: #000000; background-color: #efcb05; ">SmithingSpeed</span><span style="color: #000000; background-color: #efcb05; ">&lt;/workSpeed<wbr>Stat&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;workSkill&gt;</span><span style="color: #000000; background-color: #efcb05; ">Crafting</span><span style="color: #000000; background-color: #efcb05; ">&lt;/workSkill&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;recipeUsers&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">ElectricSmithy</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">FueledSmithy</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/recipeUsers&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;effectWorking&gt;</span><span style="color: #000000; background-color: #efcb05; ">Smelt</span><span style="color: #000000; background-color: #efcb05; ">&lt;/effectWorking&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;unfinishedThingDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">UnfinishedWeapon</span><span style="color: #000000; background-color: #efcb05; ">&lt;/u<wbr>nfinishedThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/recipeMaker&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ThingDef Name=</span><span style="color: #000000; background-color: #efcb05; ">"BaseProjectileNeolithic"</span><span style="color: #000000; background-color: #efcb05; "> Abstract=</span><span style="color: #000000; background-color: #efcb05; ">"True"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;category&gt;</span><span style="color: #000000; background-color: #efcb05; ">Projectile</span><span style="color: #000000; background-color: #efcb05; ">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;tickerType&gt;</span><span style="color: #000000; background-color: #efcb05; ">Normal</span><span style="color: #000000; background-color: #efcb05; ">&lt;/tickerType&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;altitudeLayer&gt;</span><span style="color: #000000; background-color: #efcb05; ">Projectile</span><span style="color: #000000; background-color: #efcb05; ">&lt;/altitudeLaye<wbr>r&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;thingClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">Bullet</span><span style="color: #000000; background-color: #efcb05; ">&lt;/thingClass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">arrow</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;useHitPoints&gt;</span><span style="color: #000000; background-color: #efcb05; ">False</span><span style="color: #000000; background-color: #efcb05; ">&lt;/useHitPoints&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;neverMultiSelect&gt;</span><span style="color: #000000; background-color: #efcb05; ">True</span><span style="color: #000000; background-color: #efcb05; ">&lt;/neverMultiSelec<wbr>t&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;shaderType&gt;</span><span style="color: #000000; background-color: #efcb05; ">Transparent</span><span style="color: #000000; background-color: #efcb05; ">&lt;/shaderType&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;!-- =======================================<wbr>================= --&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ThingDef ParentName=</span><span style="color: #000000; background-color: #efcb05; ">"BaseProjectileNeolithic"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Arrow_Short</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">shortbow arrow</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;texPath&gt;</span><span style="color: #000000; background-color: #efcb05; ">Things/Projectile/Arrow_Small</span><span style="color: #000000; background-color: #efcb05; ">&lt;<wbr>/texPath&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">Graphic_Single</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;projectile&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;flyOverhead&gt;</span><span style="color: #000000; background-color: #efcb05; ">false</span><span style="color: #000000; background-color: #efcb05; ">&lt;/flyOverhead&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;damageDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">Arrow</span><span style="color: #000000; background-color: #efcb05; ">&lt;/damageDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;damageAmountBase&gt;</span><span style="color: #000000; background-color: #efcb05; ">11</span><span style="color: #000000; background-color: #efcb05; ">&lt;/damageAmountBase&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;speed&gt;</span><span style="color: #000000; background-color: #efcb05; ">44</span><span style="color: #000000; background-color: #efcb05; ">&lt;/speed&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/projectile&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ThingDef ParentName=</span><span style="color: #000000; background-color: #efcb05; ">"BaseWeaponNeolithic"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Bow_Short</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">short bow</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">A simple short selfbow made from a single piece of wood.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;texPath&gt;</span><span style="color: #000000; background-color: #efcb05; ">Things/Item/Equipment/WeaponRa<wbr>nged/BowShort</span><span style="color: #000000; background-color: #efcb05; ">&lt;/texPath&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">Graphic_Single</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;soundInteract&gt;</span><span style="color: #000000; background-color: #efcb05; ">BowSmall</span><span style="color: #000000; background-color: #efcb05; ">&lt;/soundInteract&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;costList&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;WoodLog&gt;</span><span style="color: #000000; background-color: #efcb05; ">30</span><span style="color: #000000; background-color: #efcb05; ">&lt;/WoodLog&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/costList&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;WorkToMake&gt;</span><span style="color: #000000; background-color: #efcb05; ">9000</span><span style="color: #000000; background-color: #efcb05; ">&lt;/WorkToMake&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Mass&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.8</span><span style="color: #000000; background-color: #efcb05; ">&lt;/Mass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyTouch&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.89</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyTouch&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyShort&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.64</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyShort&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyMedium&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.41</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyMedium&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyLong&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.22</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyLong&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;RangedWeapon_Cooldown&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.66</span><span style="color: #000000; background-color: #efcb05; ">&lt;/RangedWeap<wbr>on_Cooldown&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Weapon_Bulk&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/Weapon_Bulk&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;weaponTags&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">NeolithicRanged</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">NeolithicRangedBasic</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/weaponTags&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;recipeMaker&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;recipeUsers&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">ElectricSmithy</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">FueledSmithy</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">CraftingSpot</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/recipeUsers&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/recipeMaker&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;verbs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;verbClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">Verb_Shoot</span><span style="color: #000000; background-color: #efcb05; ">&lt;/verbClass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;hasStandardCommand&gt;</span><span style="color: #000000; background-color: #efcb05; ">true</span><span style="color: #000000; background-color: #efcb05; ">&lt;/hasStandardCo<wbr>mmand&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defaultProjectile&gt;</span><span style="color: #000000; background-color: #efcb05; ">Arrow_Short</span><span style="color: #000000; background-color: #efcb05; ">&lt;/default<wbr>Projectile&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;warmupTime&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.35</span><span style="color: #000000; background-color: #efcb05; ">&lt;/warmupTime&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;range&gt;</span><span style="color: #000000; background-color: #efcb05; ">29</span><span style="color: #000000; background-color: #efcb05; ">&lt;/range&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;soundCast&gt;</span><span style="color: #000000; background-color: #efcb05; ">BowSmall</span><span style="color: #000000; background-color: #efcb05; ">&lt;/soundCast&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/verbs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;tools&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;capacities&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">Blunt</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">Poke</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/capacities&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;power&gt;</span><span style="color: #000000; background-color: #efcb05; ">8</span><span style="color: #000000; background-color: #efcb05; ">&lt;/power&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;cooldownTime&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.6</span><span style="color: #000000; background-color: #efcb05; ">&lt;/cooldownTime&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/tools&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ThingDef ParentName=</span><span style="color: #000000; background-color: #efcb05; ">"BaseProjectileNeolithic"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Pilum_Thrown</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">pilum</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;texPath&gt;</span><span style="color: #000000; background-color: #efcb05; ">Things/Projectile/Pilum</span><span style="color: #000000; background-color: #efcb05; ">&lt;/texPa<wbr>th&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">Graphic_Single</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;projectile&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;flyOverhead&gt;</span><span style="color: #000000; background-color: #efcb05; ">false</span><span style="color: #000000; background-color: #efcb05; ">&lt;/flyOverhead&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;damageDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">RangedStab</span><span style="color: #000000; background-color: #efcb05; ">&lt;/damageDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;damageAmountBase&gt;</span><span style="color: #000000; background-color: #efcb05; ">30</span><span style="color: #000000; background-color: #efcb05; ">&lt;/damageAmountBase&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;speed&gt;</span><span style="color: #000000; background-color: #efcb05; ">26</span><span style="color: #000000; background-color: #efcb05; ">&lt;/speed&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/projectile&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ThingDef ParentName=</span><span style="color: #000000; background-color: #efcb05; ">"BaseWeaponNeolithic"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Pila</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">pila</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">Pila are spears for throwing. They take a long time to throw, and move slowly, but one hit can do heavy damage. The singular of pila is pilum.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;texPath&gt;</span><span style="color: #000000; background-color: #efcb05; ">Things/Item/Equipment/WeaponRa<wbr>nged/Pilum</span><span style="color: #000000; background-color: #efcb05; ">&lt;/texPath&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">Graphic_Single</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;soundInteract&gt;</span><span style="color: #000000; background-color: #efcb05; ">Interact_BeatFire</span><span style="color: #000000; background-color: #efcb05; ">&lt;/sound<wbr>Interact&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;costList&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;WoodLog&gt;</span><span style="color: #000000; background-color: #efcb05; ">70</span><span style="color: #000000; background-color: #efcb05; ">&lt;/WoodLog&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/costList&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;WorkToMake&gt;</span><span style="color: #000000; background-color: #efcb05; ">13000</span><span style="color: #000000; background-color: #efcb05; ">&lt;/WorkToMake&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Mass&gt;</span><span style="color: #000000; background-color: #efcb05; ">4</span><span style="color: #000000; background-color: #efcb05; ">&lt;/Mass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyTouch&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.91</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyTouch&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyShort&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.71</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyShort&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyMedium&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.50</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyMedium&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyLong&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.32</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyLong&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;RangedWeapon_Cooldown&gt;</span><span style="color: #000000; background-color: #efcb05; ">4</span><span style="color: #000000; background-color: #efcb05; ">&lt;/RangedWeapon_<wbr>Cooldown&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Weapon_Bulk&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/Weapon_Bulk&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;weaponTags&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">NeolithicRanged</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">NeolithicRangedHeavy</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/weaponTags&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;verbs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;verbClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">Verb_Shoot</span><span style="color: #000000; background-color: #efcb05; ">&lt;/verbClass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;hasStandardCommand&gt;</span><span style="color: #000000; background-color: #efcb05; ">true</span><span style="color: #000000; background-color: #efcb05; ">&lt;/hasStandardCo<wbr>mmand&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defaultProjectile&gt;</span><span style="color: #000000; background-color: #efcb05; ">Pilum_Thrown</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defaul<wbr>tProjectile&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;warmupTime&gt;</span><span style="color: #000000; background-color: #efcb05; ">4.0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/warmupTime&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;range&gt;</span><span style="color: #000000; background-color: #efcb05; ">20</span><span style="color: #000000; background-color: #efcb05; ">&lt;/range&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;soundCast&gt;</span><span style="color: #000000; background-color: #efcb05; ">Interact_BeatFire</span><span style="color: #000000; background-color: #efcb05; ">&lt;/soundCast<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/verbs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;tools&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">shaft</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;capacities&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">Blunt</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/capacities&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;power&gt;</span><span style="color: #000000; background-color: #efcb05; ">8</span><span style="color: #000000; background-color: #efcb05; ">&lt;/power&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;cooldownTime&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.6</span><span style="color: #000000; background-color: #efcb05; ">&lt;/cooldownTime&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">point</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;capacities&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">Blunt</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/capacities&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;power&gt;</span><span style="color: #000000; background-color: #efcb05; ">10</span><span style="color: #000000; background-color: #efcb05; ">&lt;/power&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;cooldownTime&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.6</span><span style="color: #000000; background-color: #efcb05; ">&lt;/cooldownTime&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/tools&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ThingDef ParentName=</span><span style="color: #000000; background-color: #efcb05; ">"BaseProjectileNeolithic"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Arrow_Recurve</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">recurve bow arrow</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;texPath&gt;</span><span style="color: #000000; background-color: #efcb05; ">Things/Projectile/Arrow_Small</span><span style="color: #000000; background-color: #efcb05; ">&lt;<wbr>/texPath&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">Graphic_Single</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;projectile&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;flyOverhead&gt;</span><span style="color: #000000; background-color: #efcb05; ">false</span><span style="color: #000000; background-color: #efcb05; ">&lt;/flyOverhead&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;damageDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">ArrowHighVelocity</span><span style="color: #000000; background-color: #efcb05; ">&lt;/damageDef<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;damageAmountBase&gt;</span><span style="color: #000000; background-color: #efcb05; ">14</span><span style="color: #000000; background-color: #efcb05; ">&lt;/damageAmountBase&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;speed&gt;</span><span style="color: #000000; background-color: #efcb05; ">56</span><span style="color: #000000; background-color: #efcb05; ">&lt;/speed&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/projectile&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ThingDef ParentName=</span><span style="color: #000000; background-color: #efcb05; ">"BaseWeaponNeolithic"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Bow_Recurve</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">recurve bow</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">An advanced recurve bow. Its construction behaves like a tuned spring, storing energy more efficiently and delivering a faster shot.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;texPath&gt;</span><span style="color: #000000; background-color: #efcb05; ">Things/Item/Equipment/WeaponRa<wbr>nged/BowRecurve</span><span style="color: #000000; background-color: #efcb05; ">&lt;/texPath&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">Graphic_Single</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;soundInteract&gt;</span><span style="color: #000000; background-color: #efcb05; ">BowRecurve</span><span style="color: #000000; background-color: #efcb05; ">&lt;/soundInterac<wbr>t&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;costList&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;WoodLog&gt;</span><span style="color: #000000; background-color: #efcb05; ">40</span><span style="color: #000000; background-color: #efcb05; ">&lt;/WoodLog&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/costList&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;WorkToMake&gt;</span><span style="color: #000000; background-color: #efcb05; ">12000</span><span style="color: #000000; background-color: #efcb05; ">&lt;/WorkToMake&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Mass&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.85</span><span style="color: #000000; background-color: #efcb05; ">&lt;/Mass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyTouch&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.90</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyTouch&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyShort&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.78</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyShort&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyMedium&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.65</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyMedium&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyLong&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.35</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyLong&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;RangedWeapon_Cooldown&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.66</span><span style="color: #000000; background-color: #efcb05; ">&lt;/RangedWeap<wbr>on_Cooldown&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Weapon_Bulk&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/Weapon_Bulk&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;weaponTags&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">NeolithicRanged</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">NeolithicRangedHunter</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/weaponTags&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;recipeMaker&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;recipeUsers&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">ElectricSmithy</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">FueledSmithy</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">CraftingSpot</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/recipeUsers&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;researchPrerequisite&gt;</span><span style="color: #000000; background-color: #efcb05; ">RecurveBow</span><span style="color: #000000; background-color: #efcb05; ">&lt;/resea<wbr>rchPrerequisite&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/recipeMaker&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;verbs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;verbClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">Verb_Shoot</span><span style="color: #000000; background-color: #efcb05; ">&lt;/verbClass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;hasStandardCommand&gt;</span><span style="color: #000000; background-color: #efcb05; ">true</span><span style="color: #000000; background-color: #efcb05; ">&lt;/hasStandardCo<wbr>mmand&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defaultProjectile&gt;</span><span style="color: #000000; background-color: #efcb05; ">Arrow_Recurve</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defau<wbr>ltProjectile&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;warmupTime&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.45</span><span style="color: #000000; background-color: #efcb05; ">&lt;/warmupTime&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;range&gt;</span><span style="color: #000000; background-color: #efcb05; ">32</span><span style="color: #000000; background-color: #efcb05; ">&lt;/range&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;soundCast&gt;</span><span style="color: #000000; background-color: #efcb05; ">BowRecurve</span><span style="color: #000000; background-color: #efcb05; ">&lt;/soundCast&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/verbs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;tools&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;capacities&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">Blunt</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">Poke</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/capacities&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;power&gt;</span><span style="color: #000000; background-color: #efcb05; ">8</span><span style="color: #000000; background-color: #efcb05; ">&lt;/power&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;cooldownTime&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.6</span><span style="color: #000000; background-color: #efcb05; ">&lt;/cooldownTime&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/tools&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ThingDef ParentName=</span><span style="color: #000000; background-color: #efcb05; ">"BaseProjectileNeolithic"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Arrow_Great</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">greatbow arrow</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;texPath&gt;</span><span style="color: #000000; background-color: #efcb05; ">Things/Projectile/Arrow_Small</span><span style="color: #000000; background-color: #efcb05; ">&lt;<wbr>/texPath&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">Graphic_Single</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;projectile&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;flyOverhead&gt;</span><span style="color: #000000; background-color: #efcb05; ">false</span><span style="color: #000000; background-color: #efcb05; ">&lt;/flyOverhead&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;damageDef&gt;</span><span style="color: #000000; background-color: #efcb05; ">Arrow</span><span style="color: #000000; background-color: #efcb05; ">&lt;/damageDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;damageAmountBase&gt;</span><span style="color: #000000; background-color: #efcb05; ">18</span><span style="color: #000000; background-color: #efcb05; ">&lt;/damageAmountBase&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;speed&gt;</span><span style="color: #000000; background-color: #efcb05; ">49</span><span style="color: #000000; background-color: #efcb05; ">&lt;/speed&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/projectile&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;ThingDef ParentName=</span><span style="color: #000000; background-color: #efcb05; ">"BaseWeaponNeolithic"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Bow_Great</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">greatbow</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">A powerful greatbow. Fires a heavy arrow long distances.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;texPath&gt;</span><span style="color: #000000; background-color: #efcb05; ">Things/Item/Equipment/WeaponRa<wbr>nged/BowGreat</span><span style="color: #000000; background-color: #efcb05; ">&lt;/texPath&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;graphicClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">Graphic_Single</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicCl<wbr>ass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/graphicData&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;soundInteract&gt;</span><span style="color: #000000; background-color: #efcb05; ">BowLarge</span><span style="color: #000000; background-color: #efcb05; ">&lt;/soundInteract&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;costList&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;WoodLog&gt;</span><span style="color: #000000; background-color: #efcb05; ">50</span><span style="color: #000000; background-color: #efcb05; ">&lt;/WoodLog&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/costList&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;WorkToMake&gt;</span><span style="color: #000000; background-color: #efcb05; ">18000</span><span style="color: #000000; background-color: #efcb05; ">&lt;/WorkToMake&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Mass&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.2</span><span style="color: #000000; background-color: #efcb05; ">&lt;/Mass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyTouch&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.93</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyTouch&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyShort&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.85</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyShort&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyMedium&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.75</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyMedium&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;AccuracyLong&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.50</span><span style="color: #000000; background-color: #efcb05; ">&lt;/AccuracyLong&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;RangedWeapon_Cooldown&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.4</span><span style="color: #000000; background-color: #efcb05; ">&lt;/RangedWeapo<wbr>n_Cooldown&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Weapon_Bulk&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/Weapon_Bulk&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/statBases&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;weaponTags&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">NeolithicRanged</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">NeolithicRangedHeavy</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">NeolithicRangedChief</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/weaponTags&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;verbs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;verbClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">Verb_Shoot</span><span style="color: #000000; background-color: #efcb05; ">&lt;/verbClass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;hasStandardCommand&gt;</span><span style="color: #000000; background-color: #efcb05; ">true</span><span style="color: #000000; background-color: #efcb05; ">&lt;/hasStandardCo<wbr>mmand&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defaultProjectile&gt;</span><span style="color: #000000; background-color: #efcb05; ">Arrow_Great</span><span style="color: #000000; background-color: #efcb05; ">&lt;/default<wbr>Projectile&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;warmupTime&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/warmupTime&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;range&gt;</span><span style="color: #000000; background-color: #efcb05; ">32</span><span style="color: #000000; background-color: #efcb05; ">&lt;/range&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;soundCast&gt;</span><span style="color: #000000; background-color: #efcb05; ">BowLarge</span><span style="color: #000000; background-color: #efcb05; ">&lt;/soundCast&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/verbs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;tools&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;capacities&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">Blunt</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">Poke</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/capacities&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;power&gt;</span><span style="color: #000000; background-color: #efcb05; ">8</span><span style="color: #000000; background-color: #efcb05; ">&lt;/power&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;cooldownTime&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.6</span><span style="color: #000000; background-color: #efcb05; ">&lt;/cooldownTime&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/tools&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;recipeMaker&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;researchPrerequisite&gt;</span><span style="color: #000000; background-color: #efcb05; ">Greatbows</span><span style="color: #000000; background-color: #efcb05; ">&lt;/resear<wbr>chPrerequisite&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/recipeMaker&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/ThingDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&lt;/Defs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

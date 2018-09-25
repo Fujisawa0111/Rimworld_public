@@ -1,0 +1,1171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #3399ff; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #3399ff; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #3399ff; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #3399ff; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #3399ff; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #3399ff; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #3399ff; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #3399ff; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #3399ff; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #3399ff; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #3399ff; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #3399ff; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #3399ff; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">B18\Mods\Core\Defs\Stats\Stats_Basics_General.xml</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">B19\Mods\Core\Defs\Stats\Stats_Basics_General.xml</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;?</span><span class="sf7b2">xml</span><span class="sf13b2"> </span><span class="sf20b2">version</span><span class="sf13b2">=</span><span class="sf12b2">"1.0"</span><span class="sf13b2"> encoding=</span><span class="sf12b2">"utf-8"</span><span class="sf13b2"> ?&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;?</span><span class="sf7b2">xml</span><span class="sf13b2"> </span><span class="sf20b2">version</span><span class="sf13b2">=</span><span class="sf12b2">"1.0"</span><span class="sf13b2"> encoding=</span><span class="sf12b2">"utf-8"</span><span class="sf13b2"> ?&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;Defs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;Defs&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">MaxHitPoints</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">MaxHitPoints</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">max hit points</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">max hit points</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">The maximum hit points of an object. This represents how much damage it can take before being destroyed.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">The maximum hit points of an object. This represents how much damage it can take before being destroyed.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">100</span><span class="sf13b2">&lt;/defaultBaseValue<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">100</span><span class="sf13b2">&lt;/defaultBaseValue<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;roundValue&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/roundValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;roundValue&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/roundValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">Integer</span><span class="sf13b2">&lt;/toStringStyle&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">Integer</span><span class="sf13b2">&lt;/toStringStyle&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;roundToFiveOver&gt;</span><span class="sf10b2">200</span><span class="sf13b2">&lt;/roundToFiveOver&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;roundToFiveOver&gt;</span><span class="sf10b2">200</span><span class="sf13b2">&lt;/roundToFiveOver&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;showNonAbstract&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/showNonAbstract<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;showNonAbstract&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/showNonAbstract<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenarioRandomizable&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenarioRandomizable&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Mass</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Mass</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">mass</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">mass</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">The physical mass of an object.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">The physical mass of an object.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">Basics</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">Basics</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;toStringStyle&gt;</span><span style="color: #000000; background-color: #e49b52; ">FloatTwo</span><span style="color: #000000; background-color: #e49b52; ">&lt;/toStringStyle&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;toStringStyle&gt;</span><span style="color: #000000; background-color: #efcb05; ">FloatTwo</span><span class="sf17b18">OrThree</span><span style="color: #000000; background-color: #efcb05; ">&lt;/toStrin<wbr>gStyle&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;formatString&gt;{</span><span class="sf10b2">0</span><span class="sf11b2">} </span><span class="sf3b2">kg</span><span class="sf13b2">&lt;/formatString&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;formatString&gt;{</span><span class="sf10b2">0</span><span class="sf11b2">} </span><span class="sf3b2">kg</span><span class="sf13b2">&lt;/formatString&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minifiedThingInherits&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/minifiedTh<wbr>ingInherits&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minifiedThingInherits&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/minifiedTh<wbr>ingInherits&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_BodySize"</span><span class="sf13b2"> /&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_BodySize"</span><span class="sf13b2"> /&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_NaturalNotMissingBodyPa<wbr>rtsCoverage"</span><span class="sf13b2"> /&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_NaturalNotMissingBodyPa<wbr>rtsCoverage"</span><span class="sf13b2"> /&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_GearAndInventoryMass"</span><span class="sf13b2"> /&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_GearAndInventoryMass"</span><span class="sf13b2"> /&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_UnfinishedThingIngredie<wbr>ntsMass"</span><span class="sf13b2"> /&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_UnfinishedThingIngredie<wbr>ntsMass"</span><span class="sf13b2"> /&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_AddedBodyPartsMass"</span><span class="sf13b2"> /&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_AddedBodyPartsMass"</span><span class="sf13b2"> /&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">MarketValue</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">MarketValue</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;workerClass&gt;</span><span class="sf3b2">StatWorker_MarketValue</span><span class="sf13b2">&lt;/wo<wbr>rkerClass&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;workerClass&gt;</span><span class="sf3b2">StatWorker_MarketValue</span><span class="sf13b2">&lt;/wo<wbr>rkerClass&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">market value</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">market value</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">The market value of an object. The actual trade price will be </span><span class="sf17b16">further</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">modified</span><span style="color: #000000; background-color: #efcb05; "> by negotiation skill, relationship status, and other contextual factors.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">The market value of an object. The actual trade price will be </span><span class="sf17b16">adjusted</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">by negotiation skill, relationship status, and other contextual factors.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;category&gt;</span><span style="color: #000000; background-color: #efcb05; ">Basics</span><span class="sf17b18">NonPawn</span><span style="color: #000000; background-color: #efcb05; ">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;category&gt;</span><span style="color: #000000; background-color: #efcb05; ">Basics</span><span style="color: #000000; background-color: #efcb05; ">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">&lt;minValue&gt;0&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">FloatTwo</span><span class="sf13b2">&lt;/toStringStyle&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">FloatTwo</span><span class="sf13b2">&lt;/toStringStyle&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;roundToFiveOver&gt;</span><span class="sf10b2">200</span><span class="sf13b2">&lt;/roundToFiveOver&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;roundToFiveOver&gt;</span><span class="sf10b2">200</span><span class="sf13b2">&lt;/roundToFiveOver&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;formatString&gt;</span><span class="sf11b2">$</span><span class="sf13b2">{</span><span class="sf10b2">0</span><span class="sf11b2">}</span><span class="sf13b2">&lt;/formatString&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;formatString&gt;</span><span class="sf11b2">$</span><span class="sf13b2">{</span><span class="sf10b2">0</span><span class="sf11b2">}</span><span class="sf13b2">&lt;/formatString&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minifiedThingInherits&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/minifiedTh<wbr>ingInherits&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minifiedThingInherits&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/minifiedTh<wbr>ingInherits&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_Quality"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_Quality"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorAwful&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">4</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorAwful&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorAwful&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorAwful&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">factorShoddy&gt;0.6&lt;/factorShoddy&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorPoor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">75</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorPoor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorPoor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorPoor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorNormal&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/factorNormal&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorNormal&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/factorNormal&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorGood&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.2</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorGood&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorGood&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.2</span><span class="sf17b18">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorGood&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">factorSuperior</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">1.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">factorSuperior</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">maxGainGood</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">500</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">maxGainGood</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorExcellent&gt;</span><span class="sf17b16">2</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorExcellent&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorExcellent&gt;</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorExcellent&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorMasterwork&gt;</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorMasterwork<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">maxGainExcellent&gt;1000&lt;/maxGainExcellen<wbr>t&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorLegendary&gt;</span><span class="sf17b16">6</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorLegendary&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorMasterwork&gt;</span><span class="sf17b16">2</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorMasterwork<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">maxGainMasterwork&gt;2000&lt;/maxGainMasterw<wbr>ork&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorLegendary&gt;</span><span class="sf17b16">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorLegendary&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;maxGainLegendary&gt;3000&lt;/maxGainLegendar<wbr>y&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_Health"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_Health"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;curve&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;curve&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;points&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;points&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">0</span><span class="sf17b18">.0</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">0</span><span class="sf17b18">.0</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">04</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">5</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span style="color: #000000; background-color: #efcb05; ">9</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li&gt;</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b18">6,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">0.5)&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;li&gt;(0.</span><span style="color: #000000; background-color: #efcb05; ">9</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">1</span><span class="sf17b18">.0</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; ">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/points&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/points&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/curve&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/curve&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_WornByCorpse"</span><span class="sf13b2">/&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_WornByCorpse"</span><span class="sf13b2">/&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"StatPart_IsCorpseFresh"</span><span style="color: #000000; background-color: #efcb05; ">/&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenarioRandomizable&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenarioRandomizable&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">SellPriceFactor</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">SellPriceFactor</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">sell price multiplier</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">sell price multiplier</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">A multiplier on the price at which you can sell items.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;description&gt;</span><span class="sf3b2">A multiplier on the price at which you can sell items.</span><span class="sf13b2">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;showIfUndefined&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/showIfUndefined<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;showIfUndefined&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/showIfUndefined<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;minValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentZero</span><span class="sf13b2">&lt;/toStringSty<wbr>le&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentZero</span><span class="sf13b2">&lt;/toStringSty<wbr>le&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Flammability</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Flammability</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">flammability</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">flammability</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">How easily an object catches fire and how </span><span class="sf17b16">strong</span><span style="color: #000000; background-color: #efcb05; ">ly </span><span style="color: #000000; background-color: #efcb05; ">it burns.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">How easily an object catches fire and how </span><span class="sf17b16">quick</span><span style="color: #000000; background-color: #efcb05; ">ly </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">fire</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">grow</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">as</span><span style="color: #000000; background-color: #efcb05; "> it burns.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">maxValue&gt;</span><span class="sf17b16">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/maxValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">!--</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Normalize</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">1</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">wood,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">0</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">stone,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">2</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">like</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dry</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">wispy</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">paper</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">or</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">volatile</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">fuel.--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">maxValue&gt;</span><span class="sf17b16">2</span><span style="color: #000000; background-color: #efcb05; ">&lt;/maxValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentZero</span><span class="sf13b2">&lt;/toStringSty<wbr>le&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">PercentZero</span><span class="sf13b2">&lt;/toStringSty<wbr>le&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenarioRandomizable&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenarioRandomizable&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">WorkToMake</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">WorkToMake</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">work to make</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">work to make</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">The base amount of work it takes to make </span><span class="sf17b16">this,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">once</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">all</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">materials</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">tools</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">gathered.&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">The base amount of work it takes to make </span><span class="sf17b16">an</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">item</span><span style="color: #000000; background-color: #efcb05; ">, once all materials </span><span style="color: #000000; background-color: #efcb05; ">are gathered.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">&lt;category&gt;BasicsNonPawn&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">&lt;defaultBaseValue&gt;1&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">&lt;minValue&gt;0&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">&lt;toStringStyle&gt;WorkAmount&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">&lt;roundToFiveOver&gt;300&lt;/roundToFiveOver&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">&lt;showIfUndefined&gt;false&lt;/showIfUndefined<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;scenarioRandomizable&gt;true&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;defName&gt;WorkToBuild&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;label&gt;work</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">build&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;description&gt;The</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">base</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">amount</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">work</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">it</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">takes</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">build</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">structure</span><span style="color: #000000; background-color: #efcb05; ">, once all materials </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">tools</span><span style="color: #000000; background-color: #efcb05; "> are gathered.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">WorkAmount</span><span class="sf13b2">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">WorkAmount</span><span class="sf13b2">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;roundToFiveOver&gt;</span><span class="sf10b2">300</span><span class="sf13b2">&lt;/roundToFiveOver&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;roundToFiveOver&gt;</span><span class="sf10b2">300</span><span class="sf13b2">&lt;/roundToFiveOver&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;showIfUndefined&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/showIfUndefined<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;showIfUndefined&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/showIfUndefined<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenarioRandomizable&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenarioRandomizable&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">DeteriorationRate</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">DeteriorationRate</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">deterioration rate</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">deterioration rate</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">The rate at which this item deteriorates when left outside, in average hit points of damage per day. </span><span class="sf17b16">Things</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">deterio</span><span style="color: #000000; background-color: #efcb05; ">rate </span><span class="sf17b16">faster</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">than</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">normal</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">in</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">some</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">weather, </span><span class="sf17b16">like</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">rain</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">The rate at which this item deteriorates when left outside, in average hit points of damage per day. </span><span class="sf17b16">Deterioration</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">rate </span><span class="sf17b16">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">also</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">affected</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">by</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">things</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">like</span><span style="color: #000000; background-color: #efcb05; "> weather, </span><span class="sf17b16">roofs,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">toxic</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">fallout,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">or</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">being</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">left</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">shallow</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">water</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;showIfUndefined&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/showIfUndefined<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;showIfUndefined&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/showIfUndefined<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">FloatTwo</span><span class="sf13b2">&lt;/toStringStyle&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">FloatTwo</span><span class="sf13b2">&lt;/toStringStyle&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;formatString&gt;{</span><span class="sf10b2">0</span><span class="sf11b2">} / </span><span class="sf3b2">day</span><span class="sf13b2">&lt;/formatString&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;formatString&gt;{</span><span class="sf10b2">0</span><span class="sf11b2">} / </span><span class="sf3b2">day</span><span class="sf13b2">&lt;/formatString&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_Quality"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_Quality"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorAwful&gt;</span><span class="sf10b2">2</span><span class="sf13b2">&lt;/factorAwful&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorAwful&gt;</span><span class="sf10b2">2</span><span class="sf13b2">&lt;/factorAwful&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factor</span><span class="sf17b16">Shoddy</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b18">factorShoddy&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factor</span><span class="sf17b16">Poor</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span style="color: #000000; background-color: #efcb05; ">factorPoor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorPoor&gt;</span><span class="sf17b18">1.25&lt;/factorPoor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorNormal&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/factorNormal&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorNormal&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/factorNormal&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorGood&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.8</span><span class="sf17b18">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorGood&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorGood&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.8</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorGood&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">factorSuperior&gt;0.75&lt;/factorSuperior&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorExcellent&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.6</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorExcellent&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorExcellent&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.6</span><span class="sf17b18">3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorExcellent&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorMasterwork&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorMasterwork<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorMasterwork&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">51</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorMasterwor<wbr>k&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorLegendary&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorLegendary&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorLegendary&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">4</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorLegendary&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenarioRandomizable&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;scenarioRandomizable&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/scenarioRan<wbr>domizable&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Beauty</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Beauty</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">beauty</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">beauty</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">How enjoyable an object is to </span><span class="sf17b16">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">around</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">look</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">at</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">How enjoyable an object is to </span><span class="sf17b16">look</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">at.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">Beautiful</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">objects</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">fulfill</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">characters'</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">need</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">beauty</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;minValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">999999</span><span style="color: #000000; background-color: #efcb05; ">&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;minValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">1000</span><span style="color: #000000; background-color: #efcb05; ">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;hideAtValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/hideAtValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;hideAtValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/hideAtValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;roundValue&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/roundValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;roundValue&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/roundValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">Integer</span><span class="sf13b2">&lt;/toStringStyle&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">Integer</span><span class="sf13b2">&lt;/toStringStyle&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;roundToFiveOver&gt;</span><span class="sf10b2">100</span><span class="sf13b2">&lt;/roundToFiveOver&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;roundToFiveOver&gt;</span><span class="sf10b2">100</span><span class="sf13b2">&lt;/roundToFiveOver&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;applyFactorsIfNegative&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/applyFac<wbr>torsIfNegative&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;applyFactorsIfNegative&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/applyFac<wbr>torsIfNegative&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_Quality"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_Quality"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorAwful&gt;</span><span class="sf11b2">-</span><span class="sf10b2">0.1</span><span class="sf13b2">&lt;/factorAwful&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorAwful&gt;</span><span class="sf11b2">-</span><span class="sf10b2">0.1</span><span class="sf13b2">&lt;/factorAwful&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d16" href="#d16">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorShoddy&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorShoddy&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorPoor&gt;</span><span class="sf10b2">0.5</span><span class="sf13b2">&lt;/factorPoor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorPoor&gt;</span><span class="sf10b2">0.5</span><span class="sf13b2">&lt;/factorPoor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorNormal&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/factorNormal&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorNormal&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/factorNormal&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d17" href="#d17">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorGood&gt;</span><span class="sf17b16">1.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorGood&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorGood&gt;</span><span class="sf17b16">2</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorGood&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">factorSuperior&gt;2.0&lt;/factorSuperior&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorExcellent&gt;</span><span style="color: #000000; background-color: #efcb05; ">3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorExcellent&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorExcellent&gt;</span><span style="color: #000000; background-color: #efcb05; ">3</span><span class="sf17b18">.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorExcellent&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorMasterwork&gt;</span><span style="color: #000000; background-color: #efcb05; ">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorMasterwork&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorMasterwork&gt;</span><span style="color: #000000; background-color: #efcb05; ">5</span><span class="sf17b18">.0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorMasterwork<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorLegendary&gt;</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorLegendary&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorLegendary&gt;</span><span class="sf17b16">10</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorLegendary&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Cleanliness</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Cleanliness</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">cleanliness</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">cleanliness</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d18" href="#d18">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">How </span><span class="sf17b16">clean</span><span style="color: #000000; background-color: #efcb05; "> an object </span><span class="sf17b16">is</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">How </span><span class="sf17b16">much</span><span style="color: #000000; background-color: #efcb05; "> an object </span><span class="sf17b18">contributes</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">an</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">area's</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">cleanliness</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">score</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;maxValue&gt;</span><span class="sf10b2">1000</span><span class="sf13b2">&lt;/maxValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;maxValue&gt;</span><span class="sf10b2">1000</span><span class="sf13b2">&lt;/maxValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf11b2">-</span><span class="sf10b2">1000</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf11b2">-</span><span class="sf10b2">1000</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;hideAtValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/hideAtValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;hideAtValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/hideAtValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">FloatOne</span><span class="sf13b2">&lt;/toStringStyle&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">FloatOne</span><span class="sf13b2">&lt;/toStringStyle&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;applyFactorsIfNegative&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/applyFac<wbr>torsIfNegative&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;applyFactorsIfNegative&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/applyFac<wbr>torsIfNegative&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Comfort</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Comfort</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">comfort</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;label&gt;</span><span class="sf3b2">comfort</span><span class="sf13b2">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d19" href="#d19">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">How comfortable an object is to sit or lay on.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">How comfortable an object is to sit or lay on. </span><span class="sf17b18">Using</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">comfortable</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">objects</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">fulfills</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">character's</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">need</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">comfort.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;category&gt;</span><span class="sf3b2">BasicsNonPawn</span><span class="sf13b2">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;showIfUndefined&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/showIfUndefined<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;showIfUndefined&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/showIfUndefined<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;defaultBaseValue&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;maxValue&gt;</span><span class="sf10b2">1000</span><span class="sf13b2">&lt;/maxValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;maxValue&gt;</span><span class="sf10b2">1000</span><span class="sf13b2">&lt;/maxValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf11b2">-</span><span class="sf10b2">1000</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;minValue&gt;</span><span class="sf11b2">-</span><span class="sf10b2">1000</span><span class="sf13b2">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">FloatTwo</span><span class="sf13b2">&lt;/toStringStyle&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;toStringStyle&gt;</span><span class="sf3b2">FloatTwo</span><span class="sf13b2">&lt;/toStringStyle&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;applyFactorsIfNegative&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/applyFac<wbr>torsIfNegative&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;applyFactorsIfNegative&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/applyFac<wbr>torsIfNegative&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_Quality"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;li Class=</span><span class="sf12b2">"StatPart_Quality"</span><span class="sf13b2">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d20" href="#d20">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorAwful&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">4</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorAwful&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorAwful&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">76</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorAwful&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">factorShoddy&gt;0.7&lt;/factorShoddy&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorPoor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.8</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorPoor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorPoor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.8</span><span class="sf17b16">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorPoor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorNormal&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/factorNormal&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;factorNormal&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/factorNormal&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d21" href="#d21">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorGood&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorGood&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorGood&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.1</span><span class="sf17b18">2</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorGood&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">factorSuperior&gt;1.2&lt;/factorSuperior&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorExcellent&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.</span><span class="sf17b16">24</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorExcellent&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">factorExcellent&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorExcellent&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorMasterwork&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.4</span><span class="sf17b18">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorMasterwor<wbr>k&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorMasterwork&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.4</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorMasterwork<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorLegendary&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.</span><span class="sf17b16">7</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorLegendary&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;factorLegendary&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.</span><span class="sf17b16">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/factorLegendary&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;/li&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d22" href="#d22">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">Nutrition</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">nutrition</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">How nutritious this food is.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;category&gt;</span><span style="color: #000000; background-color: #efcb05; ">BasicsNonPawn</span><span style="color: #000000; background-color: #efcb05; ">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defaultBaseValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;minValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;showIfUndefined&gt;</span><span style="color: #000000; background-color: #efcb05; ">false</span><span style="color: #000000; background-color: #efcb05; ">&lt;/showIfUndefined<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;toStringStyle&gt;</span><span style="color: #000000; background-color: #e49b52; ">FloatTwo</span><span style="color: #000000; background-color: #e49b52; ">&lt;/toStringStyle&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"StatPart_BodySize"</span><span style="color: #000000; background-color: #efcb05; "> /&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"StatPart_NaturalNotMissingBodyPa<wbr>rtsCoverage"</span><span style="color: #000000; background-color: #efcb05; "> /&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"StatPart_PlantGrowthNutritionFac<wbr>tor"</span><span style="color: #000000; background-color: #efcb05; "> /&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"StatPart_IsFlesh"</span><span style="color: #000000; background-color: #efcb05; "> /&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"StatPart_IsCorpseFresh"</span><span style="color: #000000; background-color: #efcb05; "> /&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">FoodPoisonChanceFixedHuman</span><span style="color: #000000; background-color: #efcb05; ">&lt;/de<wbr>fName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">food poison chance</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">The chance this food will cause food poisoning.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;category&gt;</span><span style="color: #000000; background-color: #efcb05; ">BasicsNonPawn</span><span style="color: #000000; background-color: #efcb05; ">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defaultBaseValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defaultBaseValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;minValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/minValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;hideAtValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/hideAtValue&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;toStringStyle&gt;</span><span style="color: #000000; background-color: #efcb05; ">PercentZero</span><span style="color: #000000; background-color: #efcb05; ">&lt;/toStringSty<wbr>le&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;li Class=</span><span style="color: #000000; background-color: #efcb05; ">"StatPart_MaxChanceIfRotting"</span><span style="color: #000000; background-color: #efcb05; "> /&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/parts&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #efcb05; ">ShootingAccuracyTurret</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defNam<wbr>e&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span style="color: #000000; background-color: #efcb05; ">shooting accuracy</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">Base chance to not miss per cell of shot distance. Chance to hit is also affected by many other factors. A hit chance explanation for any shot can be seen by selecting a shooter and mousing over a target.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;category&gt;</span><span style="color: #000000; background-color: #efcb05; ">BasicsNonPawn</span><span style="color: #000000; background-color: #efcb05; ">&lt;/category&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;workerClass&gt;</span><span style="color: #000000; background-color: #efcb05; ">StatWorker_ShootingAccurac<wbr>y</span><span style="color: #000000; background-color: #efcb05; ">&lt;/workerClass&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defaultBaseValue&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.96</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defaultBaseValu<wbr>e&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;toStringStyle&gt;</span><span style="color: #000000; background-color: #efcb05; ">PercentTwo</span><span style="color: #000000; background-color: #efcb05; ">&lt;/toStringStyl<wbr>e&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;toStringStyleUnfinalized&gt;</span><span style="color: #000000; background-color: #efcb05; ">FloatOne</span><span style="color: #000000; background-color: #efcb05; ">&lt;/toS<wbr>tringStyleUnfinalized&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;showIfUndefined&gt;</span><span style="color: #000000; background-color: #efcb05; ">false</span><span style="color: #000000; background-color: #efcb05; ">&lt;/showIfUndefined<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;/StatDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;/Defs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;/Defs&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

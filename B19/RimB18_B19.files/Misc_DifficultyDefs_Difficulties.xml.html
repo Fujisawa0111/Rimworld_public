@@ -1,0 +1,699 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #3399ff; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #3399ff; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #3399ff; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #3399ff; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #3399ff; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #3399ff; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #3399ff; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #3399ff; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #3399ff; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #3399ff; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #3399ff; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #3399ff; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #3399ff; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">B18\Mods\Core\Defs\Misc\DifficultyDefs\Difficulties.xml</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">B19\Mods\Core\Defs\Misc\DifficultyDefs\Difficulties.xml</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;?</span><span class="sf7b2">xml</span><span class="sf13b2"> </span><span class="sf20b2">version</span><span class="sf13b2">=</span><span class="sf12b2">"1.0"</span><span class="sf13b2"> encoding=</span><span class="sf12b2">"utf-8"</span><span class="sf13b2"> ?&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;?</span><span class="sf7b2">xml</span><span class="sf13b2"> </span><span class="sf20b2">version</span><span class="sf13b2">=</span><span class="sf12b2">"1.0"</span><span class="sf13b2"> encoding=</span><span class="sf12b2">"utf-8"</span><span class="sf13b2"> ?&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;Defs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;Defs&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;DifficultyDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;DifficultyDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Peaceful</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Peaceful</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span class="sf17b16">P</span><span style="color: #000000; background-color: #efcb05; ">eaceful</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span class="sf17b16">p</span><span style="color: #000000; background-color: #efcb05; ">eaceful</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">For</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">those</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">who want to </span><span class="sf17b16">relax</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">build</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">colony</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">in</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">sandbox-like</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">environment</span><span style="color: #000000; background-color: #efcb05; ">.\n\n</span><span class="sf17b16">Major</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">threatening events </span><span class="sf17b18">are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">disabled</span><span style="color: #000000; background-color: #efcb05; ">, but c</span><span class="sf17b16">olonist</span><span style="color: #000000; background-color: #efcb05; ">s </span><span class="sf17b16">can</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">still</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">get</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">grumpy</span><span style="color: #000000; background-color: #efcb05; "> and </span><span style="color: #000000; background-color: #efcb05; ">animals </span><span class="sf17b18">can</span><span style="color: #000000; background-color: #efcb05; "> still </span><span class="sf17b16">go</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">crazy</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">from</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">time</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">time</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">Build</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">community</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">sandbox</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">environment.\n\nRecommendeed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Players</span><span style="color: #000000; background-color: #efcb05; "> who want to </span><span class="sf17b16">focus</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">on</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">community-building</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">aspects</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">RimWorld</span><span style="color: #000000; background-color: #efcb05; ">.\n\n</span><span class="sf17b16">This</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">disables</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">major</span><span style="color: #000000; background-color: #efcb05; "> threatening events</span><span style="color: #000000; background-color: #efcb05; ">, but c</span><span class="sf17b16">hallenge</span><span style="color: #000000; background-color: #efcb05; ">s </span><span class="sf17b16">like</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">disease,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">mental</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">breaks,</span><span style="color: #000000; background-color: #efcb05; "> and </span><span class="sf17b18">mad</span><span style="color: #000000; background-color: #efcb05; "> animals </span><span style="color: #000000; background-color: #efcb05; ">still </span><span class="sf17b16">occur</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;difficulty&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/difficulty&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;difficulty&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/difficulty&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;threatScale&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">05</span><span style="color: #000000; background-color: #efcb05; ">&lt;/threatScale&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;threatScale&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.10</span><span style="color: #000000; background-color: #e49b52; ">&lt;/threatScale&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;allowBigThreats&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/allowBigThreats<wbr>&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;allowBigThreats&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/allowBigThreats<wbr>&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;allowIntroThreats&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/allowIntroThr<wbr>eats&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;allowIntroThreats&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/allowIntroThr<wbr>eats&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;peacefulTemples&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/peacefulTemples&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;peacefulTemples&gt;</span><span class="sf3b2">true</span><span class="sf13b2">&lt;/peacefulTemples&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;allowCaveHives&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/allowCaveHives&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;allowCaveHives&gt;</span><span class="sf3b2">false</span><span class="sf13b2">&lt;/allowCaveHives&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;predatorsHuntHumanlikes&gt;</span><span style="color: #000000; background-color: #efcb05; ">false</span><span style="color: #000000; background-color: #efcb05; ">&lt;/predato<wbr>rsHuntHumanlikes&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;colonistMoodOffset&gt;</span><span class="sf10b2">10</span><span class="sf13b2">&lt;/colonistMoodOff<wbr>set&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;colonistMoodOffset&gt;</span><span class="sf10b2">10</span><span class="sf13b2">&lt;/colonistMoodOff<wbr>set&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;cropYieldFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/cropYieldFactor&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;cropYieldFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.</span><span class="sf17b16">2</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/cropYieldFactor&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;mineYieldFactor&gt;1.20&lt;/mineYieldFactor&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;researchSpeedFactor&gt;1.20&lt;/researchSpee<wbr>dFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;diseaseIntervalFactor&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/diseaseInterv<wbr>alFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;diseaseIntervalFactor&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/diseaseInterv<wbr>alFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;enemyReproductionRateFactor&gt;</span><span class="sf10b2">0.1</span><span class="sf13b2">&lt;/enemy<wbr>ReproductionRateFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;enemyReproductionRateFactor&gt;</span><span class="sf10b2">0.1</span><span class="sf13b2">&lt;/enemy<wbr>ReproductionRateFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerPawnInfectionChanceFactor&gt;</span><span class="sf10b2">0.3</span><span class="sf13b2">&lt;/p<wbr>layerPawnInfectionChanceFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerPawnInfectionChanceFactor&gt;</span><span class="sf10b2">0.3</span><span class="sf13b2">&lt;/p<wbr>layerPawnInfectionChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;manhunterChanceOnDamageFactor&gt;</span><span class="sf10b2">0.25</span><span class="sf13b2">&lt;/ma<wbr>nhunterChanceOnDamageFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;manhunterChanceOnDamageFactor&gt;</span><span class="sf10b2">0.25</span><span class="sf13b2">&lt;/ma<wbr>nhunterChanceOnDamageFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;deepDrillInfestationChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/de<wbr>epDrillInfestationChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;foodPoisonChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/foodPoison<wbr>ChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;maintenanceCostFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/maintenance<wbr>CostFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;enemyDeathOnDownedChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/en<wbr>emyDeathOnDownedChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;adaptationGrowthRateFactorOverZero&gt;</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/<wbr>adaptationGrowthRateFactorOverZero&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/DifficultyDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/DifficultyDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;DifficultyDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;DifficultyDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #e49b52; ">Easy</span><span style="color: #000000; background-color: #e49b52; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">defName&gt;VeryEasy&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">label&gt;</span><span style="color: #000000; background-color: #efcb05; ">builder</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">label&gt;</span><span class="sf17b18">Base</span><span style="color: #000000; background-color: #efcb05; "> builder</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">Build</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">colony,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">while</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">still</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">having</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">taste</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">danger.\n\nRecommended</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Players</span><span style="color: #000000; background-color: #efcb05; "> who </span><span class="sf17b16">are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">new</span><span style="color: #000000; background-color: #efcb05; "> to </span><span class="sf17b16">this</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">kind</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">game,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">players</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">who</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">want</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">build</span><span style="color: #000000; background-color: #efcb05; "> a </span><span class="sf17b16">perfect</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">colony</span><span style="color: #000000; background-color: #efcb05; ">.\n\nMajor threats appear, but they're </span><span class="sf17b18">weaker</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">than</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">other</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">modes</span><span style="color: #000000; background-color: #efcb05; ">. Some </span><span style="color: #000000; background-color: #efcb05; ">extremely dangerous events are disabled.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">For</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">those</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">who </span><span class="sf17b16">want</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">to </span><span class="sf17b16">build</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">colony</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">with</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">a </span><span class="sf17b16">taste</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">danger</span><span style="color: #000000; background-color: #efcb05; ">.\n\nMajor threats appear, but they're </span><span class="sf17b16">weakened</span><span style="color: #000000; background-color: #efcb05; ">. Some </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> extremely dangerous events are disabled.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;difficulty&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/difficulty&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;difficulty&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/difficulty&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;threatScale&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.10</span><span style="color: #000000; background-color: #e49b52; ">&lt;/threatScale&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;threatScale&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/threatScale&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;predatorsHuntHumanlikes&gt;false&lt;/predato<wbr>rsHuntHumanlikes&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;colonistMoodOffset&gt;</span><span class="sf10b2">10</span><span class="sf13b2">&lt;/colonistMoodOff<wbr>set&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;colonistMoodOffset&gt;</span><span class="sf10b2">10</span><span class="sf13b2">&lt;/colonistMoodOff<wbr>set&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;cropYieldFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/cropYieldFactor&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;cropYieldFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.</span><span class="sf17b16">2</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/cropYieldFactor&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">diseaseIntervalFactor&gt;</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/diseaseInterv<wbr>alFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">mineYieldFactor&gt;1.20&lt;/mineYieldFactor&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;enemyReproductionRateFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/enemy<wbr>ReproductionRateFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;researchSpeedFactor&gt;1.20&lt;/researchSpee<wbr>dFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">diseaseIntervalFactor&gt;</span><span class="sf17b16">2.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/diseaseInte<wbr>rvalFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;enemyReproductionRateFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.1</span><span class="sf17b18">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/enem<wbr>yReproductionRateFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerPawnInfectionChanceFactor&gt;</span><span class="sf10b2">0.5</span><span class="sf13b2">&lt;/p<wbr>layerPawnInfectionChanceFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerPawnInfectionChanceFactor&gt;</span><span class="sf10b2">0.5</span><span class="sf13b2">&lt;/p<wbr>layerPawnInfectionChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;deepDrillInfestationChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.25</span><span style="color: #000000; background-color: #efcb05; ">&lt;<wbr>/deepDrillInfestationChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;foodPoisonChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/foodPoison<wbr>ChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;maintenanceCostFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/maintenance<wbr>CostFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;enemyDeathOnDownedChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.90</span><span style="color: #000000; background-color: #efcb05; ">&lt;/e<wbr>nemyDeathOnDownedChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;adaptationGrowthRateFactorOverZero&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.2<wbr>5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/adaptationGrowthRateFactorOverZero&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;raidBeaconThreatCountFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/raidB<wbr>eaconThreatCountFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/DifficultyDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/DifficultyDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;DifficultyDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;DifficultyDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #e49b52; ">Easy</span><span style="color: #000000; background-color: #e49b52; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #e49b52; ">Medium</span><span style="color: #000000; background-color: #e49b52; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span class="sf17b16">Some</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">challenge</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span class="sf17b16">medium</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">For</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">players on their first game</span><span style="color: #000000; background-color: #efcb05; ">, or </span><span class="sf17b16">casual</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">players who </span><span class="sf17b18">still</span><span style="color: #000000; background-color: #efcb05; "> want </span><span class="sf17b16">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">challenge</span><span style="color: #000000; background-color: #efcb05; ">.\n\</span><span class="sf17b16">nThreat</span><span style="color: #000000; background-color: #efcb05; ">s </span><span class="sf17b16">are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">dangerous</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">but </span><span class="sf17b16">not</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">brutal</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">Build</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">community</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">while</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">facing</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">down</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dangerous</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">threats.\n\nRecommended</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Experienced</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">strategy</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">game</span><span style="color: #000000; background-color: #efcb05; "> players on their first game </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">RimWorld</span><span style="color: #000000; background-color: #efcb05; ">, or </span><span class="sf17b16">skilled</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">RimWorld</span><span style="color: #000000; background-color: #efcb05; "> players who </span><span style="color: #000000; background-color: #efcb05; ">want </span><span class="sf17b16">some</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">breathing</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">room</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">pursue</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">funny</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">or</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">weird</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">goals</span><span style="color: #000000; background-color: #efcb05; ">.\n\</span><span class="sf17b16">nThere'</span><span style="color: #000000; background-color: #efcb05; ">s </span><span class="sf17b16">room</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">grow</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">thrive,</span><span style="color: #000000; background-color: #efcb05; "> but </span><span class="sf17b16">it's</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">still</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dangerous</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">planet</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;difficulty&gt;</span><span class="sf10b2">2</span><span class="sf13b2">&lt;/difficulty&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;difficulty&gt;</span><span class="sf10b2">2</span><span class="sf13b2">&lt;/difficulty&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;threatScale&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">35</span><span style="color: #000000; background-color: #efcb05; ">&lt;/threatScale&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;threatScale&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; ">&lt;/threatScale&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;colonistMoodOffset&gt;</span><span class="sf10b2">5</span><span class="sf13b2">&lt;/colonistMoodOffs<wbr>et&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;colonistMoodOffset&gt;</span><span class="sf10b2">5</span><span class="sf13b2">&lt;/colonistMoodOffs<wbr>et&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;cropYieldFactor&gt;</span><span style="color: #000000; background-color: #e49b52; ">1</span><span style="color: #000000; background-color: #e49b52; ">&lt;/cropYieldFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">tradePriceFactorLoss</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">0.05</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">tradePriceF<wbr>actorLoss</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">mineYieldFactor</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">mineYieldFactor</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">cropYiel</span><span style="color: #000000; background-color: #efcb05; ">dFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span class="sf17b18">.20</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">cropYiel</span><span style="color: #000000; background-color: #efcb05; ">dFactor&gt;<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">researchSpee</span><span style="color: #000000; background-color: #efcb05; ">dFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">researchSpee</span><span style="color: #000000; background-color: #efcb05; ">dFa<wbr>ctor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;diseaseIntervalFactor&gt;</span><span class="sf10b2">1.5</span><span class="sf13b2">&lt;/diseaseInte<wbr>rvalFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;diseaseIntervalFactor&gt;</span><span class="sf10b2">1.5</span><span class="sf13b2">&lt;/diseaseInte<wbr>rvalFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;enemyReproductionRateFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">4</span><span style="color: #000000; background-color: #efcb05; ">&lt;/enemy<wbr>ReproductionRateFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;enemyReproductionRateFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/enemy<wbr>ReproductionRateFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerPawnInfectionChanceFactor&gt;</span><span class="sf10b2">0.75</span><span class="sf13b2">&lt;/<wbr>playerPawnInfectionChanceFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerPawnInfectionChanceFactor&gt;</span><span class="sf10b2">0.75</span><span class="sf13b2">&lt;/<wbr>playerPawnInfectionChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;deepDrillInfestationChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.75</span><span style="color: #000000; background-color: #efcb05; ">&lt;<wbr>/deepDrillInfestationChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;foodPoisonChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.75</span><span style="color: #000000; background-color: #efcb05; ">&lt;/foodPoiso<wbr>nChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;maintenanceCostFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.75</span><span style="color: #000000; background-color: #efcb05; ">&lt;/maintenanc<wbr>eCostFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;enemyDeathOnDownedChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/enem<wbr>yDeathOnDownedChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;adaptationGrowthRateFactorOverZero&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.7<wbr>5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/adaptationGrowthRateFactorOverZero&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;raidBeaconThreatCountFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.8</span><span style="color: #000000; background-color: #efcb05; ">&lt;/raidB<wbr>eaconThreatCountFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/DifficultyDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/DifficultyDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;DifficultyDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;DifficultyDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;defName&gt;</span><span style="color: #000000; background-color: #e49b52; ">Medium</span><span style="color: #000000; background-color: #e49b52; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">label</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span style="color: #000000; background-color: #efcb05; ">Rough</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span style="color: #000000; background-color: #efcb05; ">label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">defName</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span style="color: #000000; background-color: #efcb05; ">Rough</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b18">defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">It's</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">a rough</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">planet.\n\n</span><span class="sf17b16">Threats</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">can</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">quite</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">dangerous</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">Not</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">recommended</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">until</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">you've</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">got</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">some</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">experience</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">wit</span><span style="color: #000000; background-color: #efcb05; ">h </span><span style="color: #000000; background-color: #efcb05; ">the </span><span class="sf17b16">game</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">label&gt;</span><span class="sf17b18">rough&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">Strive</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">survive</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">on</span><span style="color: #000000; background-color: #efcb05; "> a rough</span><span class="sf17b18">,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">tough</span><span style="color: #000000; background-color: #efcb05; "> planet.\n\n</span><span class="sf17b16">Recommended</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">for:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">Players</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">with</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">experience</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">RimWorld,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">looking</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">play</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">rough</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">story</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">requiring</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">skill</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">survive</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b18">\n\nThere</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">good</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">times</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">bad</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">times;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">triump</span><span style="color: #000000; background-color: #efcb05; ">h </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">tragedy.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">It's</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">all</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; "> the </span><span class="sf17b16">drama</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;difficulty&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/difficulty&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;difficulty&gt;</span><span class="sf10b2">3</span><span class="sf13b2">&lt;/difficulty&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d16" href="#d16">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;threatScale&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">65</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">threatScale</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;threatScale&gt;</span><span class="sf17b18">1&lt;/threatScale&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;adaptationEffectFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">adaptation<wbr>EffectFactor</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;colonistMoodOffset&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/colonistMoodOffs<wbr>et&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;colonistMoodOffset&gt;</span><span class="sf10b2">0</span><span class="sf13b2">&lt;/colonistMoodOffs<wbr>et&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d17" href="#d17">.</a></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;tradePriceFactorLoss&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.10</span><span style="color: #000000; background-color: #e49b52; ">&lt;/tradePriceF<wbr>actorLoss&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;cropYieldFactor&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/cropYieldFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;cropYieldFactor&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/cropYieldFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d18" href="#d18">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;mineYieldFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/mineYieldFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;researchSpeedFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/researchSpeedFa<wbr>ctor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;diseaseIntervalFactor&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/diseaseInterv<wbr>alFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;diseaseIntervalFactor&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/diseaseInterv<wbr>alFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;enemyReproductionRateFactor&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/enemyRe<wbr>productionRateFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;enemyReproductionRateFactor&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/enemyRe<wbr>productionRateFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d19" href="#d19">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;deepDrillInfestationChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/de<wbr>epDrillInfestationChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;foodPoisonChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/foodPoisonCh<wbr>anceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;maintenanceCostFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/maintenanceCo<wbr>stFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;enemyDeathOnDownedChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/enem<wbr>yDeathOnDownedChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;adaptationGrowthRateFactorOverZero&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/<wbr>adaptationGrowthRateFactorOverZero&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;raidBeaconThreatCountFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/raidBea<wbr>conThreatCountFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/DifficultyDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/DifficultyDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;DifficultyDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;DifficultyDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Hard</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;defName&gt;</span><span class="sf3b2">Hard</span><span class="sf13b2">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d20" href="#d20">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span class="sf17b16">Intens</span><span style="color: #000000; background-color: #efcb05; ">e</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span class="sf17b16">savag</span><span style="color: #000000; background-color: #efcb05; ">e</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">A</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">significant</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">challenge</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">\n\</span><span style="color: #000000; background-color: #efcb05; ">nSucceeding at this level requires </span><span class="sf17b16">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">solid</span><span style="color: #000000; background-color: #efcb05; "> and </span><span class="sf17b16">well-rounded</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">understanding</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">survival</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">strategie</span><span style="color: #000000; background-color: #efcb05; ">s</span><span class="sf17b18">,</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">and </span><span style="color: #000000; background-color: #efcb05; ">some </span><span style="color: #000000; background-color: #efcb05; ">l</span><span class="sf17b16">uck</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span class="sf17b16">Face</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">brutal</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">survival</span><span style="color: #000000; background-color: #efcb05; "> challenge</span><span class="sf17b18">s</span><span style="color: #000000; background-color: #efcb05; ">. </span><span class="sf17b18">The</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">price</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">survival</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">blood.</span><span style="color: #000000; background-color: #efcb05; ">\n\</span><span class="sf17b18">nRecommended</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Experienced</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">players</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">who</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">want</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">experience</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">great</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">tests</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">sacrifice.\n\</span><span style="color: #000000; background-color: #efcb05; ">nSucceeding at this level requires </span><span class="sf17b16">diverse</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">strategies,</span><span style="color: #000000; background-color: #efcb05; "> and </span><span class="sf17b16">disciplined</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">preparation,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">luck.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">Threat</span><span style="color: #000000; background-color: #efcb05; ">s</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">can</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">spike</span><span style="color: #000000; background-color: #efcb05; "> and </span><span class="sf17b18">combine</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">vicious</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">ways.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Even</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">if</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">you</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">play</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">well,</span><span style="color: #000000; background-color: #efcb05; "> some </span><span class="sf17b18">challenges</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">impossible</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">overcome</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">without</span><span style="color: #000000; background-color: #efcb05; "> l</span><span class="sf17b16">osses</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;difficulty&gt;</span><span class="sf10b2">4</span><span class="sf13b2">&lt;/difficulty&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;difficulty&gt;</span><span class="sf10b2">4</span><span class="sf13b2">&lt;/difficulty&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d21" href="#d21">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;threatScale&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">&lt;/threatScale&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;threatScale&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.</span><span class="sf17b16">55</span><span style="color: #000000; background-color: #efcb05; ">&lt;/threatScale&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">colonistMoodOffset</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">-3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">colonistMoodOff<wbr>set</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">adaptationEffectFactor</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">0.7</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">adaptation<wbr>EffectFactor</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">tradePriceFactorLoss</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">0.15</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">tradePriceF<wbr>actorLoss</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b16">colonistMoodOffset</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b16">-5</span><span style="color: #000000; background-color: #efcb05; ">&lt;/</span><span class="sf17b16">colonistMoodOff<wbr>set</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;tradePriceFactorLoss&gt;</span><span style="color: #000000; background-color: #e49b52; ">0.10</span><span style="color: #000000; background-color: #e49b52; ">&lt;/tradePriceF<wbr>actorLoss&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;cropYieldFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.95</span><span style="color: #000000; background-color: #efcb05; ">&lt;/cropYieldFactor&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;mineYieldFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.95</span><span style="color: #000000; background-color: #efcb05; ">&lt;/mineYieldFactor&gt;<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;researchSpeedFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.95</span><span style="color: #000000; background-color: #efcb05; ">&lt;/researchSpee<wbr>dFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;diseaseIntervalFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.95</span><span style="color: #000000; background-color: #efcb05; ">&lt;/diseaseInt<wbr>ervalFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #e49b52; "><code><span style="color: #000000; background-color: #e49b52; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #e49b52; ">&lt;cropYieldFactor&gt;</span><span style="color: #000000; background-color: #e49b52; ">1</span><span style="color: #000000; background-color: #e49b52; ">&lt;/cropYieldFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;diseaseIntervalFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/diseaseInterv<wbr>alFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;enemyReproductionRateFactor&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/enemyRe<wbr>productionRateFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;enemyReproductionRateFactor&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/enemyRe<wbr>productionRateFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d22" href="#d22">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;deepDrillInfestationChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/<wbr>deepDrillInfestationChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;foodPoisonChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/foodPoison<wbr>ChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;maintenanceCostFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/maintenanceCo<wbr>stFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;enemyDeathOnDownedChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/enem<wbr>yDeathOnDownedChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;adaptationGrowthRateFactorOverZero&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/<wbr>adaptationGrowthRateFactorOverZero&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;raidBeaconThreatCountFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/raidB<wbr>eaconThreatCountFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp;</span><span class="sf13b2">&lt;/DifficultyDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/DifficultyDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;DifficultyDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;DifficultyDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d23" href="#d23">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span class="sf17b16">VeryHard</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;defName&gt;</span><span class="sf17b16">Extreme</span><span style="color: #000000; background-color: #efcb05; ">&lt;/defName&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span class="sf17b16">Extreme</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;label&gt;</span><span class="sf17b16">merciless</span><span style="color: #000000; background-color: #efcb05; ">&lt;/label&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">A</span><span class="sf17b16">s</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">hard</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">as</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">a </span><span class="sf17b16">diamond-bladed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">dagger</span><span style="color: #000000; background-color: #efcb05; ">.\n\n</span><span class="sf17b16">Enemies</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">numerous</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">prices</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">ar</span><span style="color: #000000; background-color: #efcb05; ">e </span><span class="sf17b16">poor</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">food</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">is </span><span class="sf17b16">scarce</span><span style="color: #000000; background-color: #efcb05; ">, and </span><span class="sf17b16">colonists</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">grumpy</span><span style="color: #000000; background-color: #efcb05; ">. </span><span class="sf17b16">Fo</span><span style="color: #000000; background-color: #efcb05; ">r </span><span class="sf17b16">those</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">who</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">enjoy</span><span style="color: #000000; background-color: #efcb05; "> d</span><span class="sf17b16">igital</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">suffering</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;description&gt;</span><span style="color: #000000; background-color: #efcb05; ">A</span><span class="sf17b16">pply</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">mastery</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">every</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">RimWorld</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">skill</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">just</span><span style="color: #000000; background-color: #efcb05; "> a </span><span class="sf17b16">chance</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">survive</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">harrowing</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">trial</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">against</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">merciless,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">unfair</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">world</span><span style="color: #000000; background-color: #efcb05; ">.\n\n</span><span class="sf17b16">Recommended</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">for:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Experienced</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">players</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">who</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">want</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">face</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">brutal</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">unfair</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">challeng</span><span style="color: #000000; background-color: #efcb05; ">e </span><span class="sf17b18">where</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">even</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">great</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">skill</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">may</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">not</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">prevent</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">death.\n\nThis</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">level</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">about</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dealing</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">losses</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">because</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">preventing</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">them</span><span style="color: #000000; background-color: #efcb05; "> is </span><span class="sf17b18">impossible.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">You'll</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">spend</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">lot</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">time</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">fighting</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">wounded</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">recovering</span><span style="color: #000000; background-color: #efcb05; ">, and </span><span class="sf17b16">you'll</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">need</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">sacrifice</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">people</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">things</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">you</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">love</span><span style="color: #000000; background-color: #efcb05; ">. </span><span class="sf17b16">Unfai</span><span style="color: #000000; background-color: #efcb05; ">r </span><span class="sf17b16">challenges</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">capricious</span><span style="color: #000000; background-color: #efcb05; "> d</span><span class="sf17b16">eath</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">may</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">come</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">at</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">any</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">time</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">&lt;/description&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;drawColor&gt;(1,0.2,0.2)&lt;/drawColor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;isExtreme&gt;true&lt;/isExtreme&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;difficulty&gt;</span><span class="sf10b2">5</span><span class="sf13b2">&lt;/difficulty&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;difficulty&gt;</span><span class="sf10b2">5</span><span class="sf13b2">&lt;/difficulty&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d24" href="#d24">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;threatScale&gt;</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/threatScale&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;threatScale&gt;</span><span class="sf17b16">2</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">2</span><span style="color: #000000; background-color: #efcb05; ">&lt;/threatScale&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">colonistMoodOffset&gt;</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #efcb05; ">&lt;/colonistMoodOff<wbr>set&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">adaptationEffectFactor&gt;0.4&lt;/adaptation<wbr>EffectFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">colonistMoodOffset&gt;</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">10</span><span style="color: #000000; background-color: #efcb05; ">&lt;/colonistMoodOf<wbr>fset&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;tradePriceFactorLoss&gt;</span><span class="sf10b2">0.20</span><span class="sf13b2">&lt;/tradePriceF<wbr>actorLoss&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;tradePriceFactorLoss&gt;</span><span class="sf10b2">0.20</span><span class="sf13b2">&lt;/tradePriceF<wbr>actorLoss&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d25" href="#d25">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;cropYieldFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #efcb05; ">&lt;/cropYieldFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;cropYieldFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #efcb05; ">&lt;/cropYieldFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;mineYieldFactor&gt;0.8&lt;/mineYieldFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">&lt;researchSpeedFactor&gt;0.9&lt;/researchSpeed<wbr>Factor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;diseaseIntervalFactor&gt;</span><span class="sf10b2">0.9</span><span class="sf13b2">&lt;/diseaseInte<wbr>rvalFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;diseaseIntervalFactor&gt;</span><span class="sf10b2">0.9</span><span class="sf13b2">&lt;/diseaseInte<wbr>rvalFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;enemyReproductionRateFactor&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/enemyRe<wbr>productionRateFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;enemyReproductionRateFactor&gt;</span><span class="sf10b2">1</span><span class="sf13b2">&lt;/enemyRe<wbr>productionRateFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerPawnInfectionChanceFactor&gt;</span><span class="sf10b2">1.1</span><span class="sf13b2">&lt;/p<wbr>layerPawnInfectionChanceFactor&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf13b2">&lt;playerPawnInfectionChanceFactor&gt;</span><span class="sf10b2">1.1</span><span class="sf13b2">&lt;/p<wbr>layerPawnInfectionChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d26" href="#d26">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;deepDrillInfestationChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.3</span><span style="color: #000000; background-color: #efcb05; ">&lt;/<wbr>deepDrillInfestationChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;foodPoisonChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.2</span><span style="color: #000000; background-color: #efcb05; ">&lt;/foodPoison<wbr>ChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;maintenanceCostFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/maintenanceCo<wbr>stFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;enemyDeathOnDownedChanceFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/enem<wbr>yDeathOnDownedChanceFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;adaptationGrowthRateFactorOverZero&gt;</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">&lt;/<wbr>adaptationGrowthRateFactorOverZero&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&lt;raidBeaconThreatCountFactor&gt;</span><span style="color: #000000; background-color: #efcb05; ">1.2</span><span style="color: #000000; background-color: #efcb05; ">&lt;/raidB<wbr>eaconThreatCountFactor&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/DifficultyDef&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf13b2">&lt;/DifficultyDef&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;/Defs&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf13b2">&lt;/Defs&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>
